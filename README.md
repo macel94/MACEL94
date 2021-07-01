@@ -1,5 +1,10 @@
 ### Hi there 👋
 
+Take a look at my thesis on :octocat:: 
+
+✨ https://github.com/MACEL94/Tesi-Il-framework-Blazor/blob/master/Tesi%20Il%20Framework%20Blazor%20062020%20-%20Presentazione.pdf ✨
+
+
 <!--
 **MACEL94/MACEL94** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
