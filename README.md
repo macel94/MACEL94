@@ -4,18 +4,14 @@ Take a look at my thesis on :octocat::
 
 ✨ https://github.com/MACEL94/Tesi-Il-framework-Blazor/blob/master/Tesi%20Il%20Framework%20Blazor%20062020%20-%20Presentazione.pdf ✨
 
+<div>
+  <img align="center" src="https://github-readme-stats.vercel.app/api?username=MACEL94&show_icons=true&theme=dark" alt="MACEL94" />
+<div/>
+<br />
+  
+<div>
+  <img align="center" src="https://github-readme-stats.vercel.app/api/top-langs/?username=MACEL94&layout=compact&theme=dark" alt="MACEL94" />
+<div/>
+<br />
 
-<!--
-**MACEL94/MACEL94** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+![Visitors](http://estruyf-github.azurewebsites.net/api/VisitorHit?user=MACEL94&repo=MACEL94&countColor=%237B1E7A)
