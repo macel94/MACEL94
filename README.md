@@ -20,4 +20,4 @@ Take a look at my uni thesis on GitHub :octocat::
 <div/>
 <br />
 
-![Visitors](http://estruyf-github.azurewebsites.net/api/VisitorHit?user=MACEL94&repo=MACEL94&countColor=%237B1E7A)
+![Visitors](https://api.visitorbadge.io/api/VisitorHit?user=MACEL94&repo=MACEL94&countColor=%237B1E7A)
