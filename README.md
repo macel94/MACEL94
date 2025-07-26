@@ -13,7 +13,9 @@ Some data:
 <br />
 
 ![Visitors](https://api.visitorbadge.io/api/VisitorHit?user=MACEL94&repo=MACEL94&countColor=%237B1E7A)
+<br />
 [![GitHub Streak](https://streak-stats.demolab.com?user=macel94&theme=dark&date_format=j%20M%5B%20Y%5D&mode=weekly)](https://git.io/streak-stats)
+<br />
 
 You can find my(old) uni thesis on Blazor, here on GitHub :octocat:: 
 ✨ https://github.com/macel94/Tesi-Il-framework-Blazor/blob/master/Tesi%20Il%20Framework%20Blazor%20062020%20-%20Presentazione.pdf ✨
