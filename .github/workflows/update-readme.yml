@@ -24,10 +24,16 @@ jobs:
         with:
           dotnet-version: "10.0.x"
 
-      - name: Fetch LinkedIn data & generate README + Europass CV
+      - name: Fetch LinkedIn data
         env:
           LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
         run: dotnet run scripts/fetch_linkedin.cs
+
+      - name: Generate README
+        run: dotnet run scripts/generate_readme.cs
+
+      - name: Generate Europass CV XML
+        run: dotnet run scripts/generate_cv.cs
 
       # ── GitHub Stats SVGs (generated locally, no third-party Vercel) ──
       - name: Create profile directory
