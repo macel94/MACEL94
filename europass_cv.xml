@@ -1,0 +1,1105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Candidate xsi:schemaLocation="http://www.europass.eu/1.0 Candidate.xsd"
+    xmlns="http://www.europass.eu/1.0"
+    xmlns:oa="http://www.openapplications.org/oagis/9"
+    xmlns:eures="http://www.europass_eures.eu/1.0"
+    xmlns:hr="http://www.hr-xml.org/3"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <hr:DocumentID schemeID="Test-0001" schemeName="DocumentIdentifier" schemeAgencyName="EUROPASS" schemeVersionID="4.0"/>
+    <CandidateSupplier>
+        <hr:PartyID schemeID="Test-0001" schemeName="PartyID" schemeAgencyName="EUROPASS" schemeVersionID="1.0"/>
+        <hr:PartyName>Owner</hr:PartyName>
+        <PersonContact>
+            <PersonName>
+                <oa:GivenName>Francesco</oa:GivenName>
+                <hr:FamilyName>Belacca</hr:FamilyName>
+            </PersonName>
+            <Communication>
+                <ChannelCode>Email</ChannelCode>
+                <oa:URI>francesco.belacca@hotmail.it</oa:URI>
+            </Communication>
+        </PersonContact>
+        <hr:PrecedenceCode>1</hr:PrecedenceCode>
+    </CandidateSupplier>
+    <CandidatePerson>
+        <PersonName>
+            <oa:GivenName>Francesco</oa:GivenName>
+            <hr:FamilyName>Belacca</hr:FamilyName>
+        </PersonName>
+        <Communication>
+            <ChannelCode>Email</ChannelCode>
+            <oa:URI>francesco.belacca@hotmail.it</oa:URI>
+        </Communication>
+        <Communication>
+            <ChannelCode>Web</ChannelCode>
+            <oa:URI>https://www.linkedin.com/in/fbelacca/</oa:URI>
+        </Communication>
+        <Communication>
+            <ChannelCode>Web</ChannelCode>
+            <oa:URI>https://github.com/MACEL94</oa:URI>
+        </Communication>
+        <Communication>
+            <ChannelCode>Telephone</ChannelCode>
+            <UseCode>mobile</UseCode>
+            <CountryDialing>39</CountryDialing>
+            <oa:DialNumber>3927192565</oa:DialNumber>
+            <CountryCode>it</CountryCode>
+        </Communication>
+        <Communication>
+            <UseCode>home</UseCode>
+            <Address type="home">
+                <oa:AddressLine>Viale la Grola 29</oa:AddressLine>
+                <oa:CityName>Parma</oa:CityName>
+                <CountryCode>it</CountryCode>
+                <oa:PostalCode>43126</oa:PostalCode>
+            </Address>
+        </Communication>
+        <NationalityCode>it</NationalityCode>
+        <hr:BirthDate>1994-10-09</hr:BirthDate>
+        <GenderCode>male</GenderCode>
+        <PrimaryLanguageCode name="NORMAL">ita</PrimaryLanguageCode>
+    </CandidatePerson>
+    <CandidateProfile languageCode="en">
+        <hr:ID schemeID="Test-0001" schemeName="CandidateProfileID" schemeAgencyName="EUROPASS" schemeVersionID="1.0">5f327b3f7a5af5347b0c995f</hr:ID>
+        <EmploymentHistory>
+            <EmployerHistory>
+                <hr:OrganizationName>Würth IT Italy</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address>
+                            <oa:CityName>Parma</oa:CityName>
+                            <CountryCode>it</CountryCode>
+                        </Address>
+                    </Communication>
+                </OrganizationContact>
+                <PositionHistory>
+                    <PositionTitle typeCode="FREETEXT">Site Reliability Engineer</PositionTitle>
+                    <eures:EmploymentPeriod>
+                        <eures:StartDate>
+                            <hr:FormattedDateTime>2024-09-01</hr:FormattedDateTime>
+                        </eures:StartDate>
+                        <hr:CurrentIndicator>true</hr:CurrentIndicator>
+                    </eures:EmploymentPeriod>
+                    <oa:Description>&lt;p&gt;I’ve been the force-multiplier behind Würth-Phoenix’s Microsoft stack.  Built and maintain complex, dynamic CI/CD in Azure DevOps and GitHub Enterprise for CRM/ERP and Business Central workloads.  Wrote production PowerShell automation and .NET backend APIs to remove manual toil and harden processes.  Rolling out Bicep for repeatable, reviewable IaC across environments.  Lead admin/governance for tenants and repos (Azure, Entra ID, Business Central, Fabric, GitHub Enterprise), enforcing DevSecOps guardrails, RBAC, and compliance by default.  Partner with developers to shift-left security, codify best practices, and unblock delivery at scale.  Speaker at Microsoft-centric events and internal Würth forums to share patterns and uplift teams.   Focus areas Azure | Azure DevOps | GitHub Enterprise | CI/CD | PowerShell | .NET | Bicep (IaC) | Dynamics 365 / Business Central / Power Platform | Microsoft Fabric | Entra ID | DevSecOps | Governance | Automation&lt;/p&gt;</oa:Description>
+                    <City>Parma</City>
+                    <Country>it</Country>
+                </PositionHistory>
+            </EmployerHistory>
+            <EmployerHistory>
+                <hr:OrganizationName>Agic Cloud</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address>
+                            <oa:CityName>Parma</oa:CityName>
+                            <CountryCode>it</CountryCode>
+                        </Address>
+                    </Communication>
+                </OrganizationContact>
+                <PositionHistory>
+                    <PositionTitle typeCode="FREETEXT">Presales Solutions Architect</PositionTitle>
+                    <eures:EmploymentPeriod>
+                        <eures:StartDate>
+                            <hr:FormattedDateTime>2023-07-01</hr:FormattedDateTime>
+                        </eures:StartDate>
+                        <eures:EndDate>
+                            <hr:FormattedDateTime>2024-07-01</hr:FormattedDateTime>
+                        </eures:EndDate>
+                        <hr:CurrentIndicator>false</hr:CurrentIndicator>
+                    </eures:EmploymentPeriod>
+                    <oa:Description>&lt;p&gt;Designed Azure landing zones, application architectures, and migration plans for enterprise clients, focusing on scalability, security, and cost control.  Led technical presales: shaped solutions, produced estimations, and supported bids for complex multi-service Azure projects.  Drove DevOps adoption using Bicep, GitHub Actions/Azure DevOps YAML, and CI/CD patterns; standardized IaC and deployment practices across teams.  Engaged with Dynamics teams as an enabler, defining integration patterns, securing workloads with Key Vault/Managed Identity, and improving delivery workflows.  Collaborated with engineering teams to troubleshoot distributed systems, resolve reliability issues, and streamline cloud operations.&lt;/p&gt;</oa:Description>
+                    <City>Parma</City>
+                    <Country>it</Country>
+                </PositionHistory>
+            </EmployerHistory>
+            <EmployerHistory>
+                <hr:OrganizationName>Agic Cloud</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address>
+                            <oa:CityName>Parma</oa:CityName>
+                            <CountryCode>it</CountryCode>
+                        </Address>
+                    </Communication>
+                </OrganizationContact>
+                <PositionHistory>
+                    <PositionTitle typeCode="FREETEXT">Backend Team Leader &amp; Cloud Developer</PositionTitle>
+                    <eures:EmploymentPeriod>
+                        <eures:StartDate>
+                            <hr:FormattedDateTime>2022-02-01</hr:FormattedDateTime>
+                        </eures:StartDate>
+                        <eures:EndDate>
+                            <hr:FormattedDateTime>2023-07-01</hr:FormattedDateTime>
+                        </eures:EndDate>
+                        <hr:CurrentIndicator>false</hr:CurrentIndicator>
+                    </eures:EmploymentPeriod>
+                    <oa:Description>&lt;p&gt;Our cloud division (Vetrya Cloud) was bought by the AGIC Techonology group, becoming AGIC Cloud.  Load tested multiple applications E2E using Azure Load Testing and Jmeter. Built from the ground up and managed more than one Multi-Region project with Microsoft Consulting with a fully remote team. Demonstrated AKS potential building and deploying a custom three layered containerized application using Github Actions, bicep, helm, Chaos Mesh, Azure Load Testing and made metric available using Prometheus and Grafana. Led and helped the Agic Cloud Backend Team grow and succeed. Contributed to Open Source projects for both Agic Cloud and myself on github. Teached a PBI Embedded &amp; Azure Automation course(to automatically use only what&apos;s needed, when it&apos;s needed) for an IT PA division(in Italian). Gave guidance to clients by demonstrating Azure capabilities implementing multiple POCs whenever needed using the latest standards(Bicep-Blazor-.NET 6-AzDevOps pipelines or GitHub actions).&lt;/p&gt;</oa:Description>
+                    <City>Parma</City>
+                    <Country>it</Country>
+                </PositionHistory>
+            </EmployerHistory>
+            <EmployerHistory>
+                <hr:OrganizationName>Vetrya</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address>
+                            <oa:CityName>Parma</oa:CityName>
+                            <CountryCode>it</CountryCode>
+                        </Address>
+                    </Communication>
+                </OrganizationContact>
+                <PositionHistory>
+                    <PositionTitle typeCode="FREETEXT">Backend Team Leader &amp; Cloud Developer</PositionTitle>
+                    <eures:EmploymentPeriod>
+                        <eures:StartDate>
+                            <hr:FormattedDateTime>2021-06-01</hr:FormattedDateTime>
+                        </eures:StartDate>
+                        <eures:EndDate>
+                            <hr:FormattedDateTime>2022-01-01</hr:FormattedDateTime>
+                        </eures:EndDate>
+                        <hr:CurrentIndicator>false</hr:CurrentIndicator>
+                    </eures:EmploymentPeriod>
+                    <oa:Description>&lt;p&gt;As a Team Leader I helped my Team succeed and grow.  We used Azure PaaS services to build multiple environments using the following technologies:  Bot framework PBI Dashboard embedded in Azure Static Web Apps .NET 6 Web APIs  Azure MSSQL dbs using EFCore Code First Approach  Azure Search Logic Apps yaml pipelines for CI/CD on Azure DevOps Bicep for IAC xUnit + Moq for Unit Tests  React &amp; Blazor for FE  Used managed identities and RBAC whenever possible to secure and manage secrets.&lt;/p&gt;</oa:Description>
+                    <City>Parma</City>
+                    <Country>it</Country>
+                </PositionHistory>
+            </EmployerHistory>
+            <EmployerHistory>
+                <hr:OrganizationName>Credemtel SpA</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address>
+                            <oa:CityName>Reggio nell&apos;Emilia</oa:CityName>
+                            <CountryCode>it</CountryCode>
+                        </Address>
+                    </Communication>
+                </OrganizationContact>
+                <PositionHistory>
+                    <PositionTitle typeCode="FREETEXT">Backend Developer/ Analyst</PositionTitle>
+                    <eures:EmploymentPeriod>
+                        <eures:StartDate>
+                            <hr:FormattedDateTime>2020-04-01</hr:FormattedDateTime>
+                        </eures:StartDate>
+                        <eures:EndDate>
+                            <hr:FormattedDateTime>2021-05-01</hr:FormattedDateTime>
+                        </eures:EndDate>
+                        <hr:CurrentIndicator>false</hr:CurrentIndicator>
+                    </eures:EmploymentPeriod>
+                    <oa:Description>&lt;p&gt;Worked as backend developer for multiple core application using various types of dbs(sql/ElasticSearch) developing microservices of a SAGA in the backend and APIs for the frontend. Used both .net Framework(spanning from 2 to 4.8) and .net Core. Always worked in team, using TFS for planning, CI/CD and repository.&lt;/p&gt;</oa:Description>
+                    <City>Reggio nell&apos;Emilia</City>
+                    <Country>it</Country>
+                </PositionHistory>
+            </EmployerHistory>
+            <EmployerHistory>
+                <hr:OrganizationName>Credemtel SpA</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address>
+                            <oa:CityName>Reggio Emilia</oa:CityName>
+                            <CountryCode>it</CountryCode>
+                        </Address>
+                    </Communication>
+                </OrganizationContact>
+                <PositionHistory>
+                    <PositionTitle typeCode="FREETEXT">Backend Developer</PositionTitle>
+                    <eures:EmploymentPeriod>
+                        <eures:StartDate>
+                            <hr:FormattedDateTime>2019-09-01</hr:FormattedDateTime>
+                        </eures:StartDate>
+                        <eures:EndDate>
+                            <hr:FormattedDateTime>2020-03-01</hr:FormattedDateTime>
+                        </eures:EndDate>
+                        <hr:CurrentIndicator>false</hr:CurrentIndicator>
+                    </eures:EmploymentPeriod>
+                    <oa:Description>&lt;p&gt;Worked as backend developer for multiple core application using various types of dbs(sql/ElasticSearch) developing microservices of a SAGA in the backend and APIs for the frontend. Used both .net Framework(spanning from 2 to 4.8) and .net Core. Always worked in team, using TFS for planning, CI/CD and repository. Worked part time and finished my University with my thesis on Blazor.&lt;/p&gt;</oa:Description>
+                    <City>Reggio Emilia</City>
+                    <Country>it</Country>
+                </PositionHistory>
+            </EmployerHistory>
+            <EmployerHistory>
+                <hr:OrganizationName>Amaris</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address>
+                            <oa:CityName>Reggio Emilia</oa:CityName>
+                            <CountryCode>it</CountryCode>
+                        </Address>
+                    </Communication>
+                </OrganizationContact>
+                <PositionHistory>
+                    <PositionTitle typeCode="FREETEXT">Consultant - Backend Developer</PositionTitle>
+                    <eures:EmploymentPeriod>
+                        <eures:StartDate>
+                            <hr:FormattedDateTime>2018-09-01</hr:FormattedDateTime>
+                        </eures:StartDate>
+                        <eures:EndDate>
+                            <hr:FormattedDateTime>2019-08-01</hr:FormattedDateTime>
+                        </eures:EndDate>
+                        <hr:CurrentIndicator>false</hr:CurrentIndicator>
+                    </eures:EmploymentPeriod>
+                    <oa:Description>&lt;p&gt;Worked as consultant for Credemtel&lt;/p&gt;</oa:Description>
+                    <City>Reggio Emilia</City>
+                    <Country>it</Country>
+                </PositionHistory>
+            </EmployerHistory>
+            <EmployerHistory>
+                <hr:OrganizationName>ericsoft srl</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address>
+                            <oa:CityName>Misano Adriatico</oa:CityName>
+                            <CountryCode>it</CountryCode>
+                        </Address>
+                    </Communication>
+                </OrganizationContact>
+                <PositionHistory>
+                    <PositionTitle typeCode="FREETEXT">Junior Backend Developer</PositionTitle>
+                    <eures:EmploymentPeriod>
+                        <eures:StartDate>
+                            <hr:FormattedDateTime>2016-05-01</hr:FormattedDateTime>
+                        </eures:StartDate>
+                        <eures:EndDate>
+                            <hr:FormattedDateTime>2018-08-01</hr:FormattedDateTime>
+                        </eures:EndDate>
+                        <hr:CurrentIndicator>false</hr:CurrentIndicator>
+                    </eures:EmploymentPeriod>
+                    <oa:Description>&lt;p&gt;Developed various APIs integrations from Booking to expedia and Agoda for Ericsoft&apos;s Channel Manager. Started working with C#, EF, and basic SQL.  Tested everything i developed with MSTests &amp; learned to use Visual Studio.&lt;/p&gt;</oa:Description>
+                    <City>Misano Adriatico</City>
+                    <Country>it</Country>
+                </PositionHistory>
+            </EmployerHistory>
+        </EmploymentHistory>
+        <EducationHistory>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>Università degli Studi di Urbino &apos;Carlo Bo&apos;</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2014-09-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <EndDate>
+                        <hr:FormattedDateTime>2020-06-01</hr:FormattedDateTime>
+                    </EndDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>Informatica Applicata(CS)</hr:DegreeName>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>Liceo Scientifico A.Volta Riccione - Corso Sperimentale Brocca</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <Ongoing>true</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>High School</hr:DegreeName>
+                    <OccupationalSkillsCovered>Focus on advanced mathematics and natural sciences within an extended‑hours experimental curriculum.</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>http://www.mensa.it/</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2014-02-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>MENSA ITALIA</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://www.cloud32.it/GES/stampa?Ybrx%253hhjZog2Ynyqt1H58OUdkEJG6Re1y%3Fnbeu%2B26hcatWk%2B%3Fu%3F%2FFn6B%3DQQgJLJ9HBcNVWTqAVmobqbDy%2Bn%2F%25p30Jz6%3D%2FGIWckfomplKYPdUjy330&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>Udemy</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2017-09-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>Getting Started with Angular 2+</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://www.udemy.com/certificate/UC-KKN29TB2/&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>Udemy</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2018-01-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>The Web Developer Bootcamp (40+ hours)</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://www.udemy.com/certificate/UC-SQ4MQOK7/&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>Speexx</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2020-09-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>Speexx English CEFR Level C1.1</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://portal.speexx.com/certificate/MzY2Mjg1Nw==&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>Microsoft</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2021-05-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>Microsoft Certified Azure Developer Associate</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://learn.microsoft.com/api/credentials/share/en-us/francesco-belacca-dev/B0B6390715280944?sharingId=DBB6C71362CD4CB4&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>Udemy</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2021-03-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>AZ-204 Developing for Microsoft Azure Exam Prep</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://www.udemy.com/certificate/UC-5957c389-228f-4488-aa31-c8cdd755f9af/&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>Microsoft</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2021-10-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>Microsoft Certified DevOps Engineer Expert</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://learn.microsoft.com/api/credentials/share/en-us/francesco-belacca-dev/8D2BB8D5E8687F2B?sharingId=DBB6C71362CD4CB4&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>LinkedIn</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2021-12-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>Managing Projects with Microsoft Teams</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://www.linkedin.com/learning/certificates/dec857b1866d560cc08e3a2456cd7d7f79485f05167dd1b75ceb7bb374590106&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>LinkedIn</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2022-01-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>Agile Foundations</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://www.linkedin.com/learning/certificates/9c25484c3e47fe357dc8ab6719addfdcbb14030906aa029457037580f1abfd39&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>LinkedIn</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2022-01-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>Scrum: The Basics</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://www.linkedin.com/learning/certificates/f5cec7d2cb199430912201ca06b48e477d818a6f17502b99c32c78cc3044fa58&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>LinkedIn</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2022-01-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>Scrum: Advanced</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://www.linkedin.com/learning/certificates/afbaf17a86736bcd0387cb7c65271d51ce71bc34c381502b791da65bbf2fa824&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>LinkedIn</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2022-01-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>Agile Project Leadership</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://www.linkedin.com/learning/certificates/7b7e3e8dae60f6791caaf538144030fe6cab6cc110e6adf89d35824b4b58e4eb&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>LinkedIn</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2022-05-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>Advanced Azure Microservices with .NET for Developers</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://www.linkedin.com/learning/certificates/160a722984c87c54489f6881e7e6b5ad299b09a0d4e2df8241467c18c5305b68&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>Udemy</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2023-04-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>Kubernetes for developers</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://www.udemy.com/certificate/UC-67714a89-6f40-4717-93a7-cded4b75d711/&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>LinkedIn</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2023-09-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>Introducing Semantic Kernel: Building AI-Based Apps</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://www.linkedin.com/learning/certificates/7d260cc6b9a0550507158d58a059c4dca7e8469ad56b64b4b543c24c9b517bd9&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>LinkedIn</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2023-10-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>Generative AI: The Evolution of Thoughtful Online Search</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://www.linkedin.com/learning/certificates/1552de3b7e9de56676146d25554b15b00e5c173d96081737c85789b7ae498543&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>LinkedIn</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2023-10-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>What Is Generative AI?</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://www.linkedin.com/learning/certificates/6f4f2a01f0d040292460e09c6fa385ebdd22ff6e4fbc91b8b456aadfd6ccd82a&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>LinkedIn</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2023-10-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>Streamlining Your Work with Microsoft Bing Chat</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://www.linkedin.com/learning/certificates/fccb09bb98c04c31b8554ed1ffd4b2ae67afebe4d228946a293ee6a704d6c05d&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>LinkedIn</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2023-10-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>Microsoft 365 Copilot First Look</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://www.linkedin.com/learning/certificates/56d2fde3a6529f9ca1e4b529f4b5a8f75c66588edca2be8560271c1a1c24f28a&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>LinkedIn</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2023-10-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>Ethics in the Age of Generative AI</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://www.linkedin.com/learning/certificates/494ade7cfad1cb24525faf2d511658a89e2fe3ce1a6f4969419d65e7193dcac7&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>LinkedIn</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2023-10-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>Introduction to Artificial Intelligence</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://www.linkedin.com/learning/certificates/44fa0685cbf275d19b25f5f7c3a0365e0b26227dd31e9c9545147e737e671c70&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>Microsoft</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2023-10-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>Career Essentials in Generative AI by Microsoft and LinkedIn</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://www.linkedin.com/learning/certificates/16067e03e960ef0144dc31920fcaf387d7873ef227c5738cb99ff362ede92a8a&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>Microsoft</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2024-01-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>Microsoft Certified: Azure Administrator Associate</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://learn.microsoft.com/api/credentials/share/en-us/francesco-belacca-dev/45B731060917D54E?sharingId&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+        </EducationHistory>
+        <eures:Licenses>
+            <eures:License>
+                <hr:LicenseTypeCode>B</hr:LicenseTypeCode>
+            </eures:License>
+        </eures:Licenses>
+        <Certifications/>
+        <PublicationHistory/>
+        <PersonQualifications>
+            <PersonCompetency>
+                <CompetencyID schemeName="NORMAL">eng</CompetencyID>
+                <hr:TaxonomyID>language</hr:TaxonomyID>
+                <eures:CompetencyDimension>
+                    <hr:CompetencyDimensionTypeCode>CEF-Understanding-Listening</hr:CompetencyDimensionTypeCode>
+                    <eures:Score>
+                        <hr:ScoreText>C1</hr:ScoreText>
+                    </eures:Score>
+                </eures:CompetencyDimension>
+                <eures:CompetencyDimension>
+                    <hr:CompetencyDimensionTypeCode>CEF-Understanding-Reading</hr:CompetencyDimensionTypeCode>
+                    <eures:Score>
+                        <hr:ScoreText>C1</hr:ScoreText>
+                    </eures:Score>
+                </eures:CompetencyDimension>
+                <eures:CompetencyDimension>
+                    <hr:CompetencyDimensionTypeCode>CEF-Speaking-Interaction</hr:CompetencyDimensionTypeCode>
+                    <eures:Score>
+                        <hr:ScoreText>B2</hr:ScoreText>
+                    </eures:Score>
+                </eures:CompetencyDimension>
+                <eures:CompetencyDimension>
+                    <hr:CompetencyDimensionTypeCode>CEF-Speaking-Production</hr:CompetencyDimensionTypeCode>
+                    <eures:Score>
+                        <hr:ScoreText>B2</hr:ScoreText>
+                    </eures:Score>
+                </eures:CompetencyDimension>
+                <eures:CompetencyDimension>
+                    <hr:CompetencyDimensionTypeCode>CEF-Writing-Production</hr:CompetencyDimensionTypeCode>
+                    <eures:Score>
+                        <hr:ScoreText>C1</hr:ScoreText>
+                    </eures:Score>
+                </eures:CompetencyDimension>
+            </PersonCompetency>
+        </PersonQualifications>
+        <EmploymentReferences/>
+        <CreativeWorks/>
+        <Projects/>
+        <SocialAndPoliticalActivities/>
+        <Skills>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Stakeholder Management</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Security Administration</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Identity management</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Pianificazione delle capacità</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Public speaking</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Microsoft Fabric</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>JIRA</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Github Enterprise</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>wsl</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Powershell Core</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Bash</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>DSC</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Business Central</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Software Infrastructure</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Azure</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Microsoft Entra ID</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Automation</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Microsoft Dynamics 365</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Microsoft Power Platform</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Cost Optimization</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Cloud Security</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Customer Requirements</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Communication</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Windows Azure</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>C#</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>DevOps</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Containerization</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Distributed Systems</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Version Control</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Cloud Infrastructure</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Attention to Detail</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Analytical Skills</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>SQL</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Lingua inglese</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Project management</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>OOP</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Analisi dei dati</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Sviluppo di prodotto</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>ETL</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Infrastrutture</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Troubleshooting</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Applicazioni Web</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Sviluppo di software</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Continuous improvement</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Integrazione continua</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Social media</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Agile Methodologies</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Agile Project Management</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>.NET</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Git</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>JavaScript</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>LINQ</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Visual Studio</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Microsoft Office</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>HTML</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Database</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Server Microsoft SQL</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Windows PowerShell</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>T-SQL</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Kibana</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>AZURE DEVOPS</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Time management</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Lavoro di squadra</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Project Leadership</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>.NET Framework</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Microservices</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Generative AI</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Search Engine Technology</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Artificial Intelligence (AI)</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Artificial Intelligence for Business</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Chatbots</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Microsoft Search</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Computer Ethics</hr:CompetencyName>
+            </PersonCompetency>
+        </Skills>
+        <NetworksAndMemberships/>
+        <ConferencesAndSeminars/>
+        <VoluntaryWorks/>
+        <CourseCertifications/>
+        <Others>
+            <Title>Job-related skills</Title>
+            <Other>
+                <Title>Job-related skills</Title>
+                <Description>&lt;p&gt;Senior DevOps &amp; Site Reliability Engineer | Azure &amp; .NET Specialist  With 9+ years in the tech industry, I help organizations build, secure, and scale their cloud infrastructure. My background spans the full stack—from writing C# backend code to leading development teams and architecting cloud solutions for enterprise clients.  Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps, governance, and automation across Dynamics 365, Power Platform, and Entra ID services. I thrive in complex environments where operational excellence is critical.  Key Competencies:  Governance at Scale: Navigating compliance and security in a massive single-tenant environment (85,000+ users, 500+ companies). I orchestrate stakeholders to ensure smooth approvals and operations in a complex corporate ecosystem.  Infrastructure as Code: Expert in Bicep and YAML pipelines (GitHub Actions/Azure DevOps) to implement modern, rapid approaches for creating and destroying cloud infrastructure.  Backend Engineering: Strong foundation in .NET and Blazor for building robust internal tools and customer-facing apps.  Security Automation: Managing large-scale secret rotation (Key Vault) and identity security standards.  Cloud Solutions Architecting: Utilizing rapid prototyping to demonstrate value, align stakeholders, and drive management strategies toward modern technical directions.  Power Platform Administration: Managing and governing low-code environments at an enterprise level.  My Mission: To build groundbreaking products that influence billions. I am passionate about simplifying complex distributed systems and applying Domain-Driven Design principles to solve real-world problems.  Based in Parma, Italy. Let&apos;s connect to talk about the future of Cloud Engineering and .NET.&lt;/p&gt;</Description>
+            </Other>
+        </Others>
+    </CandidateProfile>
+    <RenderingInformation>
+        <Design>
+            <Template>DynamicTemplate2</Template>
+            <Color>DarkGreen</Color>
+            <FontSize>Medium</FontSize>
+            <Logo>None</Logo>
+            <PageNumbers>true</PageNumbers>
+            <SectionsOrder>
+                <Section>
+                    <Title>work-experience</Title>
+                </Section>
+                <Section>
+                    <Title>education-training</Title>
+                </Section>
+                <Section>
+                    <Title>language</Title>
+                </Section>
+                <Section>
+                    <Title>profile-skills</Title>
+                </Section>
+                <Section>
+                    <Title>driving-licence</Title>
+                </Section>
+                <Section>
+                    <Title>Job-related skills</Title>
+                    <Custom>true</Custom>
+                </Section>
+            </SectionsOrder>
+        </Design>
+    </RenderingInformation>
+</Candidate>

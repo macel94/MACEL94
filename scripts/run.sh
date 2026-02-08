@@ -43,11 +43,20 @@ if ! command -v pandoc &>/dev/null || ! command -v wkhtmltopdf &>/dev/null; then
   echo "📦 Installing pandoc & wkhtmltopdf..."
   if command -v apt-get &>/dev/null; then
     sudo apt-get update -qq 2>/dev/null || true
-    sudo apt-get install -y -qq pandoc wkhtmltopdf librsvg2-bin imagemagick 2>/dev/null
+    sudo apt-get install -y -qq pandoc wkhtmltopdf librsvg2-bin imagemagick poppler-utils 2>/dev/null
   else
     echo "⚠ pandoc/wkhtmltopdf not found and cannot auto-install. Skipping PDF generation."
     echo "✅ Done (README + Europass XML generated, PDF skipped)."
     exit 0
+  fi
+fi
+
+# Ensure pdfattach is available (poppler-utils) for embedding XML metadata
+if ! command -v pdfattach &>/dev/null; then
+  echo "📦 Installing poppler-utils (for pdfattach)..."
+  if command -v apt-get &>/dev/null; then
+    sudo apt-get update -qq 2>/dev/null || true
+    sudo apt-get install -y -qq poppler-utils 2>/dev/null
   fi
 fi
 
@@ -96,7 +105,17 @@ pandoc README_pdf.md \
   -o Francesco_Belacca_CV.pdf
 rm -f README_pdf.md
 
+# ── 5. Embed Europass XML metadata into the PDF ─────────────────────
+if command -v pdfattach &>/dev/null && [[ -f europass_cv.xml ]]; then
+  echo "▶ Embedding europass_cv.xml into PDF as attachment..."
+  pdfattach Francesco_Belacca_CV.pdf europass_cv.xml Francesco_Belacca_CV_with_metadata.pdf
+  mv Francesco_Belacca_CV_with_metadata.pdf Francesco_Belacca_CV.pdf
+  echo "   ✅ Europass XML metadata embedded into PDF"
+else
+  echo "⚠ pdfattach not available or europass_cv.xml missing — PDF generated without embedded metadata."
+fi
+
 echo "✅ Done. Generated:"
 echo "   • README.md"
 echo "   • europass_cv.xml"
-echo "   • Francesco_Belacca_CV.pdf"
+echo "   • Francesco_Belacca_CV.pdf (with embedded Europass XML metadata)"
