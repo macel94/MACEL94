@@ -403,8 +403,8 @@ string GenerateReadme(Dictionary<string, List<JsonElement>> data)
     sb.AppendLine();
     sb.AppendLine("### 📥 Download CV");
     sb.AppendLine();
-    sb.AppendLine($"- [PDF Version](./Francesco_Belacca_CV.pdf)");
-    sb.AppendLine($"- [Europass XML](./europass_cv.xml)");
+    sb.AppendLine($"- [PDF Version](./artifacts/Francesco_Belacca_CV.pdf)");
+    sb.AppendLine($"- [Europass XML](./artifacts/europass_cv.xml)");
     sb.AppendLine();
     sb.AppendLine(
         $"<sub>🔄 Auto-generated from LinkedIn via " +
