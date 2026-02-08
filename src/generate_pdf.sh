@@ -98,9 +98,10 @@ for svg in artifacts/profile/*.svg; do
   echo "   • $svg → $static"
 done
 
-# ── 6. Build a PDF-ready markdown (point to static SVGs) ────────────
+# ── 6. Build a PDF-ready markdown (point to static SVGs, strip Download CV section) ─
 echo "▶ Converting README to PDF..."
-sed -E 's|(artifacts/profile/[a-z-]+)\.svg"|\1_static.svg"|g' README.md > README_pdf.md
+sed -E 's|(artifacts/profile/[a-z-]+)\.svg"|\1_static.svg"|g' README.md \
+  | sed '/^### 📥 Download CV$/,/^<sub>/{ /^### 📥 Download CV$/d; /^- \[/d; /^$/d; }' > README_pdf.md
 
 # ── 7. Convert markdown → HTML body with pandoc ─────────────────────
 pandoc README_pdf.md \
