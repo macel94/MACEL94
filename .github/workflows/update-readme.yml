@@ -1,0 +1,37 @@
+name: Update README from LinkedIn
+
+on:
+  # Run manually from the Actions tab
+  workflow_dispatch:
+
+  # Run on a schedule (weekly, every Monday at 06:00 UTC)
+  schedule:
+    - cron: "0 6 * * 1"
+
+permissions:
+  contents: write
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET 10
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "10.0.x"
+
+      - name: Fetch LinkedIn data & generate README
+        env:
+          LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+        run: dotnet run scripts/fetch_linkedin.cs
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet || (git commit -m "docs: update README from LinkedIn profile [skip ci]" && git push)
