@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SkillsPassport xmlns="http://europass.cedefop.europa.eu/Europass"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://europass.cedefop.europa.eu/Europass"
+  xsi:schemaLocation="http://europass.cedefop.europa.eu/Europass http://europass.cedefop.europa.eu/xml/EuropassSchema_V3.4.xsd"
   locale="en">
 
   <DocumentInfo>
     <DocumentType>ECV</DocumentType>
-    <CreationDate>2026-02-08T16:08:41.658Z</CreationDate>
-    <LastUpdateDate>2026-02-08T16:08:41.658Z</LastUpdateDate>
+    <CreationDate>2026-02-08T16:20:11.161Z</CreationDate>
+    <LastUpdateDate>2026-02-08T16:20:11.161Z</LastUpdateDate>
     <XSDVersion>V3.4</XSDVersion>
     <Generator>LinkedIn DMA Portability API + C# Script</Generator>
     <Comment>Auto-generated from LinkedIn profile data</Comment>
@@ -29,12 +29,16 @@
         <Email>
           <Contact>francesco.belacca@outlook.it</Contact>
         </Email>
-        <Website>
-          <Contact>https://github.com/macel94</Contact>
-        </Website>
-        <Website>
-          <Contact>https://www.linkedin.com/in/fbelacca/</Contact>
-        </Website>
+        <WebsiteList>
+          <Website>
+            <Contact>https://github.com/macel94</Contact>
+            <Use><Code>personal</Code><Label>Personal Website</Label></Use>
+          </Website>
+          <Website>
+            <Contact>https://www.linkedin.com/in/fbelacca/</Contact>
+            <Use><Code>personal</Code><Label>Personal Website</Label></Use>
+          </Website>
+        </WebsiteList>
       </ContactInfo>
     </Identification>
 
@@ -46,7 +50,7 @@
     <WorkExperienceList>
       <WorkExperience>
         <Period>
-          <From><Year>2024</Year><Month>--09</Month></From>
+          <From year="2024" month="--09"/>
           <Current>true</Current>
         </Period>
         <Position>
@@ -59,6 +63,7 @@
             <Address>
               <Contact>
                 <Municipality>Parma, Emilia-Romagna, Italy</Municipality>
+                <Country><Code>IT</Code><Label>Italy</Label></Country>
               </Contact>
             </Address>
           </ContactInfo>
@@ -66,8 +71,8 @@
       </WorkExperience>
       <WorkExperience>
         <Period>
-          <From><Year>2023</Year><Month>--07</Month></From>
-          <To><Year>2024</Year><Month>--07</Month></To>
+          <From year="2023" month="--07"/>
+          <To year="2024" month="--07"/>
         </Period>
         <Position>
           <Label>Presales Solutions Architect</Label>
@@ -79,6 +84,7 @@
             <Address>
               <Contact>
                 <Municipality>Parma, Emilia Romagna, Italia</Municipality>
+                <Country><Code>IT</Code><Label>Italy</Label></Country>
               </Contact>
             </Address>
           </ContactInfo>
@@ -86,8 +92,8 @@
       </WorkExperience>
       <WorkExperience>
         <Period>
-          <From><Year>2022</Year><Month>--02</Month></From>
-          <To><Year>2023</Year><Month>--07</Month></To>
+          <From year="2022" month="--02"/>
+          <To year="2023" month="--07"/>
         </Period>
         <Position>
           <Label>Backend Team Leader &amp; Cloud Developer</Label>
@@ -99,6 +105,7 @@
             <Address>
               <Contact>
                 <Municipality>Parma, Emilia-Romagna, Italy</Municipality>
+                <Country><Code>IT</Code><Label>Italy</Label></Country>
               </Contact>
             </Address>
           </ContactInfo>
@@ -106,8 +113,8 @@
       </WorkExperience>
       <WorkExperience>
         <Period>
-          <From><Year>2021</Year><Month>--06</Month></From>
-          <To><Year>2022</Year><Month>--01</Month></To>
+          <From year="2021" month="--06"/>
+          <To year="2022" month="--01"/>
         </Period>
         <Position>
           <Label>Backend Team Leader &amp; Cloud Developer</Label>
@@ -119,6 +126,7 @@
             <Address>
               <Contact>
                 <Municipality>Parma, Emilia-Romagna, Italy (Full Remote)</Municipality>
+                <Country><Code>IT</Code><Label>Italy</Label></Country>
               </Contact>
             </Address>
           </ContactInfo>
@@ -126,8 +134,8 @@
       </WorkExperience>
       <WorkExperience>
         <Period>
-          <From><Year>2020</Year><Month>--04</Month></From>
-          <To><Year>2021</Year><Month>--05</Month></To>
+          <From year="2020" month="--04"/>
+          <To year="2021" month="--05"/>
         </Period>
         <Position>
           <Label>Backend Developer/ Analyst</Label>
@@ -139,6 +147,7 @@
             <Address>
               <Contact>
                 <Municipality>Reggio nell&apos;Emilia, Emilia Romagna, Italia</Municipality>
+                <Country><Code>IT</Code><Label>Italy</Label></Country>
               </Contact>
             </Address>
           </ContactInfo>
@@ -146,8 +155,8 @@
       </WorkExperience>
       <WorkExperience>
         <Period>
-          <From><Year>2019</Year><Month>--09</Month></From>
-          <To><Year>2020</Year><Month>--03</Month></To>
+          <From year="2019" month="--09"/>
+          <To year="2020" month="--03"/>
         </Period>
         <Position>
           <Label>Backend Developer</Label>
@@ -159,6 +168,7 @@
             <Address>
               <Contact>
                 <Municipality>Reggio Emilia, Italia</Municipality>
+                <Country><Code>IT</Code><Label>Italy</Label></Country>
               </Contact>
             </Address>
           </ContactInfo>
@@ -166,8 +176,8 @@
       </WorkExperience>
       <WorkExperience>
         <Period>
-          <From><Year>2018</Year><Month>--09</Month></From>
-          <To><Year>2019</Year><Month>--08</Month></To>
+          <From year="2018" month="--09"/>
+          <To year="2019" month="--08"/>
         </Period>
         <Position>
           <Label>Consultant - Backend Developer</Label>
@@ -179,6 +189,7 @@
             <Address>
               <Contact>
                 <Municipality>Reggio Emilia, Italia</Municipality>
+                <Country><Code>IT</Code><Label>Italy</Label></Country>
               </Contact>
             </Address>
           </ContactInfo>
@@ -186,8 +197,8 @@
       </WorkExperience>
       <WorkExperience>
         <Period>
-          <From><Year>2016</Year><Month>--05</Month></From>
-          <To><Year>2018</Year><Month>--08</Month></To>
+          <From year="2016" month="--05"/>
+          <To year="2018" month="--08"/>
         </Period>
         <Position>
           <Label>Junior Backend Developer</Label>
@@ -199,6 +210,7 @@
             <Address>
               <Contact>
                 <Municipality>Misano Adriatico</Municipality>
+                <Country><Code>IT</Code><Label>Italy</Label></Country>
               </Contact>
             </Address>
           </ContactInfo>
@@ -209,8 +221,8 @@
     <EducationList>
       <Education>
         <Period>
-          <From><Year>2014</Year><Month>--09</Month></From>
-          <To><Year>2020</Year><Month>--06</Month></To>
+          <From year="2014" month="--09"/>
+          <To year="2020" month="--06"/>
         </Period>
         <Title>Informatica Applicata(CS)</Title>
         <Organisation>
@@ -253,187 +265,164 @@
     <AchievementList>
       <Achievement>
         <Title>
+          <Code>honors_awards</Code>
           <Label>MENSA ITALIA</Label>
         </Title>
-        <Description>Issued by http://www.mensa.it/</Description>
-        <Date><Year>2014</Year><Month>--02</Month></Date>
-        <ReferenceTo><Label>https://www.cloud32.it/GES/stampa?Ybrx%253hhjZog2Ynyqt1H58OUdkEJG6Re1y%3Fnbeu%2B26hcatWk%2B%3Fu%3F%2FFn6B%3DQQgJLJ9HBcNVWTqAVmobqbDy%2Bn%2F%25p30Jz6%3D%2FGIWckfomplKYPdUjy330</Label></ReferenceTo>
+        <Description>Issued by http://www.mensa.it/ (Feb 2014) - https://www.cloud32.it/GES/stampa?Ybrx%253hhjZog2Ynyqt1H58OUdkEJG6Re1y%3Fnbeu%2B26hcatWk%2B%3Fu%3F%2FFn6B%3DQQgJLJ9HBcNVWTqAVmobqbDy%2Bn%2F%25p30Jz6%3D%2FGIWckfomplKYPdUjy330</Description>
       </Achievement>
       <Achievement>
         <Title>
+          <Code>honors_awards</Code>
           <Label>Getting Started with Angular 2+</Label>
         </Title>
-        <Description>Issued by Udemy</Description>
-        <Date><Year>2017</Year><Month>--09</Month></Date>
-        <ReferenceTo><Label>https://www.udemy.com/certificate/UC-KKN29TB2/</Label></ReferenceTo>
+        <Description>Issued by Udemy (Sep 2017) - https://www.udemy.com/certificate/UC-KKN29TB2/</Description>
       </Achievement>
       <Achievement>
         <Title>
+          <Code>honors_awards</Code>
           <Label>The Web Developer Bootcamp (40+ hours)</Label>
         </Title>
-        <Description>Issued by Udemy</Description>
-        <Date><Year>2018</Year><Month>--01</Month></Date>
-        <ReferenceTo><Label>https://www.udemy.com/certificate/UC-SQ4MQOK7/</Label></ReferenceTo>
+        <Description>Issued by Udemy (Jan 2018) - https://www.udemy.com/certificate/UC-SQ4MQOK7/</Description>
       </Achievement>
       <Achievement>
         <Title>
+          <Code>honors_awards</Code>
           <Label>Speexx English CEFR Level C1.1</Label>
         </Title>
-        <Description>Issued by Speexx</Description>
-        <Date><Year>2020</Year><Month>--09</Month></Date>
-        <ReferenceTo><Label>https://portal.speexx.com/certificate/MzY2Mjg1Nw==</Label></ReferenceTo>
+        <Description>Issued by Speexx (Sep 2020) - https://portal.speexx.com/certificate/MzY2Mjg1Nw==</Description>
       </Achievement>
       <Achievement>
         <Title>
+          <Code>honors_awards</Code>
           <Label>Microsoft Certified Azure Developer Associate</Label>
         </Title>
-        <Description>Issued by Microsoft</Description>
-        <Date><Year>2021</Year><Month>--05</Month></Date>
-        <ReferenceTo><Label>https://learn.microsoft.com/api/credentials/share/en-us/francesco-belacca-dev/B0B6390715280944?sharingId=DBB6C71362CD4CB4</Label></ReferenceTo>
+        <Description>Issued by Microsoft (May 2021) - https://learn.microsoft.com/api/credentials/share/en-us/francesco-belacca-dev/B0B6390715280944?sharingId=DBB6C71362CD4CB4</Description>
       </Achievement>
       <Achievement>
         <Title>
+          <Code>honors_awards</Code>
           <Label>AZ-204 Developing for Microsoft Azure Exam Prep</Label>
         </Title>
-        <Description>Issued by Udemy</Description>
-        <Date><Year>2021</Year><Month>--03</Month></Date>
-        <ReferenceTo><Label>https://www.udemy.com/certificate/UC-5957c389-228f-4488-aa31-c8cdd755f9af/</Label></ReferenceTo>
+        <Description>Issued by Udemy (Mar 2021) - https://www.udemy.com/certificate/UC-5957c389-228f-4488-aa31-c8cdd755f9af/</Description>
       </Achievement>
       <Achievement>
         <Title>
+          <Code>honors_awards</Code>
           <Label>Microsoft Certified DevOps Engineer Expert</Label>
         </Title>
-        <Description>Issued by Microsoft</Description>
-        <Date><Year>2021</Year><Month>--10</Month></Date>
-        <ReferenceTo><Label>https://learn.microsoft.com/api/credentials/share/en-us/francesco-belacca-dev/8D2BB8D5E8687F2B?sharingId=DBB6C71362CD4CB4</Label></ReferenceTo>
+        <Description>Issued by Microsoft (Oct 2021) - https://learn.microsoft.com/api/credentials/share/en-us/francesco-belacca-dev/8D2BB8D5E8687F2B?sharingId=DBB6C71362CD4CB4</Description>
       </Achievement>
       <Achievement>
         <Title>
+          <Code>honors_awards</Code>
           <Label>Managing Projects with Microsoft Teams</Label>
         </Title>
-        <Description>Issued by LinkedIn</Description>
-        <Date><Year>2021</Year><Month>--12</Month></Date>
-        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/dec857b1866d560cc08e3a2456cd7d7f79485f05167dd1b75ceb7bb374590106</Label></ReferenceTo>
+        <Description>Issued by LinkedIn (Dec 2021) - https://www.linkedin.com/learning/certificates/dec857b1866d560cc08e3a2456cd7d7f79485f05167dd1b75ceb7bb374590106</Description>
       </Achievement>
       <Achievement>
         <Title>
+          <Code>honors_awards</Code>
           <Label>Agile Foundations</Label>
         </Title>
-        <Description>Issued by LinkedIn</Description>
-        <Date><Year>2022</Year><Month>--01</Month></Date>
-        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/9c25484c3e47fe357dc8ab6719addfdcbb14030906aa029457037580f1abfd39</Label></ReferenceTo>
+        <Description>Issued by LinkedIn (Jan 2022) - https://www.linkedin.com/learning/certificates/9c25484c3e47fe357dc8ab6719addfdcbb14030906aa029457037580f1abfd39</Description>
       </Achievement>
       <Achievement>
         <Title>
+          <Code>honors_awards</Code>
           <Label>Scrum: The Basics</Label>
         </Title>
-        <Description>Issued by LinkedIn</Description>
-        <Date><Year>2022</Year><Month>--01</Month></Date>
-        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/f5cec7d2cb199430912201ca06b48e477d818a6f17502b99c32c78cc3044fa58</Label></ReferenceTo>
+        <Description>Issued by LinkedIn (Jan 2022) - https://www.linkedin.com/learning/certificates/f5cec7d2cb199430912201ca06b48e477d818a6f17502b99c32c78cc3044fa58</Description>
       </Achievement>
       <Achievement>
         <Title>
+          <Code>honors_awards</Code>
           <Label>Scrum: Advanced</Label>
         </Title>
-        <Description>Issued by LinkedIn</Description>
-        <Date><Year>2022</Year><Month>--01</Month></Date>
-        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/afbaf17a86736bcd0387cb7c65271d51ce71bc34c381502b791da65bbf2fa824</Label></ReferenceTo>
+        <Description>Issued by LinkedIn (Jan 2022) - https://www.linkedin.com/learning/certificates/afbaf17a86736bcd0387cb7c65271d51ce71bc34c381502b791da65bbf2fa824</Description>
       </Achievement>
       <Achievement>
         <Title>
+          <Code>honors_awards</Code>
           <Label>Agile Project Leadership</Label>
         </Title>
-        <Description>Issued by LinkedIn</Description>
-        <Date><Year>2022</Year><Month>--01</Month></Date>
-        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/7b7e3e8dae60f6791caaf538144030fe6cab6cc110e6adf89d35824b4b58e4eb</Label></ReferenceTo>
+        <Description>Issued by LinkedIn (Jan 2022) - https://www.linkedin.com/learning/certificates/7b7e3e8dae60f6791caaf538144030fe6cab6cc110e6adf89d35824b4b58e4eb</Description>
       </Achievement>
       <Achievement>
         <Title>
+          <Code>honors_awards</Code>
           <Label>Advanced Azure Microservices with .NET for Developers</Label>
         </Title>
-        <Description>Issued by LinkedIn</Description>
-        <Date><Year>2022</Year><Month>--05</Month></Date>
-        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/160a722984c87c54489f6881e7e6b5ad299b09a0d4e2df8241467c18c5305b68</Label></ReferenceTo>
+        <Description>Issued by LinkedIn (May 2022) - https://www.linkedin.com/learning/certificates/160a722984c87c54489f6881e7e6b5ad299b09a0d4e2df8241467c18c5305b68</Description>
       </Achievement>
       <Achievement>
         <Title>
+          <Code>honors_awards</Code>
           <Label>Kubernetes for developers</Label>
         </Title>
-        <Description>Issued by Udemy</Description>
-        <Date><Year>2023</Year><Month>--04</Month></Date>
-        <ReferenceTo><Label>https://www.udemy.com/certificate/UC-67714a89-6f40-4717-93a7-cded4b75d711/</Label></ReferenceTo>
+        <Description>Issued by Udemy (Apr 2023) - https://www.udemy.com/certificate/UC-67714a89-6f40-4717-93a7-cded4b75d711/</Description>
       </Achievement>
       <Achievement>
         <Title>
+          <Code>honors_awards</Code>
           <Label>Introducing Semantic Kernel: Building AI-Based Apps</Label>
         </Title>
-        <Description>Issued by LinkedIn</Description>
-        <Date><Year>2023</Year><Month>--09</Month></Date>
-        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/7d260cc6b9a0550507158d58a059c4dca7e8469ad56b64b4b543c24c9b517bd9</Label></ReferenceTo>
+        <Description>Issued by LinkedIn (Sep 2023) - https://www.linkedin.com/learning/certificates/7d260cc6b9a0550507158d58a059c4dca7e8469ad56b64b4b543c24c9b517bd9</Description>
       </Achievement>
       <Achievement>
         <Title>
+          <Code>honors_awards</Code>
           <Label>Generative AI: The Evolution of Thoughtful Online Search</Label>
         </Title>
-        <Description>Issued by LinkedIn</Description>
-        <Date><Year>2023</Year><Month>--10</Month></Date>
-        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/1552de3b7e9de56676146d25554b15b00e5c173d96081737c85789b7ae498543</Label></ReferenceTo>
+        <Description>Issued by LinkedIn (Oct 2023) - https://www.linkedin.com/learning/certificates/1552de3b7e9de56676146d25554b15b00e5c173d96081737c85789b7ae498543</Description>
       </Achievement>
       <Achievement>
         <Title>
+          <Code>honors_awards</Code>
           <Label>What Is Generative AI?</Label>
         </Title>
-        <Description>Issued by LinkedIn</Description>
-        <Date><Year>2023</Year><Month>--10</Month></Date>
-        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/6f4f2a01f0d040292460e09c6fa385ebdd22ff6e4fbc91b8b456aadfd6ccd82a</Label></ReferenceTo>
+        <Description>Issued by LinkedIn (Oct 2023) - https://www.linkedin.com/learning/certificates/6f4f2a01f0d040292460e09c6fa385ebdd22ff6e4fbc91b8b456aadfd6ccd82a</Description>
       </Achievement>
       <Achievement>
         <Title>
+          <Code>honors_awards</Code>
           <Label>Streamlining Your Work with Microsoft Bing Chat</Label>
         </Title>
-        <Description>Issued by LinkedIn</Description>
-        <Date><Year>2023</Year><Month>--10</Month></Date>
-        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/fccb09bb98c04c31b8554ed1ffd4b2ae67afebe4d228946a293ee6a704d6c05d</Label></ReferenceTo>
+        <Description>Issued by LinkedIn (Oct 2023) - https://www.linkedin.com/learning/certificates/fccb09bb98c04c31b8554ed1ffd4b2ae67afebe4d228946a293ee6a704d6c05d</Description>
       </Achievement>
       <Achievement>
         <Title>
+          <Code>honors_awards</Code>
           <Label>Microsoft 365 Copilot First Look</Label>
         </Title>
-        <Description>Issued by LinkedIn</Description>
-        <Date><Year>2023</Year><Month>--10</Month></Date>
-        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/56d2fde3a6529f9ca1e4b529f4b5a8f75c66588edca2be8560271c1a1c24f28a</Label></ReferenceTo>
+        <Description>Issued by LinkedIn (Oct 2023) - https://www.linkedin.com/learning/certificates/56d2fde3a6529f9ca1e4b529f4b5a8f75c66588edca2be8560271c1a1c24f28a</Description>
       </Achievement>
       <Achievement>
         <Title>
+          <Code>honors_awards</Code>
           <Label>Ethics in the Age of Generative AI</Label>
         </Title>
-        <Description>Issued by LinkedIn</Description>
-        <Date><Year>2023</Year><Month>--10</Month></Date>
-        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/494ade7cfad1cb24525faf2d511658a89e2fe3ce1a6f4969419d65e7193dcac7</Label></ReferenceTo>
+        <Description>Issued by LinkedIn (Oct 2023) - https://www.linkedin.com/learning/certificates/494ade7cfad1cb24525faf2d511658a89e2fe3ce1a6f4969419d65e7193dcac7</Description>
       </Achievement>
       <Achievement>
         <Title>
+          <Code>honors_awards</Code>
           <Label>Introduction to Artificial Intelligence</Label>
         </Title>
-        <Description>Issued by LinkedIn</Description>
-        <Date><Year>2023</Year><Month>--10</Month></Date>
-        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/44fa0685cbf275d19b25f5f7c3a0365e0b26227dd31e9c9545147e737e671c70</Label></ReferenceTo>
+        <Description>Issued by LinkedIn (Oct 2023) - https://www.linkedin.com/learning/certificates/44fa0685cbf275d19b25f5f7c3a0365e0b26227dd31e9c9545147e737e671c70</Description>
       </Achievement>
       <Achievement>
         <Title>
+          <Code>honors_awards</Code>
           <Label>Career Essentials in Generative AI by Microsoft and LinkedIn</Label>
         </Title>
-        <Description>Issued by Microsoft</Description>
-        <Date><Year>2023</Year><Month>--10</Month></Date>
-        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/16067e03e960ef0144dc31920fcaf387d7873ef227c5738cb99ff362ede92a8a</Label></ReferenceTo>
+        <Description>Issued by Microsoft (Oct 2023) - https://www.linkedin.com/learning/certificates/16067e03e960ef0144dc31920fcaf387d7873ef227c5738cb99ff362ede92a8a</Description>
       </Achievement>
       <Achievement>
         <Title>
+          <Code>honors_awards</Code>
           <Label>Microsoft Certified: Azure Administrator Associate</Label>
         </Title>
-        <Description>Issued by Microsoft</Description>
-        <Date><Year>2024</Year><Month>--01</Month></Date>
-        <ReferenceTo><Label>https://learn.microsoft.com/api/credentials/share/en-us/francesco-belacca-dev/45B731060917D54E?sharingId</Label></ReferenceTo>
+        <Description>Issued by Microsoft (Jan 2024) - https://learn.microsoft.com/api/credentials/share/en-us/francesco-belacca-dev/45B731060917D54E?sharingId</Description>
       </Achievement>
     </AchievementList>
 

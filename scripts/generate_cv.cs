@@ -83,7 +83,7 @@ string GenerateEuropassXml(Dictionary<string, List<JsonElement>> data)
     sb.AppendLine("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
     sb.AppendLine("<SkillsPassport xmlns=\"http://europass.cedefop.europa.eu/Europass\"");
     sb.AppendLine("  xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"");
-    sb.AppendLine("  xsi:schemaLocation=\"http://europass.cedefop.europa.eu/Europass\"");
+    sb.AppendLine("  xsi:schemaLocation=\"http://europass.cedefop.europa.eu/Europass http://europass.cedefop.europa.eu/xml/EuropassSchema_V3.4.xsd\"");
     sb.AppendLine($"  locale=\"en\">");
     sb.AppendLine();
 
@@ -118,12 +118,16 @@ string GenerateEuropassXml(Dictionary<string, List<JsonElement>> data)
     sb.AppendLine("        <Email>");
     sb.AppendLine("          <Contact>francesco.belacca@outlook.it</Contact>");
     sb.AppendLine("        </Email>");
-    sb.AppendLine("        <Website>");
-    sb.AppendLine("          <Contact>https://github.com/macel94</Contact>");
-    sb.AppendLine("        </Website>");
-    sb.AppendLine("        <Website>");
-    sb.AppendLine("          <Contact>https://www.linkedin.com/in/fbelacca/</Contact>");
-    sb.AppendLine("        </Website>");
+        sb.AppendLine("        <WebsiteList>");
+    sb.AppendLine("          <Website>");
+    sb.AppendLine("            <Contact>https://github.com/macel94</Contact>");
+    sb.AppendLine("            <Use><Code>personal</Code><Label>Personal Website</Label></Use>");
+    sb.AppendLine("          </Website>");
+    sb.AppendLine("          <Website>");
+    sb.AppendLine("            <Contact>https://www.linkedin.com/in/fbelacca/</Contact>");
+    sb.AppendLine("            <Use><Code>personal</Code><Label>Personal Website</Label></Use>");
+    sb.AppendLine("          </Website>");
+    sb.AppendLine("        </WebsiteList>");
     sb.AppendLine("      </ContactInfo>");
     sb.AppendLine("    </Identification>");
     sb.AppendLine();
@@ -157,9 +161,9 @@ string GenerateEuropassXml(Dictionary<string, List<JsonElement>> data)
             if (!string.IsNullOrEmpty(started))
             {
                 sb.AppendLine("        <Period>");
-                sb.AppendLine($"          <From>{FormatEuropassDate(started)}</From>");
+                sb.AppendLine($"          <From {FormatEuropassDate(started)}/>");
                 if (!string.IsNullOrEmpty(finished))
-                    sb.AppendLine($"          <To>{FormatEuropassDate(finished)}</To>");
+                    sb.AppendLine($"          <To {FormatEuropassDate(finished)}/>");
                 else
                     sb.AppendLine("          <Current>true</Current>");
                 sb.AppendLine("        </Period>");
@@ -183,6 +187,7 @@ string GenerateEuropassXml(Dictionary<string, List<JsonElement>> data)
                 sb.AppendLine("            <Address>");
                 sb.AppendLine("              <Contact>");
                 sb.AppendLine($"                <Municipality>{EscapeXml(location)}</Municipality>");
+                sb.AppendLine($"                <Country><Code>IT</Code><Label>Italy</Label></Country>");
                 sb.AppendLine("              </Contact>");
                 sb.AppendLine("            </Address>");
                 sb.AppendLine("          </ContactInfo>");
@@ -217,9 +222,9 @@ string GenerateEuropassXml(Dictionary<string, List<JsonElement>> data)
             if (!string.IsNullOrEmpty(started))
             {
                 sb.AppendLine("        <Period>");
-                sb.AppendLine($"          <From>{FormatEuropassDate(started)}</From>");
+                sb.AppendLine($"          <From {FormatEuropassDate(started)}/>");
                 if (!string.IsNullOrEmpty(finished))
-                    sb.AppendLine($"          <To>{FormatEuropassDate(finished)}</To>");
+                    sb.AppendLine($"          <To {FormatEuropassDate(finished)}/>");
                 sb.AppendLine("        </Period>");
             }
 
@@ -343,16 +348,22 @@ string GenerateEuropassXml(Dictionary<string, List<JsonElement>> data)
             var url = Safe(c, "Url");
             var startedOn = Safe(c, "Started On");
 
+            // Build description with date and URL info
+            var descParts = new List<string>();
+            if (!string.IsNullOrEmpty(authority))
+                descParts.Add($"Issued by {authority}");
+            if (!string.IsNullOrEmpty(startedOn))
+                descParts.Add($"({startedOn})");
+            if (!string.IsNullOrEmpty(url))
+                descParts.Add($"- {url}");
+            var description = string.Join(" ", descParts);
+
             sb.AppendLine("      <Achievement>");
             sb.AppendLine("        <Title>");
+            sb.AppendLine("          <Code>honors_awards</Code>");
             sb.AppendLine($"          <Label>{EscapeXml(name)}</Label>");
             sb.AppendLine("        </Title>");
-            if (!string.IsNullOrEmpty(authority))
-                sb.AppendLine($"        <Description>{EscapeXml($"Issued by {authority}")}</Description>");
-            if (!string.IsNullOrEmpty(startedOn))
-                sb.AppendLine($"        <Date>{FormatEuropassDate(startedOn)}</Date>");
-            if (!string.IsNullOrEmpty(url))
-                sb.AppendLine($"        <ReferenceTo><Label>{EscapeXml(url)}</Label></ReferenceTo>");
+            sb.AppendLine($"        <Description>{EscapeXml(description)}</Description>");
             sb.AppendLine("      </Achievement>");
         }
         sb.AppendLine("    </AchievementList>");
@@ -373,11 +384,11 @@ string FormatEuropassDate(string dateStr)
             System.Globalization.CultureInfo.InvariantCulture,
             System.Globalization.DateTimeStyles.None, out var dt))
     {
-        return $"<Year>{dt.Year}</Year><Month>--{dt.Month:D2}</Month>";
+        return $"year=\"{dt.Year}\" month=\"--{dt.Month:D2}\"";
     }
     if (int.TryParse(dateStr, out var year))
-        return $"<Year>{year}</Year>";
-    return $"<Year>{dateStr}</Year>";
+        return $"year=\"{year}\"";
+    return $"year=\"{EscapeXml(dateStr)}\"";
 }
 
 string EscapeXml(string text)
