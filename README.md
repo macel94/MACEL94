@@ -150,5 +150,5 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 - [PDF Version](./Francesco_Belacca_CV.pdf)
 - [Europass XML](./europass_cv.xml)
 
-<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-02-08 17:01 UTC</sub>
+<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-02-08 17:19 UTC</sub>
 
