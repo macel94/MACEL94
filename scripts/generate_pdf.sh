@@ -44,7 +44,18 @@ if ! command -v pdfattach &>/dev/null; then
   fi
 fi
 
-# ── 4. Download GitHub markdown CSS if missing ──────────────────────
+# ── 4. Ensure emoji font is installed (for proper icon rendering) ────
+if ! fc-list | grep -qi "Noto Color Emoji"; then
+  echo "📦 Installing Noto Color Emoji font..."
+  if command -v apt-get &>/dev/null; then
+    sudo apt-get update -qq 2>/dev/null || true
+    sudo apt-get install -y -qq fonts-noto-color-emoji 2>/dev/null
+  else
+    echo "⚠ Cannot auto-install emoji font — emoji may render as boxes."
+  fi
+fi
+
+# ── 5. Download GitHub markdown CSS if missing ──────────────────────
 if [[ ! -f github-markdown.css ]]; then
   echo "📥 Downloading GitHub markdown CSS..."
   curl -sL https://raw.githubusercontent.com/sindresorhus/github-markdown-css/main/github-markdown.css \
