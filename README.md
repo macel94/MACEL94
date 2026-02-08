@@ -41,7 +41,7 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 
 ## 🛠 Tech Stack
 
-<img src="https://skillicons.dev/icons?i=azure,dotnet,cs,docker,kubernetes,powershell,bash,github,githubactions,git,js,vscode,visualstudio&perline=8" alt="Tech Stack"/>
+<img src="https://skillicons.dev/icons?i=azure,dotnet,cs,docker,kubernetes,powershell,bash,github,githubactions,git,js,vscode&perline=6" alt="Tech Stack"/>
 
 **Cloud & Infrastructure:** Microsoft Fabric · Business Central · Software Infrastructure · Azure · Microsoft Entra ID · Microsoft Dynamics 365 · Microsoft Power Platform · Cost Optimization · Cloud Security · Windows Azure · Containerization · Distributed Systems · Cloud Infrastructure
 

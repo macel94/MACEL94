@@ -119,7 +119,7 @@ string GenerateReadme(Dictionary<string, List<JsonElement>> data)
 
         var (cloudOps, backend, devops, frontend, tools) = CategorizeSkills(skillNames);
 
-        sb.AppendLine($"<img src=\"https://skillicons.dev/icons?i=azure,dotnet,cs,docker,kubernetes,powershell,bash,github,githubactions,git,js,vscode,visualstudio&perline=8\" alt=\"Tech Stack\"/>");
+        sb.AppendLine($"<img src=\"https://skillicons.dev/icons?i=azure,dotnet,cs,docker,kubernetes,powershell,bash,github,githubactions,git,js,vscode&perline=6\" alt=\"Tech Stack\"/>");
         sb.AppendLine();
 
         void WriteCategory(string label, List<string> items)
