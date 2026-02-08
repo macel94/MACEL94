@@ -82,8 +82,21 @@ foreach (var domain in relevantDomains)
 
 if (allData.Count == 0)
 {
-    Console.Error.WriteLine("❌  No data returned. Check your token and that snapshot processing is complete.");
-    return 1;
+    // Fallback: try loading cached raw JSON if available
+    var cachedPath = Path.Combine(GetScriptDirectory(), "linkedin_raw.json");
+    if (File.Exists(cachedPath))
+    {
+        Console.Error.WriteLine("⚠️  No live data. Falling back to cached linkedin_raw.json...");
+        var cachedJson = File.ReadAllText(cachedPath);
+        allData = JsonSerializer.Deserialize<Dictionary<string, List<JsonElement>>>(cachedJson)
+                  ?? new Dictionary<string, List<JsonElement>>();
+    }
+
+    if (allData.Count == 0)
+    {
+        Console.Error.WriteLine("❌  No data returned. Check your token and that snapshot processing is complete.");
+        return 1;
+    }
 }
 
 // Save raw JSON for debugging
@@ -180,8 +193,9 @@ async Task<List<JsonElement>> FetchDomain(HttpClient client, string domain)
 string GenerateReadme(Dictionary<string, List<JsonElement>> data)
 {
     var sb = new StringBuilder();
+    const string GH_USER = "macel94";
 
-    // ── Header / Profile ─────────────────────────────────────────────
+    // ── Profile data extraction ──────────────────────────────────────
     var profile = GetFirst(data, "PROFILE");
     var first = Safe(profile, "First Name");
     var last = Safe(profile, "Last Name");
@@ -197,34 +211,164 @@ string GenerateReadme(Dictionary<string, List<JsonElement>> data)
     var fullName = $"{first} {last}".Trim();
     if (string.IsNullOrEmpty(fullName)) fullName = "My Profile";
 
-    sb.AppendLine($"# 👋 Hi, I'm {fullName}");
+    var geo = Safe(profile, "Geo Location");
+
+    // ── Hero Section ─────────────────────────────────────────────────
+    sb.AppendLine($"# Hi, I'm {fullName} 👋");
     sb.AppendLine();
+
+    // Tagline — punchy, scannable
     if (!string.IsNullOrEmpty(headline))
     {
-        sb.AppendLine($"**{headline}**");
+        sb.AppendLine($"### {headline}");
         sb.AppendLine();
     }
+
+    // Shields.io contact & social badges
+    sb.AppendLine("<p>");
+    sb.AppendLine($"  <a href=\"https://www.linkedin.com/in/fbelacca/\"><img src=\"https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white\" alt=\"LinkedIn\"/></a>");
+    sb.AppendLine($"  <a href=\"mailto:francesco.belacca@outlook.it\"><img src=\"https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=microsoft-outlook&logoColor=white\" alt=\"Email\"/></a>");
+    sb.AppendLine($"  <a href=\"https://github.com/{GH_USER}\"><img src=\"https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white\" alt=\"GitHub\"/></a>");
+    if (!string.IsNullOrEmpty(geo))
+        sb.AppendLine($"  <img src=\"https://img.shields.io/badge/📍_{geo.Replace(" ", "_").Replace(",", "%2C")}-grey?style=for-the-badge\" alt=\"Location\"/>");
+    sb.AppendLine("</p>");
+    sb.AppendLine();
+
+    // ── About Me — formatted summary ─────────────────────────────────
     if (!string.IsNullOrEmpty(summary))
     {
-        sb.AppendLine(summary);
+        sb.AppendLine("## 🧑‍💻 About Me");
+        sb.AppendLine();
+        // Split continuous text into readable chunks by sentence or by section keywords
+        var formattedSummary = FormatSummary(summary);
+        sb.AppendLine(formattedSummary);
         sb.AppendLine();
     }
 
-    var geo = Safe(profile, "Geo Location");
-    var industry = Safe(profile, "Industry");
-    var metaParts = new[] { geo, industry }.Where(x => !string.IsNullOrEmpty(x));
-    if (metaParts.Any())
+    // ── GitHub Stats ─────────────────────────────────────────────────
+    sb.AppendLine("## 📊 GitHub Stats");
+    sb.AppendLine();
+    sb.AppendLine("<p>");
+    sb.AppendLine($"  <img src=\"https://github-readme-stats.vercel.app/api?username={GH_USER}&show_icons=true&theme=github_dark&hide_border=true&count_private=true\" height=\"170\" alt=\"GitHub Stats\"/>");
+    sb.AppendLine($"  <img src=\"https://github-readme-stats.vercel.app/api/top-langs/?username={GH_USER}&layout=compact&theme=github_dark&hide_border=true&langs_count=8\" height=\"170\" alt=\"Top Languages\"/>");
+    sb.AppendLine("</p>");
+    sb.AppendLine();
+    sb.AppendLine($"<p>");
+    sb.AppendLine($"  <img src=\"https://github-readme-streak-stats.herokuapp.com?user={GH_USER}&theme=github-dark-blue&hide_border=true\" alt=\"GitHub Streak\"/>");
+    sb.AppendLine($"</p>");
+    sb.AppendLine();
+
+    // ── Tech Stack ───────────────────────────────────────────────────
+    sb.AppendLine("## 🛠 Tech Stack");
+    sb.AppendLine();
+
+    if (data.TryGetValue("SKILLS", out var skills) && skills.Count > 0)
     {
-        sb.AppendLine($"📍 {string.Join(" · ", metaParts)}");
+        var skillNames = skills
+            .Select(s => Safe(s, "Name").Length > 0 ? Safe(s, "Name") : Safe(s, "Skill"))
+            .Where(n => !string.IsNullOrEmpty(n))
+            .ToList();
+
+        // Map LinkedIn skills to skillicons.dev icon IDs and group by category
+        var (cloudOps, backend, devops, frontend, tools) = CategorizeSkills(skillNames);
+
+        // Visual skill icons row via skillicons.dev
+        sb.AppendLine($"<img src=\"https://skillicons.dev/icons?i=azure,dotnet,cs,docker,kubernetes,powershell,bash,github,githubactions,git,js,html,css,react,visualstudio,vscode&perline=8\" alt=\"Tech Stack\"/>");
         sb.AppendLine();
+
+        // Grouped badges for detail
+        void WriteCategory(string label, List<string> items)
+        {
+            if (items.Count == 0) return;
+            sb.AppendLine($"**{label}:** {string.Join(" · ", items)}");
+            sb.AppendLine();
+        }
+
+        WriteCategory("Cloud & Infrastructure", cloudOps);
+        WriteCategory("Backend & Languages", backend);
+        WriteCategory("DevOps & CI/CD", devops);
+        WriteCategory("Frontend", frontend);
+        WriteCategory("Methods & Tools", tools);
     }
 
-    // ── Experience / Positions ────────────────────────────────────────
+    // ── Microsoft Certifications (prominent) ─────────────────────────
+    if (data.TryGetValue("CERTIFICATIONS", out var certs) && certs.Count > 0)
+    {
+        sb.AppendLine("## 📜 Certifications");
+        sb.AppendLine();
+
+        // Only prominent certs with Shields.io badges
+        var microsoftCerts = certs
+            .Where(c => Safe(c, "Authority").Contains("Microsoft", StringComparison.OrdinalIgnoreCase)
+                     && Safe(c, "Name").Contains("Certified", StringComparison.OrdinalIgnoreCase))
+            .OrderByDescending(c => ParseDate(Safe(c, "Started On")))
+            .ToList();
+
+        var otherNotable = certs
+            .Where(c => !Safe(c, "Authority").Contains("Microsoft", StringComparison.OrdinalIgnoreCase)
+                     || !Safe(c, "Name").Contains("Certified", StringComparison.OrdinalIgnoreCase))
+            .Where(c =>
+            {
+                var name = Safe(c, "Name").ToLowerInvariant();
+                var authority = Safe(c, "Authority").ToLowerInvariant();
+                // Keep Udemy courses, Kubernetes, Speexx, MENSA — skip LinkedIn Learning micro-courses
+                return !authority.Contains("linkedin") ||
+                       name.Contains("career essentials", StringComparison.OrdinalIgnoreCase);
+            })
+            .OrderByDescending(c => ParseDate(Safe(c, "Started On")))
+            .ToList();
+
+        if (microsoftCerts.Count > 0)
+        {
+            sb.AppendLine("<p>");
+            foreach (var c in microsoftCerts)
+            {
+                var name = Safe(c, "Name");
+                var url = Safe(c, "Url");
+                var badgeLabel = name.Replace("Microsoft Certified: ", "");
+                var badgeName = badgeLabel.Replace(" ", "_").Replace("-", "--");
+                if (!string.IsNullOrEmpty(url))
+                    sb.AppendLine($"  <a href=\"{url}\"><img src=\"https://img.shields.io/badge/{Uri.EscapeDataString(badgeName)}-0078D4?style=for-the-badge&logo=microsoft&logoColor=white\" alt=\"{badgeLabel}\"/></a>");
+                else
+                    sb.AppendLine($"  <img src=\"https://img.shields.io/badge/{Uri.EscapeDataString(badgeName)}-0078D4?style=for-the-badge&logo=microsoft&logoColor=white\" alt=\"{badgeLabel}\"/>");
+            }
+            sb.AppendLine("</p>");
+            sb.AppendLine();
+        }
+
+        if (otherNotable.Count > 0)
+        {
+            sb.AppendLine("<details>");
+            sb.AppendLine("<summary>Other certifications & courses</summary>");
+            sb.AppendLine();
+            foreach (var c in otherNotable)
+            {
+                var name = Safe(c, "Name");
+                var authority = Safe(c, "Authority");
+                var url = Safe(c, "Url");
+                var dates = DateStr(c);
+
+                var header = !string.IsNullOrEmpty(name) ? $"**{name}**" : "";
+                if (!string.IsNullOrEmpty(authority)) header += $" – {authority}";
+                if (!string.IsNullOrEmpty(dates)) header += $" ({dates})";
+                if (!string.IsNullOrEmpty(url)) header = $"[{header}]({url})";
+                sb.AppendLine($"- {header}");
+            }
+            sb.AppendLine();
+            sb.AppendLine("</details>");
+            sb.AppendLine();
+        }
+    }
+
+    // ── Experience (top 3 only) ──────────────────────────────────────
     if (data.TryGetValue("POSITIONS", out var positions) && positions.Count > 0)
     {
         sb.AppendLine("## 💼 Experience");
         sb.AppendLine();
-        foreach (var pos in positions)
+
+        var topPositions = positions.Take(3).ToList();
+
+        foreach (var pos in topPositions)
         {
             var title = Safe(pos, "Title");
             var company = Safe(pos, "Company Name");
@@ -234,15 +378,82 @@ string GenerateReadme(Dictionary<string, List<JsonElement>> data)
 
             var header = !string.IsNullOrEmpty(title) ? $"**{title}**" : "";
             if (!string.IsNullOrEmpty(company)) header += $" @ {company}";
-            if (!string.IsNullOrEmpty(location)) header += $" · {location}";
             if (!string.IsNullOrEmpty(dates)) header += $" ({dates})";
-            sb.AppendLine($"- {header}");
+            sb.AppendLine($"### {header}");
+            if (!string.IsNullOrEmpty(location))
+                sb.AppendLine($"📍 {location}");
+            sb.AppendLine();
 
             if (!string.IsNullOrEmpty(description))
             {
-                foreach (var line in description.Split('\n'))
-                    sb.AppendLine($"  > {line.Trim()}");
+                // Convert raw text to bullet points
+                var bullets = FormatExperienceDescription(description);
+                foreach (var bullet in bullets)
+                    sb.AppendLine($"- {bullet}");
+                sb.AppendLine();
             }
+        }
+
+        // Collapsed earlier roles
+        if (positions.Count > 3)
+        {
+            sb.AppendLine("<details>");
+            sb.AppendLine("<summary>Earlier roles</summary>");
+            sb.AppendLine();
+            foreach (var pos in positions.Skip(3))
+            {
+                var title = Safe(pos, "Title");
+                var company = Safe(pos, "Company Name");
+                var location = Safe(pos, "Location");
+                var dates = DateStr(pos);
+                var description = Safe(pos, "Description");
+
+                var header = !string.IsNullOrEmpty(title) ? $"**{title}**" : "";
+                if (!string.IsNullOrEmpty(company)) header += $" @ {company}";
+                if (!string.IsNullOrEmpty(location)) header += $" · {location}";
+                if (!string.IsNullOrEmpty(dates)) header += $" ({dates})";
+                sb.AppendLine($"- {header}");
+                if (!string.IsNullOrEmpty(description))
+                {
+                    // Truncated summary for older roles
+                    var truncated = description.Length > 200 ? description[..200].TrimEnd() + "..." : description;
+                    truncated = truncated.Replace("\n", " ").Replace("  ", " ");
+                    sb.AppendLine($"  > {truncated}");
+                }
+            }
+            sb.AppendLine();
+            sb.AppendLine("</details>");
+            sb.AppendLine();
+        }
+
+        sb.AppendLine($"> 📄 [Full career history on LinkedIn](https://www.linkedin.com/in/fbelacca/)");
+        sb.AppendLine();
+    }
+
+    // ── Featured Projects ────────────────────────────────────────────
+    sb.AppendLine("## 🚀 Featured Projects");
+    sb.AppendLine();
+    sb.AppendLine($"<a href=\"https://github.com/{GH_USER}/{GH_USER}\"><img src=\"https://github-readme-stats.vercel.app/api/pin/?username={GH_USER}&repo={GH_USER}&theme=github_dark&hide_border=true\" alt=\"Profile README\"/></a>");
+    sb.AppendLine();
+    sb.AppendLine("*This profile auto-updates from LinkedIn using the [EU DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) — powered by a C# script and GitHub Actions.*");
+    sb.AppendLine();
+
+    // LinkedIn projects section if available
+    if (data.TryGetValue("PROJECTS", out var projects) && projects.Count > 0)
+    {
+        foreach (var proj in projects)
+        {
+            var pTitle = Safe(proj, "Title");
+            if (string.IsNullOrEmpty(pTitle)) pTitle = Safe(proj, "Name");
+            var pDesc = Safe(proj, "Description");
+            var pUrl = Safe(proj, "Url");
+            var pDates = DateStr(proj);
+
+            var pHeader = !string.IsNullOrEmpty(pTitle) ? $"**{pTitle}**" : "";
+            if (!string.IsNullOrEmpty(pDates)) pHeader += $" ({pDates})";
+            if (!string.IsNullOrEmpty(pUrl)) pHeader = $"[{pHeader}]({pUrl})";
+            sb.AppendLine($"- {pHeader}");
+            if (!string.IsNullOrEmpty(pDesc)) sb.AppendLine($"  > {pDesc}");
         }
         sb.AppendLine();
     }
@@ -263,78 +474,14 @@ string GenerateReadme(Dictionary<string, List<JsonElement>> data)
             var dates = DateStr(edu);
 
             var header = !string.IsNullOrEmpty(school) ? $"**{school}**" : "**School**";
-            var parts = new[] { degree, field }.Where(x => !string.IsNullOrEmpty(x));
-            if (parts.Any()) header += $" – {string.Join(", ", parts)}";
+            var degreeParts = new[] { degree, field }.Where(x => !string.IsNullOrEmpty(x));
+            if (degreeParts.Any()) header += $" – {string.Join(", ", degreeParts)}";
             if (!string.IsNullOrEmpty(dates)) header += $" ({dates})";
             sb.AppendLine($"- {header}");
             if (!string.IsNullOrEmpty(notes)) sb.AppendLine($"  > {notes}");
             if (!string.IsNullOrEmpty(activities)) sb.AppendLine($"  > Activities: {activities}");
         }
         sb.AppendLine();
-    }
-
-    // ── Skills ────────────────────────────────────────────────────────
-    if (data.TryGetValue("SKILLS", out var skills) && skills.Count > 0)
-    {
-        sb.AppendLine("## 🛠 Skills");
-        sb.AppendLine();
-        var skillNames = skills
-            .Select(s => Safe(s, "Name").Length > 0 ? Safe(s, "Name") : Safe(s, "Skill"))
-            .Where(n => !string.IsNullOrEmpty(n))
-            .ToList();
-        if (skillNames.Count > 0)
-            sb.AppendLine(string.Join(" · ", skillNames.Select(s => $"`{s}`")));
-        sb.AppendLine();
-    }
-
-    // ── Certifications ────────────────────────────────────────────────
-    if (data.TryGetValue("CERTIFICATIONS", out var certs) && certs.Count > 0)
-    {
-        sb.AppendLine("## 📜 Certifications");
-        sb.AppendLine();
-
-        // Group: Microsoft first, then everything else. Within each group, newest first.
-        var microsoftCerts = certs
-            .Where(c => Safe(c, "Authority").Contains("Microsoft", StringComparison.OrdinalIgnoreCase))
-            .OrderByDescending(c => ParseDate(Safe(c, "Started On")))
-            .ToList();
-        var otherCerts = certs
-            .Where(c => !Safe(c, "Authority").Contains("Microsoft", StringComparison.OrdinalIgnoreCase))
-            .OrderByDescending(c => ParseDate(Safe(c, "Started On")))
-            .ToList();
-
-        void WriteCertGroup(List<JsonElement> group)
-        {
-            foreach (var c in group)
-            {
-                var name = Safe(c, "Name");
-                var authority = Safe(c, "Authority");
-                var url = Safe(c, "Url");
-                var dates = DateStr(c);
-
-                var header = !string.IsNullOrEmpty(name) ? $"**{name}**" : "";
-                if (!string.IsNullOrEmpty(authority)) header += $" – {authority}";
-                if (!string.IsNullOrEmpty(dates)) header += $" ({dates})";
-                if (!string.IsNullOrEmpty(url)) header = $"[{header}]({url})";
-                sb.AppendLine($"- {header}");
-            }
-        }
-
-        if (microsoftCerts.Count > 0)
-        {
-            sb.AppendLine("### Microsoft");
-            sb.AppendLine();
-            WriteCertGroup(microsoftCerts);
-            sb.AppendLine();
-        }
-
-        if (otherCerts.Count > 0)
-        {
-            sb.AppendLine("### Other");
-            sb.AppendLine();
-            WriteCertGroup(otherCerts);
-            sb.AppendLine();
-        }
     }
 
     // ── Languages ─────────────────────────────────────────────────────
@@ -346,116 +493,10 @@ string GenerateReadme(Dictionary<string, List<JsonElement>> data)
         {
             var name = Safe(lang, "Name");
             var proficiency = Safe(lang, "Proficiency");
-            var entry = !string.IsNullOrEmpty(name) ? $"**{name}**" : "";
-            if (!string.IsNullOrEmpty(proficiency)) entry += $" ({proficiency})";
-            sb.AppendLine($"- {entry}");
-        }
-        sb.AppendLine();
-    }
-
-    // ── Courses ───────────────────────────────────────────────────────
-    if (data.TryGetValue("COURSES", out var courses) && courses.Count > 0)
-    {
-        sb.AppendLine("## 📚 Courses");
-        sb.AppendLine();
-        foreach (var c in courses)
-        {
-            var name = Safe(c, "Name");
-            var number = Safe(c, "Number");
-            var entry = !string.IsNullOrEmpty(name) ? $"**{name}**" : "";
-            if (!string.IsNullOrEmpty(number)) entry += $" ({number})";
-            sb.AppendLine($"- {entry}");
-        }
-        sb.AppendLine();
-    }
-
-    // ── Honors ────────────────────────────────────────────────────────
-    if (data.TryGetValue("HONORS", out var honors) && honors.Count > 0)
-    {
-        sb.AppendLine("## 🏅 Honors & Awards");
-        sb.AppendLine();
-        foreach (var h in honors)
-        {
-            var title = Safe(h, "Title");
-            var issuer = Safe(h, "Issuer");
-            var entry = !string.IsNullOrEmpty(title) ? $"**{title}**" : "";
-            if (!string.IsNullOrEmpty(issuer)) entry += $" – {issuer}";
-            sb.AppendLine($"- {entry}");
-        }
-        sb.AppendLine();
-    }
-
-    // ── Publications ──────────────────────────────────────────────────
-    if (data.TryGetValue("PUBLICATIONS", out var publications) && publications.Count > 0)
-    {
-        sb.AppendLine("## 📝 Publications");
-        sb.AppendLine();
-        foreach (var pub in publications)
-        {
-            var title = Safe(pub, "Name");
-            if (string.IsNullOrEmpty(title)) title = Safe(pub, "Title");
-            var publisher = Safe(pub, "Publisher");
-            var url = Safe(pub, "Url");
-            var entry = !string.IsNullOrEmpty(title) ? $"**{title}**" : "";
-            if (!string.IsNullOrEmpty(publisher)) entry += $" – {publisher}";
-            if (!string.IsNullOrEmpty(url)) entry = $"[{entry}]({url})";
-            sb.AppendLine($"- {entry}");
-        }
-        sb.AppendLine();
-    }
-
-    // ── Patents ───────────────────────────────────────────────────────
-    if (data.TryGetValue("PATENTS", out var patents) && patents.Count > 0)
-    {
-        sb.AppendLine("## 🔬 Patents");
-        sb.AppendLine();
-        foreach (var pat in patents)
-        {
-            var title = Safe(pat, "Title");
-            if (string.IsNullOrEmpty(title)) title = Safe(pat, "Name");
-            var number = Safe(pat, "Patent Number");
-            if (string.IsNullOrEmpty(number)) number = Safe(pat, "Number");
-            var entry = !string.IsNullOrEmpty(title) ? $"**{title}**" : "";
-            if (!string.IsNullOrEmpty(number)) entry += $" (#{number})";
-            sb.AppendLine($"- {entry}");
-        }
-        sb.AppendLine();
-    }
-
-    // ── Projects ──────────────────────────────────────────────────────
-    if (data.TryGetValue("PROJECTS", out var projects) && projects.Count > 0)
-    {
-        sb.AppendLine("## 🚀 Projects");
-        sb.AppendLine();
-        foreach (var proj in projects)
-        {
-            var title = Safe(proj, "Title");
-            if (string.IsNullOrEmpty(title)) title = Safe(proj, "Name");
-            var description = Safe(proj, "Description");
-            var url = Safe(proj, "Url");
-            var dates = DateStr(proj);
-
-            var header = !string.IsNullOrEmpty(title) ? $"**{title}**" : "";
-            if (!string.IsNullOrEmpty(dates)) header += $" ({dates})";
-            if (!string.IsNullOrEmpty(url)) header = $"[{header}]({url})";
-            sb.AppendLine($"- {header}");
-            if (!string.IsNullOrEmpty(description)) sb.AppendLine($"  > {description}");
-        }
-        sb.AppendLine();
-    }
-
-    // ── Organizations ─────────────────────────────────────────────────
-    if (data.TryGetValue("ORGANIZATIONS", out var orgs) && orgs.Count > 0)
-    {
-        sb.AppendLine("## 🏢 Organizations");
-        sb.AppendLine();
-        foreach (var org in orgs)
-        {
-            var name = Safe(org, "Name");
-            var position = Safe(org, "Position");
-            if (string.IsNullOrEmpty(position)) position = Safe(org, "Title");
-            var entry = !string.IsNullOrEmpty(name) ? $"**{name}**" : "";
-            if (!string.IsNullOrEmpty(position)) entry += $" – {position}";
+            // Normalize proficiency to English
+            var normalizedProficiency = NormalizeProficiency(proficiency);
+            var entry = !string.IsNullOrEmpty(name) ? $"**{NormalizeLanguageName(name)}**" : "";
+            if (!string.IsNullOrEmpty(normalizedProficiency)) entry += $" — {normalizedProficiency}";
             sb.AppendLine($"- {entry}");
         }
         sb.AppendLine();
@@ -491,12 +532,12 @@ string GenerateReadme(Dictionary<string, List<JsonElement>> data)
         var received = recommendations
             .Where(r => Safe(r, "Type").Equals("received", StringComparison.OrdinalIgnoreCase) ||
                         Safe(r, "Direction").Equals("received", StringComparison.OrdinalIgnoreCase))
-            .Take(5)
+            .Take(3)
             .ToList();
 
         if (received.Count > 0)
         {
-            sb.AppendLine("## 💬 Recommendations Received");
+            sb.AppendLine("## 💬 What People Say");
             sb.AppendLine();
             foreach (var rec in received)
             {
@@ -508,33 +549,23 @@ string GenerateReadme(Dictionary<string, List<JsonElement>> data)
 
                 if (!string.IsNullOrEmpty(text))
                 {
-                    var truncated = text.Length > 300 ? text[..300] + "..." : text;
+                    var truncated = text.Length > 250 ? text[..250].TrimEnd() + "..." : text;
                     sb.AppendLine($"> *\"{truncated}\"*");
                     if (!string.IsNullOrEmpty(recommender))
-                        sb.AppendLine($"> — {recommender}");
+                        sb.AppendLine($"> — **{recommender}**");
                     sb.AppendLine();
                 }
             }
         }
     }
 
-    // ── Causes ────────────────────────────────────────────────────────
-    if (data.TryGetValue("CAUSES_YOU_CARE_ABOUT", out var causes) && causes.Count > 0)
-    {
-        sb.AppendLine("## ❤️ Causes I Care About");
-        sb.AppendLine();
-        var causeNames = causes
-            .Select(c => Safe(c, "Name").Length > 0 ? Safe(c, "Name") : Safe(c, "Cause"))
-            .Where(n => !string.IsNullOrEmpty(n))
-            .ToList();
-        if (causeNames.Count > 0)
-            sb.AppendLine(string.Join(", ", causeNames));
-        sb.AppendLine();
-    }
-
     // ── Footer ────────────────────────────────────────────────────────
     var now = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm") + " UTC";
     sb.AppendLine("---");
+    sb.AppendLine();
+    sb.AppendLine("<p align=\"center\">");
+    sb.AppendLine($"  <img src=\"https://komarev.com/ghpvc/?username={GH_USER}&style=flat-square&color=0A66C2\" alt=\"Profile views\"/>");
+    sb.AppendLine("</p>");
     sb.AppendLine();
     sb.AppendLine(
         $"<sub>🔄 Auto-generated from LinkedIn via " +
@@ -543,6 +574,324 @@ string GenerateReadme(Dictionary<string, List<JsonElement>> data)
     sb.AppendLine();
 
     return sb.ToString();
+}
+
+// ── Formatting Helpers ───────────────────────────────────────────────
+
+string FormatSummary(string summary)
+{
+    // Split the raw LinkedIn summary into structured, readable paragraphs
+    // Look for known section headers within the text
+    var sb = new StringBuilder();
+    var text = summary.Trim();
+
+    // Try to split on common LinkedIn summary patterns
+    // "Key Competencies:" or similar headers embedded in text
+    var knownHeaders = new[] {
+        "Key Competencies:", "My Mission:", "Focus areas",
+        "Core Competencies:", "What I do:", "Areas of expertise:"
+    };
+
+    // First, try splitting by double-space which LinkedIn often uses as paragraph separator
+    var paragraphs = text.Split(new[] { "  " }, StringSplitOptions.RemoveEmptyEntries)
+        .Select(p => p.Trim())
+        .Where(p => !string.IsNullOrEmpty(p))
+        .ToList();
+
+    if (paragraphs.Count <= 1)
+    {
+        // Fallback: split on period + space for sentences
+        paragraphs = [text];
+    }
+
+    var competenciesStarted = false;
+
+    foreach (var para in paragraphs)
+    {
+        var trimmed = para.Trim();
+        if (string.IsNullOrEmpty(trimmed)) continue;
+
+        // Detect embedded headers
+        if (trimmed.StartsWith("Key Competencies:") || trimmed.StartsWith("Core Competencies:"))
+        {
+            competenciesStarted = true;
+            sb.AppendLine();
+            sb.AppendLine("**Key Competencies:**");
+            sb.AppendLine();
+            var rest = trimmed.Substring(trimmed.IndexOf(':') + 1).Trim();
+            if (!string.IsNullOrEmpty(rest))
+            {
+                // Split competencies on double-space or sentences that start with a keyword
+                WriteCompetencyBullets(sb, rest);
+            }
+            continue;
+        }
+
+        if (trimmed.StartsWith("My Mission:"))
+        {
+            competenciesStarted = false;
+            sb.AppendLine();
+            sb.AppendLine($"**🎯 {trimmed}**");
+            sb.AppendLine();
+            continue;
+        }
+
+        if (trimmed.StartsWith("Based in"))
+        {
+            sb.AppendLine();
+            sb.AppendLine($"*{trimmed}*");
+            continue;
+        }
+
+        if (competenciesStarted)
+        {
+            WriteCompetencyBullets(sb, trimmed);
+            continue;
+        }
+
+        sb.AppendLine(trimmed);
+        sb.AppendLine();
+    }
+
+    return sb.ToString().TrimEnd();
+}
+
+void WriteCompetencyBullets(StringBuilder sb, string text)
+{
+    // Split on known competency labels followed by colons
+    var competencyPattern = new[] {
+        "Governance at Scale:", "Infrastructure as Code:", "Backend Engineering:",
+        "Security Automation:", "Cloud Solutions Architecting:", "Power Platform Administration:",
+        "Cloud Architecture:", "DevOps:", "Security:", "Automation:"
+    };
+
+    var current = text;
+    var foundAny = false;
+
+    foreach (var pattern in competencyPattern)
+    {
+        var idx = current.IndexOf(pattern, StringComparison.OrdinalIgnoreCase);
+        if (idx >= 0)
+        {
+            foundAny = true;
+        }
+    }
+
+    if (foundAny)
+    {
+        // Split on these patterns
+        var remaining = current;
+        var bullets = new List<(string label, string desc)>();
+
+        while (remaining.Length > 0)
+        {
+            // Find the next competency header
+            var bestIdx = int.MaxValue;
+            var bestPattern = "";
+
+            foreach (var pattern in competencyPattern)
+            {
+                var idx = remaining.IndexOf(pattern, StringComparison.OrdinalIgnoreCase);
+                if (idx >= 0 && idx < bestIdx)
+                {
+                    bestIdx = idx;
+                    bestPattern = pattern;
+                }
+            }
+
+            if (bestIdx == int.MaxValue || string.IsNullOrEmpty(bestPattern))
+            {
+                // No more headers found — remaining is trailing text
+                if (remaining.Trim().Length > 0 && bullets.Count > 0)
+                {
+                    var last = bullets[^1];
+                    bullets[^1] = (last.label, (last.desc + " " + remaining.Trim()).Trim());
+                }
+                break;
+            }
+
+            // Text before this header belongs to previous bullet or is skipped
+            if (bestIdx > 0 && bullets.Count > 0)
+            {
+                var last = bullets[^1];
+                bullets[^1] = (last.label, (last.desc + " " + remaining[..bestIdx].Trim()).Trim());
+            }
+
+            remaining = remaining[(bestIdx + bestPattern.Length)..];
+
+            // Find where the description for this competency ends (next competency or end)
+            var nextIdx = int.MaxValue;
+            foreach (var pattern in competencyPattern)
+            {
+                var idx = remaining.IndexOf(pattern, StringComparison.OrdinalIgnoreCase);
+                if (idx >= 0 && idx < nextIdx) nextIdx = idx;
+            }
+
+            var desc = nextIdx < int.MaxValue ? remaining[..nextIdx].Trim() : remaining.Trim();
+            bullets.Add((bestPattern.TrimEnd(':'), desc));
+            remaining = nextIdx < int.MaxValue ? remaining[nextIdx..] : "";
+        }
+
+        foreach (var (label, desc) in bullets)
+        {
+            sb.AppendLine($"- **{label}:** {desc}");
+        }
+    }
+    else
+    {
+        // No known headers — just output the text
+        sb.AppendLine(text);
+    }
+}
+
+List<string> FormatExperienceDescription(string description)
+{
+    // Convert a raw LinkedIn description into clean bullet points
+    var bullets = new List<string>();
+    var text = description.Trim();
+
+    // Split on double-space (LinkedIn's internal separator) or newlines
+    var parts = text.Split(new[] { "  ", "\n" }, StringSplitOptions.RemoveEmptyEntries)
+        .Select(p => p.Trim())
+        .Where(p => !string.IsNullOrEmpty(p) && p.Length > 5)
+        .ToList();
+
+    if (parts.Count <= 1)
+    {
+        // Single block — try splitting on sentence boundaries
+        var sentences = text.Split(new[] { ". " }, StringSplitOptions.RemoveEmptyEntries)
+            .Select(s => s.Trim().TrimEnd('.'))
+            .Where(s => !string.IsNullOrEmpty(s) && s.Length > 10)
+            .ToList();
+
+        if (sentences.Count > 1)
+        {
+            foreach (var sentence in sentences.Take(6))
+                bullets.Add(sentence);
+        }
+        else
+        {
+            bullets.Add(text.Length > 300 ? text[..300].TrimEnd() + "..." : text);
+        }
+    }
+    else
+    {
+        foreach (var part in parts)
+        {
+            if (bullets.Count >= 6) break;
+
+            // Clean up: remove "Focus areas" prefix-style lines and make them a sub-header if needed
+            var cleaned = part.TrimStart('-', '•', '*', ' ');
+            if (cleaned.StartsWith("Focus areas", StringComparison.OrdinalIgnoreCase))
+            {
+                bullets.Add($"**{cleaned}**");
+            }
+            else if (cleaned.Length > 200)
+            {
+                // Long block — sub-split on sentence boundaries
+                var subSentences = cleaned.Split(new[] { ". " }, StringSplitOptions.RemoveEmptyEntries)
+                    .Select(s => s.Trim().TrimEnd('.'))
+                    .Where(s => !string.IsNullOrEmpty(s) && s.Length > 10)
+                    .ToList();
+                foreach (var sub in subSentences)
+                {
+                    if (bullets.Count >= 6) break;
+                    bullets.Add(sub);
+                }
+            }
+            else
+            {
+                bullets.Add(cleaned);
+            }
+        }
+    }
+
+    return bullets;
+}
+
+(List<string> cloudOps, List<string> backend, List<string> devops, List<string> frontend, List<string> tools)
+    CategorizeSkills(List<string> allSkills)
+{
+    // Curated mapping from LinkedIn skill names to categories
+    // Only keep English-language, high-signal skills
+    var cloudKeywords = new HashSet<string>(StringComparer.OrdinalIgnoreCase) {
+        "Azure", "Windows Azure", "Cloud Infrastructure", "Cloud Security",
+        "Cost Optimization", "Microsoft Entra ID", "Microsoft Dynamics 365",
+        "Microsoft Power Platform", "Microsoft Fabric", "Business Central",
+        "Software Infrastructure", "Containerization", "Distributed Systems",
+        "Kubernetes"
+    };
+    var backendKeywords = new HashSet<string>(StringComparer.OrdinalIgnoreCase) {
+        "C#", ".NET", ".NET Framework", "SQL", "T-SQL", "LINQ",
+        "Microservices", "Server Microsoft SQL", "OOP", "JavaScript",
+        "Database", "ETL"
+    };
+    var devopsKeywords = new HashSet<string>(StringComparer.OrdinalIgnoreCase) {
+        "DevOps", "AZURE DEVOPS", "Git", "Version Control", "Automation",
+        "Continuous improvement", "Github Enterprise", "Powershell Core",
+        "Windows PowerShell", "Bash", "DSC", "Troubleshooting"
+    };
+    var frontendKeywords = new HashSet<string>(StringComparer.OrdinalIgnoreCase) {
+        "HTML", "Kibana"
+    };
+    var toolKeywords = new HashSet<string>(StringComparer.OrdinalIgnoreCase) {
+        "Visual Studio", "JIRA", "wsl", "Microsoft Office",
+        "Agile Methodologies", "Agile Project Management", "Stakeholder Management",
+        "Project management", "Project Leadership", "Communication",
+        "Public speaking", "Attention to Detail", "Analytical Skills",
+        "Generative AI", "Artificial Intelligence (AI)", "Artificial Intelligence for Business",
+        "Chatbots", "Microsoft Search", "Search Engine Technology"
+    };
+
+    // Skills to exclude (Italian duplicates, too generic, noise)
+    var excludeSkills = new HashSet<string>(StringComparer.OrdinalIgnoreCase) {
+        "Lingua inglese", "Pianificazione delle capacità", "Lavoro di squadra",
+        "Analisi dei dati", "Sviluppo di prodotto", "Infrastrutture",
+        "Applicazioni Web", "Sviluppo di software", "Integrazione continua",
+        "Social media", "Time management", "Customer Requirements",
+        "Computer Ethics", "Identity management", "Security Administration"
+    };
+
+    var cloud = new List<string>();
+    var backend = new List<string>();
+    var devops = new List<string>();
+    var frontend = new List<string>();
+    var tools = new List<string>();
+
+    foreach (var skill in allSkills)
+    {
+        if (excludeSkills.Contains(skill)) continue;
+
+        if (cloudKeywords.Contains(skill)) cloud.Add(skill);
+        else if (backendKeywords.Contains(skill)) backend.Add(skill);
+        else if (devopsKeywords.Contains(skill)) devops.Add(skill);
+        else if (frontendKeywords.Contains(skill)) frontend.Add(skill);
+        else if (toolKeywords.Contains(skill)) tools.Add(skill);
+        // Skip unlisted skills to keep the list curated
+    }
+
+    return (cloud, backend, devops, frontend, tools);
+}
+
+string NormalizeLanguageName(string name)
+{
+    // Convert Italian language names to English
+    return name switch
+    {
+        "Inglese" => "English",
+        "Italiano" => "Italian",
+        "Francese" => "French",
+        "Spagnolo" => "Spanish",
+        "Tedesco" => "German",
+        _ => name
+    };
+}
+
+string NormalizeProficiency(string proficiency)
+{
+    if (string.IsNullOrEmpty(proficiency)) return "";
+    // Already English proficiency levels — pass through
+    return proficiency;
 }
 
 // ── Helpers ──────────────────────────────────────────────────────────
