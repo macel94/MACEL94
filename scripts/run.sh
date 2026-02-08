@@ -43,7 +43,7 @@ if ! command -v pandoc &>/dev/null || ! command -v wkhtmltopdf &>/dev/null; then
   echo "📦 Installing pandoc & wkhtmltopdf..."
   if command -v apt-get &>/dev/null; then
     sudo apt-get update -qq 2>/dev/null || true
-    sudo apt-get install -y -qq pandoc wkhtmltopdf 2>/dev/null
+    sudo apt-get install -y -qq pandoc wkhtmltopdf librsvg2-bin imagemagick 2>/dev/null
   else
     echo "⚠ pandoc/wkhtmltopdf not found and cannot auto-install. Skipping PDF generation."
     echo "✅ Done (README + Europass XML generated, PDF skipped)."
@@ -56,14 +56,45 @@ if [[ ! -f github-markdown.css ]]; then
   curl -sL https://raw.githubusercontent.com/sindresorhus/github-markdown-css/main/github-markdown.css -o github-markdown.css
 fi
 
+# ── 4b. Convert animated SVGs to JPGs for PDF compatibility ──────────
+if command -v rsvg-convert &>/dev/null || command -v convert &>/dev/null; then
+  echo "▶ Converting SVGs to JPGs for PDF..."
+  for svg in profile/*.svg; do
+    [ -f "$svg" ] || continue
+    jpg="${svg%.svg}.jpg"
+    if command -v rsvg-convert &>/dev/null; then
+      rsvg-convert -f png "$svg" | convert png:- -background white -flatten "$jpg"
+    else
+      convert -background white -flatten "$svg" "$jpg"
+    fi
+    echo "   • $svg → $jpg"
+  done
+else
+  echo "⚠ No SVG converter found. Installing librsvg2-bin + imagemagick..."
+  if command -v apt-get &>/dev/null; then
+    sudo apt-get install -y -qq librsvg2-bin imagemagick 2>/dev/null
+    for svg in profile/*.svg; do
+      [ -f "$svg" ] || continue
+      jpg="${svg%.svg}.jpg"
+      rsvg-convert -f png "$svg" | convert png:- -background white -flatten "$jpg"
+      echo "   • $svg → $jpg"
+    done
+  else
+    echo "⚠ Cannot install SVG converters. PDF may contain broken images."
+  fi
+fi
+
+# ── 4c. Create a temp README with JPG refs for PDF export ────────────
 echo "▶ Converting README to PDF..."
-pandoc README.md \
+sed 's|\.svg"|\.jpg"|g' README.md > README_pdf.md
+pandoc README_pdf.md \
   -f gfm \
   -t html5 \
   --metadata pagetitle="Francesco Belacca - CV" \
   --css github-markdown.css \
   --self-contained \
   -o Francesco_Belacca_CV.pdf
+rm -f README_pdf.md
 
 echo "✅ Done. Generated:"
 echo "   • README.md"
