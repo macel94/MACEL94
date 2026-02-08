@@ -292,20 +292,49 @@ string GenerateReadme(Dictionary<string, List<JsonElement>> data)
     {
         sb.AppendLine("## 📜 Certifications");
         sb.AppendLine();
-        foreach (var c in certs)
-        {
-            var name = Safe(c, "Name");
-            var authority = Safe(c, "Authority");
-            var url = Safe(c, "Url");
-            var dates = DateStr(c);
 
-            var header = !string.IsNullOrEmpty(name) ? $"**{name}**" : "";
-            if (!string.IsNullOrEmpty(authority)) header += $" – {authority}";
-            if (!string.IsNullOrEmpty(dates)) header += $" ({dates})";
-            if (!string.IsNullOrEmpty(url)) header = $"[{header}]({url})";
-            sb.AppendLine($"- {header}");
+        // Group: Microsoft first, then everything else. Within each group, newest first.
+        var microsoftCerts = certs
+            .Where(c => Safe(c, "Authority").Contains("Microsoft", StringComparison.OrdinalIgnoreCase))
+            .OrderByDescending(c => ParseDate(Safe(c, "Started On")))
+            .ToList();
+        var otherCerts = certs
+            .Where(c => !Safe(c, "Authority").Contains("Microsoft", StringComparison.OrdinalIgnoreCase))
+            .OrderByDescending(c => ParseDate(Safe(c, "Started On")))
+            .ToList();
+
+        void WriteCertGroup(List<JsonElement> group)
+        {
+            foreach (var c in group)
+            {
+                var name = Safe(c, "Name");
+                var authority = Safe(c, "Authority");
+                var url = Safe(c, "Url");
+                var dates = DateStr(c);
+
+                var header = !string.IsNullOrEmpty(name) ? $"**{name}**" : "";
+                if (!string.IsNullOrEmpty(authority)) header += $" – {authority}";
+                if (!string.IsNullOrEmpty(dates)) header += $" ({dates})";
+                if (!string.IsNullOrEmpty(url)) header = $"[{header}]({url})";
+                sb.AppendLine($"- {header}");
+            }
         }
-        sb.AppendLine();
+
+        if (microsoftCerts.Count > 0)
+        {
+            sb.AppendLine("### Microsoft");
+            sb.AppendLine();
+            WriteCertGroup(microsoftCerts);
+            sb.AppendLine();
+        }
+
+        if (otherCerts.Count > 0)
+        {
+            sb.AppendLine("### Other");
+            sb.AppendLine();
+            WriteCertGroup(otherCerts);
+            sb.AppendLine();
+        }
     }
 
     // ── Languages ─────────────────────────────────────────────────────
@@ -553,6 +582,16 @@ string DateStr(JsonElement el)
     if (!string.IsNullOrEmpty(started))
         return $"{started} – Present";
     return "";
+}
+
+DateTime ParseDate(string dateStr)
+{
+    // Handles formats like "Jan 2024", "Sep 2017", "Feb 2014"
+    if (DateTime.TryParseExact(dateStr, "MMM yyyy",
+            System.Globalization.CultureInfo.InvariantCulture,
+            System.Globalization.DateTimeStyles.None, out var dt))
+        return dt;
+    return DateTime.MinValue;
 }
 
 string GetScriptDirectory()
