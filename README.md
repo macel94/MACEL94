@@ -35,17 +35,13 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 ## 📊 GitHub Stats
 
 <p>
-  <img src="https://github-readme-stats.vercel.app/api?username=macel94&show_icons=true&theme=github_dark&hide_border=true&count_private=true" height="170" alt="GitHub Stats"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=macel94&layout=compact&theme=github_dark&hide_border=true&langs_count=8" height="170" alt="Top Languages"/>
-</p>
-
-<p>
-  <img src="https://github-readme-streak-stats.herokuapp.com?user=macel94&theme=github-dark-blue&hide_border=true" alt="GitHub Streak"/>
+  <img src="./profile/stats.svg" height="170" alt="GitHub Stats"/>
+  <img src="./profile/top-langs.svg" height="170" alt="Top Languages"/>
 </p>
 
 ## 🛠 Tech Stack
 
-<img src="https://skillicons.dev/icons?i=azure,dotnet,cs,docker,kubernetes,powershell,bash,github,githubactions,git,js,html,css,react,visualstudio,vscode&perline=8" alt="Tech Stack"/>
+<img src="https://skillicons.dev/icons?i=azure,dotnet,cs,docker,kubernetes,powershell,bash,github,githubactions,git,js,vscode,visualstudio&perline=8" alt="Tech Stack"/>
 
 **Cloud & Infrastructure:** Microsoft Fabric · Business Central · Software Infrastructure · Azure · Microsoft Entra ID · Microsoft Dynamics 365 · Microsoft Power Platform · Cost Optimization · Cloud Security · Windows Azure · Containerization · Distributed Systems · Cloud Infrastructure
 
@@ -129,9 +125,7 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 
 ## 🚀 Featured Projects
 
-<a href="https://github.com/macel94/macel94"><img src="https://github-readme-stats.vercel.app/api/pin/?username=macel94&repo=macel94&theme=github_dark&hide_border=true" alt="Profile README"/></a>
-
-*This profile auto-updates from LinkedIn using the [EU DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) — powered by a C# script and GitHub Actions.*
+- [**macel94**](https://github.com/macel94/macel94) — This profile auto-updates from LinkedIn using the [EU DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/), a C# script, and GitHub Actions.
 
 ## 🎓 Education
 
@@ -151,9 +145,10 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 
 ---
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=macel94&style=flat-square&color=0A66C2" alt="Profile views"/>
-</p>
+### 📥 Download CV
 
-<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-02-08 14:53 UTC</sub>
+- [PDF Version](./Francesco_Belacca_CV.pdf)
+- [Europass XML](./europass_cv.xml)
+
+<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-02-08 15:18 UTC</sub>
 

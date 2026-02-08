@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SkillsPassport xmlns="http://europass.cedefop.europa.eu/Europass"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://europass.cedefop.europa.eu/Europass"
+  locale="en">
+
+  <DocumentInfo>
+    <DocumentType>ECV</DocumentType>
+    <CreationDate>2026-02-08T15:18:27.203Z</CreationDate>
+    <LastUpdateDate>2026-02-08T15:18:27.203Z</LastUpdateDate>
+    <XSDVersion>V3.4</XSDVersion>
+    <Generator>LinkedIn DMA Portability API + C# Script</Generator>
+    <Comment>Auto-generated from LinkedIn profile data</Comment>
+  </DocumentInfo>
+
+  <LearnerInfo>
+    <Identification>
+      <PersonName>
+        <FirstName>Francesco</FirstName>
+        <Surname>Belacca</Surname>
+      </PersonName>
+      <ContactInfo>
+        <Address>
+          <Contact>
+            <Municipality>Parma</Municipality>
+            <Country><Code>IT</Code><Label>Italy</Label></Country>
+          </Contact>
+        </Address>
+        <Email>
+          <Contact>francesco.belacca@outlook.it</Contact>
+        </Email>
+        <Website>
+          <Contact>https://github.com/macel94</Contact>
+        </Website>
+        <Website>
+          <Contact>https://www.linkedin.com/in/fbelacca/</Contact>
+        </Website>
+      </ContactInfo>
+    </Identification>
+
+    <Headline>
+      <Type><Code>position</Code><Label>Desired employment / Occupational field</Label></Type>
+      <Description><Label>Certified Azure Dev, Admin &amp; DevOps Expert</Label></Description>
+    </Headline>
+
+    <WorkExperienceList>
+      <WorkExperience>
+        <Period>
+          <From><Year>2024</Year><Month>--09</Month></From>
+          <Current>true</Current>
+        </Period>
+        <Position>
+          <Label>Site Reliability Engineer</Label>
+        </Position>
+        <Activities>I’ve been the force-multiplier behind Würth-Phoenix’s Microsoft stack. Built and maintain complex, dynamic CI/CD in Azure DevOps and GitHub Enterprise for CRM/ERP and Business Central workloads. Wrote production PowerShell automation and .NET backend APIs to remove manual toil and harden processes. Rolling out Bicep for repeatable, reviewable IaC across environments. Lead admin/governance for tenants and repos (Azure, Entra ID, Business Central, Fabric, GitHub Enterprise), enforcing DevSecOps guardrails, RBAC, and compliance by default. Partner with developers to shift-left security, codify best practices, and unblock delivery at scale. Speaker at Microsoft-centric events and internal Würth forums to share patterns and uplift teams.  Focus areas Azure | Azure DevOps | GitHub Enterprise | CI/CD | PowerShell | .NET | Bicep (IaC) | Dynamics 365 / Business Central / Power Platform | Microsoft Fabric | Entra ID | DevSecOps | Governance | Automation</Activities>
+        <Employer>
+          <Name>Würth IT Italy</Name>
+          <ContactInfo>
+            <Address>
+              <Contact>
+                <Municipality>Parma, Emilia-Romagna, Italy</Municipality>
+              </Contact>
+            </Address>
+          </ContactInfo>
+        </Employer>
+      </WorkExperience>
+      <WorkExperience>
+        <Period>
+          <From><Year>2023</Year><Month>--07</Month></From>
+          <To><Year>2024</Year><Month>--07</Month></To>
+        </Period>
+        <Position>
+          <Label>Presales Solutions Architect</Label>
+        </Position>
+        <Activities>Designed Azure landing zones, application architectures, and migration plans for enterprise clients, focusing on scalability, security, and cost control. Led technical presales: shaped solutions, produced estimations, and supported bids for complex multi-service Azure projects. Drove DevOps adoption using Bicep, GitHub Actions/Azure DevOps YAML, and CI/CD patterns; standardized IaC and deployment practices across teams. Engaged with Dynamics teams as an enabler, defining integration patterns, securing workloads with Key Vault/Managed Identity, and improving delivery workflows. Collaborated with engineering teams to troubleshoot distributed systems, resolve reliability issues, and streamline cloud operations.</Activities>
+        <Employer>
+          <Name>Agic Cloud</Name>
+          <ContactInfo>
+            <Address>
+              <Contact>
+                <Municipality>Parma, Emilia Romagna, Italia</Municipality>
+              </Contact>
+            </Address>
+          </ContactInfo>
+        </Employer>
+      </WorkExperience>
+      <WorkExperience>
+        <Period>
+          <From><Year>2022</Year><Month>--02</Month></From>
+          <To><Year>2023</Year><Month>--07</Month></To>
+        </Period>
+        <Position>
+          <Label>Backend Team Leader &amp; Cloud Developer</Label>
+        </Position>
+        <Activities>Our cloud division (Vetrya Cloud) was bought by the AGIC Techonology group, becoming AGIC Cloud. Load tested multiple applications E2E using Azure Load Testing and Jmeter. Built from the ground up and managed more than one Multi-Region project with Microsoft Consulting with a fully remote team. Demonstrated AKS potential building and deploying a custom three layered containerized application using Github Actions, bicep, helm, Chaos Mesh, Azure Load Testing and made metric available using Prometheus and Grafana. Led and helped the Agic Cloud Backend Team grow and succeed. Contributed to Open Source projects for both Agic Cloud and myself on github. Teached a PBI Embedded &amp; Azure Automation course(to automatically use only what&apos;s needed, when it&apos;s needed) for an IT PA division(in Italian). Gave guidance to clients by demonstrating Azure capabilities implementing multiple POCs whenever needed using the latest standards(Bicep-Blazor-.NET 6-AzDevOps pipelines or GitHub actions).</Activities>
+        <Employer>
+          <Name>Agic Cloud</Name>
+          <ContactInfo>
+            <Address>
+              <Contact>
+                <Municipality>Parma, Emilia-Romagna, Italy</Municipality>
+              </Contact>
+            </Address>
+          </ContactInfo>
+        </Employer>
+      </WorkExperience>
+      <WorkExperience>
+        <Period>
+          <From><Year>2021</Year><Month>--06</Month></From>
+          <To><Year>2022</Year><Month>--01</Month></To>
+        </Period>
+        <Position>
+          <Label>Backend Team Leader &amp; Cloud Developer</Label>
+        </Position>
+        <Activities>As a Team Leader I helped my Team succeed and grow. We used Azure PaaS services to build multiple environments using the following technologies: Bot framework PBI Dashboard embedded in Azure Static Web Apps .NET 6 Web APIs Azure MSSQL dbs using EFCore Code First Approach Azure Search Logic Apps yaml pipelines for CI/CD on Azure DevOps Bicep for IAC xUnit + Moq for Unit Tests React &amp; Blazor for FE Used managed identities and RBAC whenever possible to secure and manage secrets.</Activities>
+        <Employer>
+          <Name>Vetrya</Name>
+          <ContactInfo>
+            <Address>
+              <Contact>
+                <Municipality>Parma, Emilia-Romagna, Italy (Full Remote)</Municipality>
+              </Contact>
+            </Address>
+          </ContactInfo>
+        </Employer>
+      </WorkExperience>
+      <WorkExperience>
+        <Period>
+          <From><Year>2020</Year><Month>--04</Month></From>
+          <To><Year>2021</Year><Month>--05</Month></To>
+        </Period>
+        <Position>
+          <Label>Backend Developer/ Analyst</Label>
+        </Position>
+        <Activities>Worked as backend developer for multiple core application using various types of dbs(sql/ElasticSearch) developing microservices of a SAGA in the backend and APIs for the frontend. Used both .net Framework(spanning from 2 to 4.8) and .net Core. Always worked in team, using TFS for planning, CI/CD and repository.</Activities>
+        <Employer>
+          <Name>Credemtel SpA</Name>
+          <ContactInfo>
+            <Address>
+              <Contact>
+                <Municipality>Reggio nell&apos;Emilia, Emilia Romagna, Italia</Municipality>
+              </Contact>
+            </Address>
+          </ContactInfo>
+        </Employer>
+      </WorkExperience>
+      <WorkExperience>
+        <Period>
+          <From><Year>2019</Year><Month>--09</Month></From>
+          <To><Year>2020</Year><Month>--03</Month></To>
+        </Period>
+        <Position>
+          <Label>Backend Developer</Label>
+        </Position>
+        <Activities>Worked as backend developer for multiple core application using various types of dbs(sql/ElasticSearch) developing microservices of a SAGA in the backend and APIs for the frontend. Used both .net Framework(spanning from 2 to 4.8) and .net Core. Always worked in team, using TFS for planning, CI/CD and repository. Worked part time and finished my University with my thesis on Blazor.</Activities>
+        <Employer>
+          <Name>Credemtel SpA</Name>
+          <ContactInfo>
+            <Address>
+              <Contact>
+                <Municipality>Reggio Emilia, Italia</Municipality>
+              </Contact>
+            </Address>
+          </ContactInfo>
+        </Employer>
+      </WorkExperience>
+      <WorkExperience>
+        <Period>
+          <From><Year>2018</Year><Month>--09</Month></From>
+          <To><Year>2019</Year><Month>--08</Month></To>
+        </Period>
+        <Position>
+          <Label>Consultant - Backend Developer</Label>
+        </Position>
+        <Activities>Worked as consultant for Credemtel</Activities>
+        <Employer>
+          <Name>Amaris</Name>
+          <ContactInfo>
+            <Address>
+              <Contact>
+                <Municipality>Reggio Emilia, Italia</Municipality>
+              </Contact>
+            </Address>
+          </ContactInfo>
+        </Employer>
+      </WorkExperience>
+      <WorkExperience>
+        <Period>
+          <From><Year>2016</Year><Month>--05</Month></From>
+          <To><Year>2018</Year><Month>--08</Month></To>
+        </Period>
+        <Position>
+          <Label>Junior Backend Developer</Label>
+        </Position>
+        <Activities>Developed various APIs integrations from Booking to expedia and Agoda for Ericsoft&apos;s Channel Manager. Started working with C#, EF, and basic SQL. Tested everything i developed with MSTests &amp; learned to use Visual Studio.</Activities>
+        <Employer>
+          <Name>ericsoft srl</Name>
+          <ContactInfo>
+            <Address>
+              <Contact>
+                <Municipality>Misano Adriatico</Municipality>
+              </Contact>
+            </Address>
+          </ContactInfo>
+        </Employer>
+      </WorkExperience>
+    </WorkExperienceList>
+
+    <EducationList>
+      <Education>
+        <Period>
+          <From><Year>2014</Year><Month>--09</Month></From>
+          <To><Year>2020</Year><Month>--06</Month></To>
+        </Period>
+        <Title>Informatica Applicata(CS)</Title>
+        <Organisation>
+          <Name>Università degli Studi di Urbino &apos;Carlo Bo&apos;</Name>
+        </Organisation>
+      </Education>
+      <Education>
+        <Title>High School</Title>
+        <Activities>Focus on advanced mathematics and natural sciences within an extended‑hours experimental curriculum.</Activities>
+        <Organisation>
+          <Name>Liceo Scientifico A.Volta Riccione - Corso Sperimentale Brocca</Name>
+        </Organisation>
+      </Education>
+    </EducationList>
+
+    <Skills>
+      <Linguistic>
+        <MotherTongueList>
+          <MotherTongue>
+            <Description><Code>it</Code><Label>Italian</Label></Description>
+          </MotherTongue>
+        </MotherTongueList>
+        <ForeignLanguageList>
+          <ForeignLanguage>
+            <Description><Code>en</Code><Label>English</Label></Description>
+            <ProficiencyLevel>
+              <Listening>C1</Listening>
+              <Reading>C1</Reading>
+              <SpokenInteraction>C1</SpokenInteraction>
+              <SpokenProduction>C1</SpokenProduction>
+              <Writing>C1</Writing>
+            </ProficiencyLevel>
+          </ForeignLanguage>
+        </ForeignLanguageList>
+      </Linguistic>
+      <Other><Description>Senior DevOps &amp; Site Reliability Engineer | Azure &amp; .NET Specialist With 9+ years in the tech industry, I help organizations build, secure, and scale their cloud infrastructure. My background spans the full stack—from writing C# backend code to leading development teams and architecting cloud solutions for enterprise clients. Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps, governance, and automation across Dynamics 365, Power Platform, and Entra ID services. I thrive in complex environments where operational excellence is critical. Key Competencies: Governance at Scale: Navigating compliance and security in a massive single-tenant environment (85,000+ users, 500+ companies). I orchestrate stakeholders to ensure smooth approvals and operations in a complex corporate ecosystem. Infrastructure as Code: Expert in Bicep and YAML pipelines (GitHub Actions/Azure DevOps) to implement modern, rapid approaches for creating and destroying cloud infrastructure. Backend Engineering: Strong foundation in .NET and Blazor for building robust internal tools and customer-facing apps. Security Automation: Managing large-scale secret rotation (Key Vault) and identity security standards. Cloud Solutions Architecting: Utilizing rapid prototyping to demonstrate value, align stakeholders, and drive management strategies toward modern technical directions. Power Platform Administration: Managing and governing low-code environments at an enterprise level. My Mission: To build groundbreaking products that influence billions. I am passionate about simplifying complex distributed systems and applying Domain-Driven Design principles to solve real-world problems. Based in Parma, Italy. Let&apos;s connect to talk about the future of Cloud Engineering and .NET.</Description></Other>
+      <Computer><Description>Stakeholder Management, Security Administration, Identity management, Public speaking, Microsoft Fabric, JIRA, Github Enterprise, wsl, Powershell Core, Bash, DSC, Business Central, Software Infrastructure, Azure, Microsoft Entra ID, Automation, Microsoft Dynamics 365, Microsoft Power Platform, Cost Optimization, Cloud Security, Communication, Windows Azure, C#, DevOps, Containerization, Distributed Systems, Version Control, Cloud Infrastructure, Attention to Detail, Analytical Skills, SQL, Project management, OOP, ETL, Troubleshooting, Continuous improvement, Agile Methodologies, Agile Project Management, .NET, Git, JavaScript, LINQ, Visual Studio, Microsoft Office, HTML, Database, Server Microsoft SQL, Windows PowerShell, T-SQL, Kibana, AZURE DEVOPS, Project Leadership, .NET Framework, Microservices, Generative AI, Search Engine Technology, Artificial Intelligence (AI), Artificial Intelligence for Business, Chatbots, Microsoft Search</Description></Computer>
+    </Skills>
+
+    <AchievementList>
+      <Achievement>
+        <Title>
+          <Label>MENSA ITALIA</Label>
+        </Title>
+        <Description>Issued by http://www.mensa.it/</Description>
+        <Date><Year>2014</Year><Month>--02</Month></Date>
+        <ReferenceTo><Label>https://www.cloud32.it/GES/stampa?Ybrx%253hhjZog2Ynyqt1H58OUdkEJG6Re1y%3Fnbeu%2B26hcatWk%2B%3Fu%3F%2FFn6B%3DQQgJLJ9HBcNVWTqAVmobqbDy%2Bn%2F%25p30Jz6%3D%2FGIWckfomplKYPdUjy330</Label></ReferenceTo>
+      </Achievement>
+      <Achievement>
+        <Title>
+          <Label>Getting Started with Angular 2+</Label>
+        </Title>
+        <Description>Issued by Udemy</Description>
+        <Date><Year>2017</Year><Month>--09</Month></Date>
+        <ReferenceTo><Label>https://www.udemy.com/certificate/UC-KKN29TB2/</Label></ReferenceTo>
+      </Achievement>
+      <Achievement>
+        <Title>
+          <Label>The Web Developer Bootcamp (40+ hours)</Label>
+        </Title>
+        <Description>Issued by Udemy</Description>
+        <Date><Year>2018</Year><Month>--01</Month></Date>
+        <ReferenceTo><Label>https://www.udemy.com/certificate/UC-SQ4MQOK7/</Label></ReferenceTo>
+      </Achievement>
+      <Achievement>
+        <Title>
+          <Label>Speexx English CEFR Level C1.1</Label>
+        </Title>
+        <Description>Issued by Speexx</Description>
+        <Date><Year>2020</Year><Month>--09</Month></Date>
+        <ReferenceTo><Label>https://portal.speexx.com/certificate/MzY2Mjg1Nw==</Label></ReferenceTo>
+      </Achievement>
+      <Achievement>
+        <Title>
+          <Label>Microsoft Certified Azure Developer Associate</Label>
+        </Title>
+        <Description>Issued by Microsoft</Description>
+        <Date><Year>2021</Year><Month>--05</Month></Date>
+        <ReferenceTo><Label>https://learn.microsoft.com/api/credentials/share/en-us/francesco-belacca-dev/B0B6390715280944?sharingId=DBB6C71362CD4CB4</Label></ReferenceTo>
+      </Achievement>
+      <Achievement>
+        <Title>
+          <Label>AZ-204 Developing for Microsoft Azure Exam Prep</Label>
+        </Title>
+        <Description>Issued by Udemy</Description>
+        <Date><Year>2021</Year><Month>--03</Month></Date>
+        <ReferenceTo><Label>https://www.udemy.com/certificate/UC-5957c389-228f-4488-aa31-c8cdd755f9af/</Label></ReferenceTo>
+      </Achievement>
+      <Achievement>
+        <Title>
+          <Label>Microsoft Certified DevOps Engineer Expert</Label>
+        </Title>
+        <Description>Issued by Microsoft</Description>
+        <Date><Year>2021</Year><Month>--10</Month></Date>
+        <ReferenceTo><Label>https://learn.microsoft.com/api/credentials/share/en-us/francesco-belacca-dev/8D2BB8D5E8687F2B?sharingId=DBB6C71362CD4CB4</Label></ReferenceTo>
+      </Achievement>
+      <Achievement>
+        <Title>
+          <Label>Managing Projects with Microsoft Teams</Label>
+        </Title>
+        <Description>Issued by LinkedIn</Description>
+        <Date><Year>2021</Year><Month>--12</Month></Date>
+        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/dec857b1866d560cc08e3a2456cd7d7f79485f05167dd1b75ceb7bb374590106</Label></ReferenceTo>
+      </Achievement>
+      <Achievement>
+        <Title>
+          <Label>Agile Foundations</Label>
+        </Title>
+        <Description>Issued by LinkedIn</Description>
+        <Date><Year>2022</Year><Month>--01</Month></Date>
+        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/9c25484c3e47fe357dc8ab6719addfdcbb14030906aa029457037580f1abfd39</Label></ReferenceTo>
+      </Achievement>
+      <Achievement>
+        <Title>
+          <Label>Scrum: The Basics</Label>
+        </Title>
+        <Description>Issued by LinkedIn</Description>
+        <Date><Year>2022</Year><Month>--01</Month></Date>
+        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/f5cec7d2cb199430912201ca06b48e477d818a6f17502b99c32c78cc3044fa58</Label></ReferenceTo>
+      </Achievement>
+      <Achievement>
+        <Title>
+          <Label>Scrum: Advanced</Label>
+        </Title>
+        <Description>Issued by LinkedIn</Description>
+        <Date><Year>2022</Year><Month>--01</Month></Date>
+        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/afbaf17a86736bcd0387cb7c65271d51ce71bc34c381502b791da65bbf2fa824</Label></ReferenceTo>
+      </Achievement>
+      <Achievement>
+        <Title>
+          <Label>Agile Project Leadership</Label>
+        </Title>
+        <Description>Issued by LinkedIn</Description>
+        <Date><Year>2022</Year><Month>--01</Month></Date>
+        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/7b7e3e8dae60f6791caaf538144030fe6cab6cc110e6adf89d35824b4b58e4eb</Label></ReferenceTo>
+      </Achievement>
+      <Achievement>
+        <Title>
+          <Label>Advanced Azure Microservices with .NET for Developers</Label>
+        </Title>
+        <Description>Issued by LinkedIn</Description>
+        <Date><Year>2022</Year><Month>--05</Month></Date>
+        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/160a722984c87c54489f6881e7e6b5ad299b09a0d4e2df8241467c18c5305b68</Label></ReferenceTo>
+      </Achievement>
+      <Achievement>
+        <Title>
+          <Label>Kubernetes for developers</Label>
+        </Title>
+        <Description>Issued by Udemy</Description>
+        <Date><Year>2023</Year><Month>--04</Month></Date>
+        <ReferenceTo><Label>https://www.udemy.com/certificate/UC-67714a89-6f40-4717-93a7-cded4b75d711/</Label></ReferenceTo>
+      </Achievement>
+      <Achievement>
+        <Title>
+          <Label>Introducing Semantic Kernel: Building AI-Based Apps</Label>
+        </Title>
+        <Description>Issued by LinkedIn</Description>
+        <Date><Year>2023</Year><Month>--09</Month></Date>
+        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/7d260cc6b9a0550507158d58a059c4dca7e8469ad56b64b4b543c24c9b517bd9</Label></ReferenceTo>
+      </Achievement>
+      <Achievement>
+        <Title>
+          <Label>Generative AI: The Evolution of Thoughtful Online Search</Label>
+        </Title>
+        <Description>Issued by LinkedIn</Description>
+        <Date><Year>2023</Year><Month>--10</Month></Date>
+        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/1552de3b7e9de56676146d25554b15b00e5c173d96081737c85789b7ae498543</Label></ReferenceTo>
+      </Achievement>
+      <Achievement>
+        <Title>
+          <Label>What Is Generative AI?</Label>
+        </Title>
+        <Description>Issued by LinkedIn</Description>
+        <Date><Year>2023</Year><Month>--10</Month></Date>
+        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/6f4f2a01f0d040292460e09c6fa385ebdd22ff6e4fbc91b8b456aadfd6ccd82a</Label></ReferenceTo>
+      </Achievement>
+      <Achievement>
+        <Title>
+          <Label>Streamlining Your Work with Microsoft Bing Chat</Label>
+        </Title>
+        <Description>Issued by LinkedIn</Description>
+        <Date><Year>2023</Year><Month>--10</Month></Date>
+        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/fccb09bb98c04c31b8554ed1ffd4b2ae67afebe4d228946a293ee6a704d6c05d</Label></ReferenceTo>
+      </Achievement>
+      <Achievement>
+        <Title>
+          <Label>Microsoft 365 Copilot First Look</Label>
+        </Title>
+        <Description>Issued by LinkedIn</Description>
+        <Date><Year>2023</Year><Month>--10</Month></Date>
+        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/56d2fde3a6529f9ca1e4b529f4b5a8f75c66588edca2be8560271c1a1c24f28a</Label></ReferenceTo>
+      </Achievement>
+      <Achievement>
+        <Title>
+          <Label>Ethics in the Age of Generative AI</Label>
+        </Title>
+        <Description>Issued by LinkedIn</Description>
+        <Date><Year>2023</Year><Month>--10</Month></Date>
+        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/494ade7cfad1cb24525faf2d511658a89e2fe3ce1a6f4969419d65e7193dcac7</Label></ReferenceTo>
+      </Achievement>
+      <Achievement>
+        <Title>
+          <Label>Introduction to Artificial Intelligence</Label>
+        </Title>
+        <Description>Issued by LinkedIn</Description>
+        <Date><Year>2023</Year><Month>--10</Month></Date>
+        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/44fa0685cbf275d19b25f5f7c3a0365e0b26227dd31e9c9545147e737e671c70</Label></ReferenceTo>
+      </Achievement>
+      <Achievement>
+        <Title>
+          <Label>Career Essentials in Generative AI by Microsoft and LinkedIn</Label>
+        </Title>
+        <Description>Issued by Microsoft</Description>
+        <Date><Year>2023</Year><Month>--10</Month></Date>
+        <ReferenceTo><Label>https://www.linkedin.com/learning/certificates/16067e03e960ef0144dc31920fcaf387d7873ef227c5738cb99ff362ede92a8a</Label></ReferenceTo>
+      </Achievement>
+      <Achievement>
+        <Title>
+          <Label>Microsoft Certified: Azure Administrator Associate</Label>
+        </Title>
+        <Description>Issued by Microsoft</Description>
+        <Date><Year>2024</Year><Month>--01</Month></Date>
+        <ReferenceTo><Label>https://learn.microsoft.com/api/credentials/share/en-us/francesco-belacca-dev/45B731060917D54E?sharingId</Label></ReferenceTo>
+      </Achievement>
+    </AchievementList>
+
+  </LearnerInfo>
+</SkillsPassport>
