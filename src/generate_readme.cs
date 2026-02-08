@@ -83,7 +83,11 @@ string GenerateReadme(Dictionary<string, List<JsonElement>> data)
     sb.AppendLine($"  <a href=\"mailto:francesco.belacca@outlook.it\"><img src=\"https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=microsoft-outlook&logoColor=white\" alt=\"Email\"/></a>");
     sb.AppendLine($"  <a href=\"https://github.com/{GH_USER}\"><img src=\"https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white\" alt=\"GitHub\"/></a>");
     if (!string.IsNullOrEmpty(geo))
-        sb.AppendLine($"  <img src=\"https://img.shields.io/badge/📍_{geo.Replace(" ", "_").Replace(",", "%2C")}-grey?style=for-the-badge\" alt=\"Location\"/>");
+    {
+        var badgeGeo = geo.Replace("-", "--").Replace("_", "__").Replace(" ", "_").Replace(",", "%2C");
+        var mapsUrl = $"https://www.google.com/maps/search/{Uri.EscapeDataString(geo)}";
+        sb.AppendLine($"  <a href=\"{mapsUrl}\"><img src=\"https://img.shields.io/badge/📍_{badgeGeo}-grey?style=for-the-badge\" alt=\"Location\"/></a>");
+    }
     sb.AppendLine("</p>");
     sb.AppendLine();
 
