@@ -27,18 +27,18 @@ jobs:
       - name: Fetch LinkedIn data, generate README & CV XML
         env:
           LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
-        run: SKIP_PDF=1 ./scripts/run.sh
+        run: SKIP_PDF=1 ./src/run.sh
 
       # ── GitHub Stats SVGs (requires GitHub Action, CI-only) ──
-      - name: Create profile directory
-        run: mkdir -p profile
+      - name: Create artifacts directory
+        run: mkdir -p artifacts/profile
 
       - name: Generate GitHub stats card
         uses: soulteary/github-readme-stats-action@v1.0.0
         with:
           card: stats
           options: "username=${{ github.repository_owner }}&show_icons=true&theme=github_dark&hide_border=true&count_private=true"
-          path: profile/stats.svg
+          path: artifacts/profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate top languages card
@@ -46,17 +46,17 @@ jobs:
         with:
           card: top-langs
           options: "username=${{ github.repository_owner }}&layout=compact&theme=github_dark&hide_border=true&langs_count=8"
-          path: profile/top-langs.svg
+          path: artifacts/profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
       # ── Generate PDF (after SVGs are ready) ──
       - name: Generate PDF from README
-        run: ./scripts/generate_pdf.sh
+        run: ./src/generate_pdf.sh
 
       # ── Commit all artifacts ──
       - name: Commit and push if changed
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add README.md europass_cv.xml Francesco_Belacca_CV.pdf profile/*.svg
+          git add README.md artifacts/
           git diff --cached --quiet || (git commit -m "docs: update README, CV exports & stats [skip ci]" && git push)

@@ -2,11 +2,11 @@
 // Generate Europass CV XML from cached LinkedIn data.
 // The PDF is produced by the CI pipeline (pandoc converts the README).
 //
-// Reads: scripts/linkedin_raw.json  (produced by fetch_linkedin.cs)
-// Writes: europass_cv.xml
+// Reads: src/linkedin_raw.json  (produced by fetch_linkedin.cs)
+// Writes: artifacts/europass_cv.xml
 //
 // Usage:
-//   dotnet run scripts/generate_cv.cs
+//   dotnet run src/generate_cv.cs
 
 #:property PublishAot=false
 
@@ -36,8 +36,9 @@ if (allData.Count == 0)
 
 // Generate Europass CV XML
 var europassXml = GenerateEuropassXml(allData);
-var europassPath = Path.Combine(csFilePath, "..", "europass_cv.xml");
+var europassPath = Path.Combine(csFilePath, "..", "artifacts", "europass_cv.xml");
 europassPath = Path.GetFullPath(europassPath);
+Directory.CreateDirectory(Path.GetDirectoryName(europassPath)!);
 File.WriteAllText(europassPath, europassXml);
 Console.Error.WriteLine($"✅  Europass CV XML written to {europassPath}");
 
@@ -547,7 +548,7 @@ string GetScriptDirectory()
 {
     var candidates = new[]
     {
-        Path.Combine(Environment.CurrentDirectory, "scripts"),
+        Path.Combine(Environment.CurrentDirectory, "src"),
         Environment.CurrentDirectory
     };
 
@@ -557,5 +558,5 @@ string GetScriptDirectory()
             return Path.GetFullPath(dir);
     }
 
-    return Path.GetFullPath("scripts");
+    return Path.GetFullPath("src");
 }

@@ -30,9 +30,9 @@ if ! command -v pandoc &>/dev/null; then
 fi
 
 # ── 2. Ensure Puppeteer is installed (bundles its own Chromium) ──────
-if ! node -e "require('puppeteer')" 2>/dev/null; then
+if ! NODE_PATH="$REPO_ROOT/src/node_modules" node -e "require('puppeteer')" 2>/dev/null; then
   echo "📦 Installing puppeteer..."
-  npm install --save-dev puppeteer 2>/dev/null
+  (cd "$REPO_ROOT/src" && npm install --save-dev puppeteer 2>/dev/null)
 fi
 
 # ── 3. Ensure poppler-utils is available (for pdfattach) ─────────────
@@ -56,10 +56,11 @@ if ! fc-list | grep -qi "Noto Color Emoji"; then
 fi
 
 # ── 5. Download GitHub markdown CSS if missing ──────────────────────
-if [[ ! -f github-markdown.css ]]; then
+if [[ ! -f artifacts/github-markdown.css ]]; then
   echo "📥 Downloading GitHub markdown CSS..."
+  mkdir -p artifacts
   curl -sL https://raw.githubusercontent.com/sindresorhus/github-markdown-css/main/github-markdown.css \
-    -o github-markdown.css
+    -o artifacts/github-markdown.css
 fi
 
 # ── 5. Create static SVGs (strip CSS animations) ────────────────────
@@ -75,9 +76,9 @@ fi
 
 echo "▶ Preparing static SVGs for PDF..."
 # Clean up any leftover static SVGs from previous runs
-rm -f profile/*_static.svg
+rm -f artifacts/profile/*_static.svg
 
-for svg in profile/*.svg; do
+for svg in artifacts/profile/*.svg; do
   [ -f "$svg" ] || continue
   # Skip if this is somehow already a _static file
   [[ "$svg" == *_static.svg ]] && continue
@@ -99,7 +100,7 @@ done
 
 # ── 6. Build a PDF-ready markdown (point to static SVGs) ────────────
 echo "▶ Converting README to PDF..."
-sed -E 's|(profile/[a-z-]+)\.svg"|\1_static.svg"|g' README.md > README_pdf.md
+sed -E 's|(artifacts/profile/[a-z-]+)\.svg"|\1_static.svg"|g' README.md > README_pdf.md
 
 # ── 7. Convert markdown → HTML body with pandoc ─────────────────────
 pandoc README_pdf.md \
@@ -116,7 +117,7 @@ cat > README_pdf.html <<HTMLEOF
   <meta charset="utf-8">
   <title>Francesco Belacca - CV</title>
   <style>
-$(cat github-markdown.css)
+$(cat artifacts/github-markdown.css)
 
     /* GitHub-style page container */
     .markdown-body {
@@ -148,17 +149,17 @@ HTMLEOF
 
 # ── 9. Render PDF with Puppeteer (headless Chromium) ─────────────────
 echo "▶ Rendering PDF with Puppeteer (headless Chromium)..."
-node "$REPO_ROOT/scripts/html_to_pdf.js" \
+NODE_PATH="$REPO_ROOT/src/node_modules" node "$REPO_ROOT/src/html_to_pdf.js" \
   "$REPO_ROOT/README_pdf.html" \
-  "$REPO_ROOT/Francesco_Belacca_CV.pdf"
+  "$REPO_ROOT/artifacts/Francesco_Belacca_CV.pdf"
 
-echo "   ✅ PDF generated: Francesco_Belacca_CV.pdf"
+echo "   ✅ PDF generated: artifacts/Francesco_Belacca_CV.pdf"
 
 # ── 10. Embed Europass XML metadata into the PDF ─────────────────────
-if command -v pdfattach &>/dev/null && [[ -f europass_cv.xml ]]; then
+if command -v pdfattach &>/dev/null && [[ -f artifacts/europass_cv.xml ]]; then
   echo "▶ Embedding europass_cv.xml into PDF as attachment..."
-  pdfattach Francesco_Belacca_CV.pdf europass_cv.xml Francesco_Belacca_CV_with_metadata.pdf
-  mv Francesco_Belacca_CV_with_metadata.pdf Francesco_Belacca_CV.pdf
+  pdfattach artifacts/Francesco_Belacca_CV.pdf artifacts/europass_cv.xml artifacts/Francesco_Belacca_CV_with_metadata.pdf
+  mv artifacts/Francesco_Belacca_CV_with_metadata.pdf artifacts/Francesco_Belacca_CV.pdf
   echo "   ✅ Europass XML metadata embedded into PDF"
 else
   echo "⚠ pdfattach not available or europass_cv.xml missing — PDF without embedded metadata."
@@ -166,6 +167,6 @@ fi
 
 # ── Cleanup temp files ───────────────────────────────────────────────
 rm -f README_pdf.md README_pdf_body.html README_pdf.html
-rm -f profile/*_static.svg
+rm -f artifacts/profile/*_static.svg
 
 echo "✅ PDF generation complete."

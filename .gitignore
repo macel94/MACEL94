@@ -1,1 +1,6 @@
 **/node_modules
+
+# Temp files from PDF generation
+README_pdf.md
+README_pdf_body.html
+README_pdf.html

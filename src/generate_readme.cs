@@ -1,11 +1,11 @@
 #!/usr/bin/env dotnet run
 // Generate a GitHub profile README.md from cached LinkedIn data.
 //
-// Reads: scripts/linkedin_raw.json  (produced by fetch_linkedin.cs)
+// Reads: src/linkedin_raw.json  (produced by fetch_linkedin.cs)
 // Writes: README.md
 //
 // Usage:
-//   dotnet run scripts/generate_readme.cs
+//   dotnet run src/generate_readme.cs
 
 #:property PublishAot=false
 
@@ -101,8 +101,8 @@ string GenerateReadme(Dictionary<string, List<JsonElement>> data)
     sb.AppendLine("## 📊 GitHub Stats");
     sb.AppendLine();
     sb.AppendLine("<p>");
-    sb.AppendLine("  <img src=\"./profile/stats.svg\" height=\"170\" alt=\"GitHub Stats\"/>");
-    sb.AppendLine("  <img src=\"./profile/top-langs.svg\" height=\"170\" alt=\"Top Languages\"/>");
+    sb.AppendLine("  <img src=\"./artifacts/profile/stats.svg\" height=\"170\" alt=\"GitHub Stats\"/>");
+    sb.AppendLine("  <img src=\"./artifacts/profile/top-langs.svg\" height=\"170\" alt=\"Top Languages\"/>");
     sb.AppendLine("</p>");
     sb.AppendLine();
 
@@ -759,7 +759,7 @@ string GetScriptDirectory()
 {
     var candidates = new[]
     {
-        Path.Combine(Environment.CurrentDirectory, "scripts"),
+        Path.Combine(Environment.CurrentDirectory, "src"),
         Environment.CurrentDirectory
     };
 
@@ -769,5 +769,5 @@ string GetScriptDirectory()
             return Path.GetFullPath(dir);
     }
 
-    return Path.GetFullPath("scripts");
+    return Path.GetFullPath("src");
 }

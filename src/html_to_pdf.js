@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Convert a local HTML file to PDF using Puppeteer (headless Chromium).
 //
-// Usage: node scripts/html_to_pdf.js <input.html> <output.pdf>
+// Usage: node src/html_to_pdf.js <input.html> <output.pdf>
 //
 // Waits for all network requests (images, fonts) to settle before printing,
 // which ensures shields.io badges and skillicons.dev images are rendered.

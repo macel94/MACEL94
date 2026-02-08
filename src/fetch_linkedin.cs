@@ -10,7 +10,7 @@
 //
 // Usage:
 //   export LINKEDIN_ACCESS_TOKEN="your_token"
-//   dotnet run scripts/fetch_linkedin.cs
+//   dotnet run src/fetch_linkedin.cs
 //
 // API Reference:
 //   https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/
@@ -184,7 +184,7 @@ string GetScriptDirectory()
 {
     var candidates = new[]
     {
-        Path.Combine(Environment.CurrentDirectory, "scripts"),
+        Path.Combine(Environment.CurrentDirectory, "src"),
         Environment.CurrentDirectory
     };
 
@@ -194,5 +194,5 @@ string GetScriptDirectory()
             return Path.GetFullPath(dir);
     }
 
-    return Path.GetFullPath("scripts");
+    return Path.GetFullPath("src");
 }
