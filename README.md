@@ -64,19 +64,19 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 <details>
 <summary>Other certifications & courses</summary>
 
-- [**Career Essentials in Generative AI by Microsoft and LinkedIn** – Microsoft (Oct 2023 – Present)](https://www.linkedin.com/learning/certificates/16067e03e960ef0144dc31920fcaf387d7873ef227c5738cb99ff362ede92a8a)
-- [**Kubernetes for developers** – Udemy (Apr 2023 – Present)](https://www.udemy.com/certificate/UC-67714a89-6f40-4717-93a7-cded4b75d711/)
-- [**AZ-204 Developing for Microsoft Azure Exam Prep** – Udemy (Mar 2021 – Present)](https://www.udemy.com/certificate/UC-5957c389-228f-4488-aa31-c8cdd755f9af/)
-- [**Speexx English CEFR Level C1.1** – Speexx (Sep 2020 – Present)](https://portal.speexx.com/certificate/MzY2Mjg1Nw==)
-- [**The Web Developer Bootcamp (40+ hours)** – Udemy (Jan 2018 – Present)](https://www.udemy.com/certificate/UC-SQ4MQOK7/)
-- [**Getting Started with Angular 2+** – Udemy (Sep 2017 – Present)](https://www.udemy.com/certificate/UC-KKN29TB2/)
-- [**MENSA ITALIA** – http://www.mensa.it/ (Feb 2014 – Present)](https://www.cloud32.it/GES/stampa?Ybrx%253hhjZog2Ynyqt1H58OUdkEJG6Re1y%3Fnbeu%2B26hcatWk%2B%3Fu%3F%2FFn6B%3DQQgJLJ9HBcNVWTqAVmobqbDy%2Bn%2F%25p30Jz6%3D%2FGIWckfomplKYPdUjy330)
+- [**Career Essentials in Generative AI by Microsoft and LinkedIn** - Microsoft (Oct 2023 - Present)](https://www.linkedin.com/learning/certificates/16067e03e960ef0144dc31920fcaf387d7873ef227c5738cb99ff362ede92a8a)
+- [**Kubernetes for developers** - Udemy (Apr 2023 - Present)](https://www.udemy.com/certificate/UC-67714a89-6f40-4717-93a7-cded4b75d711/)
+- [**AZ-204 Developing for Microsoft Azure Exam Prep** - Udemy (Mar 2021 - Present)](https://www.udemy.com/certificate/UC-5957c389-228f-4488-aa31-c8cdd755f9af/)
+- [**Speexx English CEFR Level C1.1** - Speexx (Sep 2020 - Present)](https://portal.speexx.com/certificate/MzY2Mjg1Nw==)
+- [**The Web Developer Bootcamp (40+ hours)** - Udemy (Jan 2018 - Present)](https://www.udemy.com/certificate/UC-SQ4MQOK7/)
+- [**Getting Started with Angular 2+** - Udemy (Sep 2017 - Present)](https://www.udemy.com/certificate/UC-KKN29TB2/)
+- [**MENSA ITALIA** - http://www.mensa.it/ (Feb 2014 - Present)](https://www.cloud32.it/GES/stampa?Ybrx%253hhjZog2Ynyqt1H58OUdkEJG6Re1y%3Fnbeu%2B26hcatWk%2B%3Fu%3F%2FFn6B%3DQQgJLJ9HBcNVWTqAVmobqbDy%2Bn%2F%25p30Jz6%3D%2FGIWckfomplKYPdUjy330)
 
 </details>
 
 ## 💼 Experience
 
-### **Site Reliability Engineer** @ Würth IT Italy (Sep 2024 – Present)
+### **Site Reliability Engineer** @ Würth IT Italy (Sep 2024 - Present)
 📍 Parma, Emilia-Romagna, Italy
 
 - I’ve been the force-multiplier behind Würth-Phoenix’s Microsoft stack.
@@ -86,7 +86,7 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 - Lead admin/governance for tenants and repos (Azure, Entra ID, Business Central, Fabric, GitHub Enterprise), enforcing DevSecOps guardrails, RBAC, and compliance by default.
 - Partner with developers to shift-left security, codify best practices, and unblock delivery at scale.
 
-### **Presales Solutions Architect** @ Agic Cloud (Jul 2023 – Jul 2024)
+### **Presales Solutions Architect** @ Agic Cloud (Jul 2023 - Jul 2024)
 📍 Parma, Emilia Romagna, Italia
 
 - Designed Azure landing zones, application architectures, and migration plans for enterprise clients, focusing on scalability, security, and cost control.
@@ -95,7 +95,7 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 - Engaged with Dynamics teams as an enabler, defining integration patterns, securing workloads with Key Vault/Managed Identity, and improving delivery workflows.
 - Collaborated with engineering teams to troubleshoot distributed systems, resolve reliability issues, and streamline cloud operations.
 
-### **Backend Team Leader & Cloud Developer** @ Agic Cloud (Feb 2022 – Jul 2023)
+### **Backend Team Leader & Cloud Developer** @ Agic Cloud (Feb 2022 - Jul 2023)
 📍 Parma, Emilia-Romagna, Italy
 
 - Our cloud division (Vetrya Cloud) was bought by the AGIC Techonology group, becoming AGIC Cloud.
@@ -108,15 +108,15 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 <details>
 <summary>Earlier roles</summary>
 
-- **Backend Team Leader & Cloud Developer** @ Vetrya · Parma, Emilia-Romagna, Italy (Full Remote) (Jun 2021 – Jan 2022)
+- **Backend Team Leader & Cloud Developer** @ Vetrya · Parma, Emilia-Romagna, Italy (Full Remote) (Jun 2021 - Jan 2022)
   > As a Team Leader I helped my Team succeed and grow. We used Azure PaaS services to build multiple environments using the following technologies: Bot framework PBI Dashboard embedded in Azure Static...
-- **Backend Developer/ Analyst** @ Credemtel SpA · Reggio nell'Emilia, Emilia Romagna, Italia (Apr 2020 – May 2021)
+- **Backend Developer/ Analyst** @ Credemtel SpA · Reggio nell'Emilia, Emilia Romagna, Italia (Apr 2020 - May 2021)
   > Worked as backend developer for multiple core application using various types of dbs(sql/ElasticSearch) developing microservices of a SAGA in the backend and APIs for the frontend. Used both .net Fram...
-- **Backend Developer** @ Credemtel SpA · Reggio Emilia, Italia (Sep 2019 – Mar 2020)
+- **Backend Developer** @ Credemtel SpA · Reggio Emilia, Italia (Sep 2019 - Mar 2020)
   > Worked as backend developer for multiple core application using various types of dbs(sql/ElasticSearch) developing microservices of a SAGA in the backend and APIs for the frontend. Used both .net Fram...
-- **Consultant - Backend Developer** @ Amaris · Reggio Emilia, Italia (Sep 2018 – Aug 2019)
+- **Consultant - Backend Developer** @ Amaris · Reggio Emilia, Italia (Sep 2018 - Aug 2019)
   > Worked as consultant for Credemtel
-- **Junior Backend Developer** @ ericsoft srl · Misano Adriatico (May 2016 – Aug 2018)
+- **Junior Backend Developer** @ ericsoft srl · Misano Adriatico (May 2016 - Aug 2018)
   > Developed various APIs integrations from Booking to expedia and Agoda for Ericsoft's Channel Manager. Started working with C#, EF, and basic SQL. Tested everything i developed with MSTests & learned...
 
 </details>
@@ -129,8 +129,8 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 
 ## 🎓 Education
 
-- **Università degli Studi di Urbino 'Carlo Bo'** – Informatica Applicata(CS) (Sep 2014 – Jun 2020)
-- **Liceo Scientifico A.Volta Riccione - Corso Sperimentale Brocca** – High School
+- **Università degli Studi di Urbino 'Carlo Bo'** - Informatica Applicata(CS) (Sep 2014 - Jun 2020)
+- **Liceo Scientifico A.Volta Riccione - Corso Sperimentale Brocca** - High School
   > Focus on advanced mathematics and natural sciences within an extended‑hours experimental curriculum.
 
 ## 🌐 Languages
@@ -140,7 +140,7 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 
 ## 🤝 Volunteering
 
-- **Azure Consultant** · education (Dec 2021 – Present)
+- **Azure Consultant** · education (Dec 2021 - Present)
   > I helped the company with their onboarding on azure for nonprofit helping them obtain 3000$ per year. I helped them choosing the right technology for their use case and building their website, setting up the db, custom domains, etc.  https://www.progettosole.org/
 
 ---
@@ -150,5 +150,5 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 - [PDF Version](./Francesco_Belacca_CV.pdf)
 - [Europass XML](./europass_cv.xml)
 
-<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-02-08 15:38 UTC</sub>
+<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-02-08 15:56 UTC</sub>
 

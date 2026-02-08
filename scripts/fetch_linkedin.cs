@@ -75,7 +75,7 @@ foreach (var domain in relevantDomains)
     }
     else
     {
-        Console.Error.WriteLine(" – no data");
+        Console.Error.WriteLine(" - no data");
     }
 }
 
@@ -134,7 +134,7 @@ async Task<List<JsonElement>> FetchDomain(HttpClient client, string domain)
         if (!resp.IsSuccessStatusCode)
         {
             var body = await resp.Content.ReadAsStringAsync();
-            Console.Error.WriteLine($"\n  ⚠  {domain}: HTTP {(int)resp.StatusCode} – {body[..Math.Min(body.Length, 200)]}");
+            Console.Error.WriteLine($"\n  ⚠  {domain}: HTTP {(int)resp.StatusCode} - {body[..Math.Min(body.Length, 200)]}");
             break;
         }
 

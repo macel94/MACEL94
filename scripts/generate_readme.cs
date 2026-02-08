@@ -192,7 +192,7 @@ string GenerateReadme(Dictionary<string, List<JsonElement>> data)
                 var dates = DateStr(c);
 
                 var header = !string.IsNullOrEmpty(name) ? $"**{name}**" : "";
-                if (!string.IsNullOrEmpty(authority)) header += $" – {authority}";
+                if (!string.IsNullOrEmpty(authority)) header += $" - {authority}";
                 if (!string.IsNullOrEmpty(dates)) header += $" ({dates})";
                 if (!string.IsNullOrEmpty(url)) header = $"[{header}]({url})";
                 sb.AppendLine($"- {header}");
@@ -314,7 +314,7 @@ string GenerateReadme(Dictionary<string, List<JsonElement>> data)
 
             var header = !string.IsNullOrEmpty(school) ? $"**{school}**" : "**School**";
             var degreeParts = new[] { degree, field }.Where(x => !string.IsNullOrEmpty(x));
-            if (degreeParts.Any()) header += $" – {string.Join(", ", degreeParts)}";
+            if (degreeParts.Any()) header += $" - {string.Join(", ", degreeParts)}";
             if (!string.IsNullOrEmpty(dates)) header += $" ({dates})";
             sb.AppendLine($"- {header}");
             if (!string.IsNullOrEmpty(notes)) sb.AppendLine($"  > {notes}");
@@ -740,9 +740,9 @@ string DateStr(JsonElement el)
     if (string.IsNullOrEmpty(finished)) finished = Safe(el, "End Date");
 
     if (!string.IsNullOrEmpty(started) && !string.IsNullOrEmpty(finished))
-        return $"{started} – {finished}";
+        return $"{started} - {finished}";
     if (!string.IsNullOrEmpty(started))
-        return $"{started} – Present";
+        return $"{started} - Present";
     return "";
 }
 

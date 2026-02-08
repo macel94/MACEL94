@@ -224,7 +224,7 @@ string GenerateEuropassXml(Dictionary<string, List<JsonElement>> data)
             }
 
             var titleParts = new[] { degree, field }.Where(x => !string.IsNullOrEmpty(x));
-            var eduTitle = titleParts.Any() ? string.Join(" – ", titleParts) : "Education";
+            var eduTitle = titleParts.Any() ? string.Join(" - ", titleParts) : "Education";
             sb.AppendLine($"        <Title>{EscapeXml(eduTitle)}</Title>");
 
             if (!string.IsNullOrEmpty(notes))

@@ -4,7 +4,7 @@ set -euo pipefail
 # ── Generate README, Europass CV XML and PDF from LinkedIn data ──────
 #
 # Usage (local):
-#   export LINKEDIN_ACCESS_TOKEN="your_token"   # optional – uses cached data if missing
+#   export LINKEDIN_ACCESS_TOKEN="your_token"   # optional - uses cached data if missing
 #   ./scripts/run.sh
 #
 # Usage (CI):
@@ -23,7 +23,7 @@ if [[ -n "${LINKEDIN_ACCESS_TOKEN:-}" ]]; then
   dotnet run scripts/fetch_linkedin.cs
 else
   if [[ -f scripts/linkedin_raw.json ]]; then
-    echo "⏭ No LINKEDIN_ACCESS_TOKEN set – using cached scripts/linkedin_raw.json"
+    echo "⏭ No LINKEDIN_ACCESS_TOKEN set - using cached scripts/linkedin_raw.json"
   else
     echo "❌ No LINKEDIN_ACCESS_TOKEN and no cached linkedin_raw.json. Set the token or provide the file."
     exit 1
@@ -60,7 +60,7 @@ echo "▶ Converting README to PDF..."
 pandoc README.md \
   -f gfm \
   -t html5 \
-  --metadata pagetitle="Francesco Belacca – CV" \
+  --metadata pagetitle="Francesco Belacca - CV" \
   --css github-markdown.css \
   --self-contained \
   -o Francesco_Belacca_CV.pdf
