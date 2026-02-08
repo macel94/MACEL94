@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Candidate xsi:schemaLocation="http://www.europass.eu/1.0 Candidate.xsd" xmlns="http://www.europass.eu/1.0" xmlns:oa="http://www.openapplications.org/oagis/9" xmlns:eures="http://www.europass_eures.eu/1.0" xmlns:hr="http://www.hr-xml.org/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <hr:DocumentID schemeID="Test-0001" schemeName="DocumentIdentifier" schemeAgencyName="EUROPASS" schemeVersionID="4.0"/>
+    <CandidateSupplier>
+        <hr:PartyID schemeID="Test-0001" schemeName="PartyID" schemeAgencyName="EUROPASS" schemeVersionID="1.0"/>
+        <hr:PartyName>Owner</hr:PartyName>
+        <PersonContact>
+            <PersonName>
+                <oa:GivenName>Francesco</oa:GivenName>
+                <hr:FamilyName>Belacca</hr:FamilyName>
+            </PersonName>
+            <Communication>
+                <ChannelCode>Email</ChannelCode>
+                <oa:URI>francesco.belacca@hotmail.it</oa:URI>
+            </Communication>
+        </PersonContact>
+        <hr:PrecedenceCode>1</hr:PrecedenceCode>
+    </CandidateSupplier>
+    <CandidatePerson>
+        <PersonName>
+            <oa:GivenName>Francesco</oa:GivenName>
+            <hr:FamilyName>Belacca</hr:FamilyName>
+        </PersonName>
+        <Communication>
+            <ChannelCode>Email</ChannelCode>
+            <oa:URI>francesco.belacca@hotmail.it</oa:URI>
+        </Communication>
+        <Communication>
+            <ChannelCode>Web</ChannelCode>
+            <oa:URI>https://www.linkedin.com/in/francesco-belacca-dev/</oa:URI>
+        </Communication>
+        <Communication>
+            <ChannelCode>Web</ChannelCode>
+            <oa:URI>https://github.com/MACEL94</oa:URI>
+        </Communication>
+        <Communication>
+            <ChannelCode>Web</ChannelCode>
+            <oa:URI>https://techprofile.microsoft.com/it-it/francesco-belacca</oa:URI>
+        </Communication>
+        <Communication>
+            <ChannelCode>Telephone</ChannelCode>
+            <UseCode>mobile</UseCode>
+            <CountryDialing>39</CountryDialing>
+            <oa:DialNumber>3927192565</oa:DialNumber>
+            <CountryCode>it</CountryCode>
+        </Communication>
+        <Communication>
+            <UseCode>home</UseCode>
+            <Address type="home">
+                <oa:AddressLine>Viale la Grola 29</oa:AddressLine>
+                <oa:CityName>Parma</oa:CityName>
+                <CountryCode>it</CountryCode>
+                <oa:PostalCode>43126</oa:PostalCode>
+            </Address>
+        </Communication>
+        <NationalityCode>it</NationalityCode>
+        <hr:BirthDate>1994-10-09</hr:BirthDate>
+        <GenderCode>male</GenderCode>
+        <PrimaryLanguageCode name="NORMAL">ita</PrimaryLanguageCode>
+    </CandidatePerson>
+    <CandidateProfile languageCode="en">
+        <hr:ID schemeID="Test-0001" schemeName="CandidateProfileID" schemeAgencyName="EUROPASS" schemeVersionID="1.0">5f327b3f7a5af5347b0c995f</hr:ID>
+        <EmploymentHistory>
+            <EmployerHistory>
+                <hr:OrganizationName>Vetrya</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address>
+                            <oa:CityName>Parma</oa:CityName>
+                            <CountryCode>it</CountryCode>
+                        </Address>
+                    </Communication>
+                </OrganizationContact>
+                <PositionHistory>
+                    <PositionTitle typeCode="FREETEXT">Cloud Backend Engineer</PositionTitle>
+                    <eures:EmploymentPeriod>
+                        <eures:StartDate>
+                            <hr:FormattedDateTime>2021-06-06</hr:FormattedDateTime>
+                        </eures:StartDate>
+                        <hr:CurrentIndicator>true</hr:CurrentIndicator>
+                    </eures:EmploymentPeriod>
+                    <oa:Description>&lt;p&gt;Worked as cloud consultant in close contact with MS and specialized on Azure&lt;/p&gt;</oa:Description>
+                    <City>Parma</City>
+                    <Country>it</Country>
+                </PositionHistory>
+            </EmployerHistory>
+            <EmployerHistory>
+                <hr:OrganizationName>Credemtel</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address>
+                            <oa:CityName>Reggio Emilia</oa:CityName>
+                            <CountryCode>it</CountryCode>
+                        </Address>
+                    </Communication>
+                </OrganizationContact>
+                <PositionHistory>
+                    <PositionTitle typeCode="FREETEXT">Backend Developer - Analyst</PositionTitle>
+                    <eures:EmploymentPeriod>
+                        <eures:StartDate>
+                            <hr:FormattedDateTime>2019-09-01</hr:FormattedDateTime>
+                        </eures:StartDate>
+                        <eures:EndDate>
+                            <hr:FormattedDateTime>2021-06-03</hr:FormattedDateTime>
+                        </eures:EndDate>
+                        <hr:CurrentIndicator>false</hr:CurrentIndicator>
+                    </eures:EmploymentPeriod>
+                    <oa:Description>&lt;p&gt;Worked as backend developer for multiple core application using various types of dbs(sql/ElasticSearch) developing microservices of a SAGA in the backend and APIs for the frontend.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Used both .net Framework(spanning from 2 to 4.8) and .net Core.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Always worked in team, using TFS for planning, CI/CD and repository.&lt;/p&gt;</oa:Description>
+                    <City>Reggio Emilia</City>
+                    <Country>it</Country>
+                </PositionHistory>
+            </EmployerHistory>
+            <EmployerHistory>
+                <hr:OrganizationName>Amaris</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address>
+                            <oa:CityName>Reggio Emilia</oa:CityName>
+                            <CountryCode>it</CountryCode>
+                        </Address>
+                    </Communication>
+                </OrganizationContact>
+                <PositionHistory>
+                    <PositionTitle typeCode="FREETEXT">Junior Consultant - .NET Full Stack Developer</PositionTitle>
+                    <eures:EmploymentPeriod>
+                        <eures:StartDate>
+                            <hr:FormattedDateTime>2018-09-02</hr:FormattedDateTime>
+                        </eures:StartDate>
+                        <eures:EndDate>
+                            <hr:FormattedDateTime>2019-08-31</hr:FormattedDateTime>
+                        </eures:EndDate>
+                        <hr:CurrentIndicator>false</hr:CurrentIndicator>
+                    </eures:EmploymentPeriod>
+                    <oa:Description>&lt;ul&gt;&lt;li&gt;&lt;p&gt;Consultant for Credemtel&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Complete Maintenance of ’POR’ web application, multiple code refactorings, analysis for new implementations, fixes both frontend, backend, DAL, integration testing &amp;amp; implementation of CI/CD using TFS.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Implementation &amp;amp; maintenance of multiple web jobs(Webservices called by Biztalk) &amp;amp; relative DEVOPS, for example to create daily reports in a personalized format(not standard csv/xslx) or to send data to Salesforce API…&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Implementation &amp;amp; maintenance of console app called using reflection at runtime to extend existent web job capabilities(here called ‘plugin’) &amp;amp; relative DEVOPS.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Refactored &amp;amp; expanded an already existent webservice that given a json containing metadata, merges it with data contained in the post call pinging the WS and dynamically changes how a new Client is inserted in multiple databases using stored procedures, selecting the best candidate when multiple choices are available(upsert).&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</oa:Description>
+                    <City>Reggio Emilia</City>
+                    <Country>it</Country>
+                </PositionHistory>
+            </EmployerHistory>
+            <EmployerHistory>
+                <hr:OrganizationName>Ericsoft</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address>
+                            <oa:CityName>Misano Adriatico</oa:CityName>
+                            <CountryCode>it</CountryCode>
+                        </Address>
+                    </Communication>
+                </OrganizationContact>
+                <PositionHistory>
+                    <PositionTitle typeCode="FREETEXT">Junior .NET Backend Developer</PositionTitle>
+                    <eures:EmploymentPeriod>
+                        <eures:StartDate>
+                            <hr:FormattedDateTime>2016-05-08</hr:FormattedDateTime>
+                        </eures:StartDate>
+                        <eures:EndDate>
+                            <hr:FormattedDateTime>2018-08-29</hr:FormattedDateTime>
+                        </eures:EndDate>
+                        <hr:CurrentIndicator>false</hr:CurrentIndicator>
+                    </eures:EmploymentPeriod>
+                    <oa:Description>&lt;ul&gt;&lt;li&gt;&lt;p&gt;Implemented multiple IDS's RESTFUL APIs (Agoda, Mr&amp;amp;MrsSmith, GTA, InItalia.dk,Google Hotel Ads and many others) based on HTTP communication using XML/SOAP and built &amp;nbsp;own tests for everything implemented, updated or corrected to avoid errors.&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Proposed to make and succesfully made polls to understand how many clients wanted each implementation&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Used Visual Studio 2015 &amp;amp; 2017, C#, LINQ, Microsoft SQL Server to develop and test parts of the backend of Ericsoft's ChannelManager;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Sinchronous and Asynchronous programming in .NET;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Got in touch with .NET's MVC pattern and ASP.NET, Redis, Bootstrap, CSS, HTML5, Azure and Angular;&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;Understood what versioning is and used multiple versioning tools like Tortoise SVN, Tortoise Git, VS2017 integrated Git, VSTS.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;</oa:Description>
+                    <City>Misano Adriatico</City>
+                    <Country>it</Country>
+                </PositionHistory>
+            </EmployerHistory>
+        </EmploymentHistory>
+        <EducationHistory>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>Università Carlo Bo</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address>
+                            <oa:CityName>Urbino</oa:CityName>
+                            <CountryCode>it</CountryCode>
+                        </Address>
+                    </Communication>
+                </OrganizationContact>
+                <EducationLevelCode>6</EducationLevelCode>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2013-09-12</hr:FormattedDateTime>
+                    </StartDate>
+                    <EndDate>
+                        <hr:FormattedDateTime>2020-06-25</hr:FormattedDateTime>
+                    </EndDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>Corso di Laurea in Informatica Applicata</hr:DegreeName>
+                    <FieldOfStudy typeCode="URI">
+                        <MainFieldOfStudy>
+                            <ProgramConcentration>06</ProgramConcentration>
+                        </MainFieldOfStudy>
+                    </FieldOfStudy>
+                    <Thesis>Il framework Blazor</Thesis>
+                </EducationDegree>
+                <Link>https://youtu.be/J3jP47Cut20</Link>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>Udemy</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2018-01-09</hr:FormattedDateTime>
+                    </StartDate>
+                    <EndDate>
+                        <hr:FormattedDateTime>2018-03-07</hr:FormattedDateTime>
+                    </EndDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>The Web Developer Bootcamp (40+ Hours of content)</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://www.udemy.com/certificate/UC-SQ4MQOK7/&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2017-09-08</hr:FormattedDateTime>
+                    </StartDate>
+                    <EndDate>
+                        <hr:FormattedDateTime>2017-09-08</hr:FormattedDateTime>
+                    </EndDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>Getting Started with Angular 2+</hr:DegreeName>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://www.udemy.com/certificate/UC-KKN29TB2/&lt;/p&gt;</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>Mensa Italia</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2014-01-31</hr:FormattedDateTime>
+                    </StartDate>
+                    <Ongoing>true</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>Mensa Italia Member</hr:DegreeName>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+        </EducationHistory>
+        <eures:Licenses>
+            <eures:License>
+                <hr:LicenseTypeCode>B</hr:LicenseTypeCode>
+            </eures:License>
+        </eures:Licenses>
+        <Certifications/>
+        <PublicationHistory/>
+        <PersonQualifications>
+            <PersonCompetency>
+                <CompetencyID schemeName="NORMAL">eng</CompetencyID>
+                <hr:TaxonomyID>language</hr:TaxonomyID>
+                <eures:CompetencyDimension>
+                    <hr:CompetencyDimensionTypeCode>CEF-Understanding-Listening</hr:CompetencyDimensionTypeCode>
+                    <eures:Score>
+                        <hr:ScoreText>C1</hr:ScoreText>
+                    </eures:Score>
+                </eures:CompetencyDimension>
+                <eures:CompetencyDimension>
+                    <hr:CompetencyDimensionTypeCode>CEF-Understanding-Reading</hr:CompetencyDimensionTypeCode>
+                    <eures:Score>
+                        <hr:ScoreText>C1</hr:ScoreText>
+                    </eures:Score>
+                </eures:CompetencyDimension>
+                <eures:CompetencyDimension>
+                    <hr:CompetencyDimensionTypeCode>CEF-Speaking-Interaction</hr:CompetencyDimensionTypeCode>
+                    <eures:Score>
+                        <hr:ScoreText>B2</hr:ScoreText>
+                    </eures:Score>
+                </eures:CompetencyDimension>
+                <eures:CompetencyDimension>
+                    <hr:CompetencyDimensionTypeCode>CEF-Speaking-Production</hr:CompetencyDimensionTypeCode>
+                    <eures:Score>
+                        <hr:ScoreText>B2</hr:ScoreText>
+                    </eures:Score>
+                </eures:CompetencyDimension>
+                <eures:CompetencyDimension>
+                    <hr:CompetencyDimensionTypeCode>CEF-Writing-Production</hr:CompetencyDimensionTypeCode>
+                    <eures:Score>
+                        <hr:ScoreText>C1</hr:ScoreText>
+                    </eures:Score>
+                </eures:CompetencyDimension>
+            </PersonCompetency>
+        </PersonQualifications>
+        <EmploymentReferences/>
+        <eures:Attachment>
+            <oa:EmbeddedData>ZGF0YTppbWFnZS9wbmc7YmFzZTY0LC85ai80QUFRU2taSlJnQUJBZ0FBQVFBQkFBRC8yd0JEQUFnR0JnY0dCUWdIQndjSkNRZ0tEQlFOREFzTERCa1NFdzhVSFJvZkhoMGFIQndnSkM0bklDSXNJeHdjS0RjcExEQXhORFEwSHljNVBUZ3lQQzR6TkRMLzJ3QkRBUWtKQ1F3TERCZ05EUmd5SVJ3aE1qSXlNakl5TWpJeU1qSXlNakl5TWpJeU1qSXlNakl5TWpJeU1qSXlNakl5TWpJeU1qSXlNakl5TWpJeU1qSXlNakwvd0FBUkNBRDZBUG9EQVNJQUFoRUJBeEVCLzhRQUh3QUFBUVVCQVFFQkFRRUFBQUFBQUFBQUFBRUNBd1FGQmdjSUNRb0wvOFFBdFJBQUFnRURBd0lFQXdVRkJBUUFBQUY5QVFJREFBUVJCUkloTVVFR0UxRmhCeUp4RkRLQmthRUlJMEt4d1JWUzBmQWtNMkp5Z2drS0ZoY1lHUm9sSmljb0tTbzBOVFkzT0RrNlEwUkZSa2RJU1VwVFZGVldWMWhaV21Oa1pXWm5hR2xxYzNSMWRuZDRlWHFEaElXR2g0aUppcEtUbEpXV2w1aVptcUtqcEtXbXA2aXBxckt6dExXMnQ3aTV1c0xEeE1YR3g4akp5dExUMU5YVzE5aloydUhpNCtUbDV1Zm82ZXJ4OHZQMDlmYjMrUG42LzhRQUh3RUFBd0VCQVFFQkFRRUJBUUFBQUFBQUFBRUNBd1FGQmdjSUNRb0wvOFFBdFJFQUFnRUNCQVFEQkFjRkJBUUFBUUozQUFFQ0F4RUVCU0V4QmhKQlVRZGhjUk1pTW9FSUZFS1JvYkhCQ1NNelV2QVZZbkxSQ2hZa05PRWw4UmNZR1JvbUp5Z3BLalUyTnpnNU9rTkVSVVpIU0VsS1UxUlZWbGRZV1ZwalpHVm1aMmhwYW5OMGRYWjNlSGw2Z29PRWhZYUhpSW1La3BPVWxaYVhtSm1hb3FPa3BhYW5xS21xc3JPMHRiYTN1TG02d3NQRXhjYkh5TW5LMHRQVTFkYlgyTm5hNHVQazVlYm42T25xOHZQMDlmYjMrUG42LzlvQURBTUJBQUlSQXhFQVB3RHcwVXRKUlhTanFGcHZlbG9wZ0tLS1RKcFJTQUtCUlJRQXRLS0ZIclIzcGdIRkZINDBvQnBDQ2luYkFCeDFvRWJFVVhHTXBhZHN4Mk5HeHY3cEZERUpTR2w1SEJ6U2RleG9Xd0M5cVR2UjdVVUFKbWw5S1RpbHpRQk1uU25WR3A0cCthWWhhYWFUSnpRYWFBUTU2VXdtbjB3MG1DR2Q2TzlCcEtSUXRGSlJUdUFsRkZGSUFvb29vQVdrRkp6UzBBTFFLS01ab0FrQkczRkp0SnBWR0tRdG5qcFN1SVVJTVp6UzVQNFV6ZFRsZkI1cGpGeVJUZzdkcWJrRThHbkFZNjBtQklDeDdpcEM3SDBOSkhzeGtpbEM0UHlta0FoNjVJL1NuQXFlaWlwRjNINzJNVXJSQWdGUlR1SWdkVlBHQlVEcUZxNEVYdXBwcnhvRGpHS0FNOGpGRlN5YmMxR2FZRHgwcHdOUkEwOGRLWWgvVVVoTkFOSlFBRTAwMHBwdEF4cHBCeWNVcHBLUXdvb29vQVNpaWlnQW9vb29BS0tLWHBRQUNuRUFVZzVwd0dLQUVCRkozcGNVWXpTR0pTZ1VaSkFGUENrY0hwU0VJcTVOVEJQbHlLUXhGVnlCbXBJWkFWSUhCb0FCR3pvQUtRekxHUGtwek9VWGF2VTFHWXhLdkhCSFdnQWpsbW1mNU9hdEFTcWNucFJiakNiVkdQZXJrY2NmRzZUbWdDQk1NRGpOTVlZeXJMbGZXclRSQU1kdk9lOVF2RzJjRlJSY1ZpalBBdzVUcFZiSHJXbXI0eXJkS3J6b0JuYjBwM0FwZDZmUXk5RFNaelRBZG1relNVWm9BWHRUU2FDYWJRQXVjMGRPdEpSbWdZVVVsRkFoYVNsUEZKUU1LS0tLQUFVNERQV2tGUFVjMEFJQnoxL0NwQU1kUmtVb1dwRlhBNmRhQVEzeVE0eXB3ZlNtK1U2bkJYUHZVb1QwNE5USXJOd3hxYmxMVXJDSHBqbW50RSs0QTlLMmJUU1pyaGZsUWtlb0ZhVWZoeTVaUXJRT2NlMVpPcEZkUy9abk5KdUFLamdqMm9Gc1hZc294bnRYU2p3eGQ3K0lYQTdraXQ3UVBDSmx1U0xtQmd2WTRwT3JGZFJjcVBQaGF5U0VNRklwUHN6SWVBYTl2aThBV2NiT1d6c1ljWUhTczJmNGVySkxpTXFGcWZyRVdHaDVHVlljODB4UTViZzRyMVc1K0hFb0JhSUt3ckptOEFYeThJb0pQdDBwKzJUSFpIRXFHYkE4dys0Rkt4Q0Q3eGF1bXZ2Qm1wMkNBcEV4QjZrTG1zcit6TG1GeUpJbUJIcXRWem9PVXlXUm01QjVxTmxZcVZZQU1LMHA3Znk4N2dSNzFSSUROelZ4ZDlpR3JibWVjZ2tOMXBod0Rpck0wWHprZzFYWlNPcHF5V0pUYUtLWWhEUlJSUUFVbEZGQXdvb29xUkNta3BhU3JHZ29vb3BBeGFVSG1rcFJRQklya2QrS3N3dDVtY0wwcW9Ca1lGYWxsSGhRQU92V2dDTWdnZ2JlYTNmRDJpeWF0ZkJPUWc2MW10RUErQjFyMWY0ZjZZa05oNTVBTHRYTFhueVFOS2F1YitqK0hyYTJqVlJHT1BXdW5nMDIzQ2crU2gvQ29yZEFwNHJRVDVSWGtPYms5elpKc2NtbTJoKzlBcEgwcVdQVDdXSVpFYWo4S2toeVJtcHloWVUrYVJsSldaQ3NFWUJDcVB4cU0yc1pKT0JqNlZhMmJSU2hma281bVRkRkQ3SEh6Z0FHZ1djUTZvcDlhdkdQSTRwaGpJcDNaU1pRbXRZMlVqWU1laHJudFQwVzF1RmJNUzU5aFhVeWtEaXN5NEFPYUZKcnFiUlZ6eVBYdkRpcEMrMURrVjV2Y0kwTWhHT2hyM3pXSURoeVJsVFhqWGlXMVdDK2RRT3ZldTdEVmVZS2lUUmlTREtLMzk2cWNxN2V2V3RDVEhseExucFZhN1VZSjk2OUE1R1VqMXBEU21tbWdRRHBSUlJUQUtLS0tCaFJSUlNBRFJSUlRFRkZGS0JRQURyVGdNbWtwOGZXZ0NhS1BITmFkbW9XUGRXY3A2Vm9XN2hZT1Ixb2V3aXpiQU5ObjNyMnZ3akdFMHVQNlY0cGFQOEFNRzZjMTdUNFJuODNUSXlPb0ZlZmpWN3B2QTZ5MzVlcjZWUnRSelYxZURYbFJOK2hhamJCRld3TWlxU042TG1yS09Uamc1clZIUFVIbU1qbWxDbmswNE54eUtmdTQ0cWpLNVhPNm90elpJeHhWcm9LZ2R1dEJhWlRtSUpPT3RVSmwzR3Jrb3d4SXFwSzJLeWtkYTJNUFZCaER4eU9sZVMrTnJYWmVCbFhPUm12WGRXYmJFWE5lWWVLd0ptODMrRURwWFJodEpEY2J4dWNDUUNWR01ZSE5SWGliYmZucWVsU0VuemlEM3FHK1l5N1F1U0ZIUUN2WmljTHNqTmFpbFAwcEtiQUtLS0tBQ2twYVNnQmFLU2ltQXRGRkZBQlR1MU5wZTFBaFJUMHBncDQ2MEFhRmhwOXpmc1JDZ0lVY2sxT0kyaExRU0REcWNFVnIrRWZFbHBvVndKTDIyVzZoQVA3ckhMR3N2VTlWVysxU2U3V0pZeExJV0NEK0VlbEJHdHhrTHNnNTRBcjJyd1NDbWd4T1I5K3ZGYytZK0FPTVpOZTFlSENJdkRkbUdZSW9HU1Q2Vnc0elZXT2lCMnR0SXVNOXF2cHlRVHhYQ1IrTUlFbktCZjNZR1EzYW5wNDdpM1o4dGp6MnJ6NDBKRnViUFEwVVZORklOMjNGY2xwM2pLeXVYVkdmeXlmNy9GYjBlcjJXNzVaa1luME5WN09TTTVYWnJiY2pOQlgzcU9PWVNSN2xJeDdVN2RTTXJNZHQ5NmhrVmVhZVpRQjFxaGM2bEJHeER1b3g3MEpGUlRFbGo3aXMrNEZSWHZpS3h0MEphNGoyK3pWekY3NDQwMkppUkxrZlEwZXlsTG9iKzBkckdqcTMvSHMyNy9JcnpQeFZnYVpKSVBYRmRQTjQ2c0pQM2JvSFZodDNxZWxjeDRpa2ltMENab1gzeDd2bGJOYlVhY2xMVkc4WjNnZWNseTBqWVBPTWl0ZncvTHAvd0JxdUJmdUVSby9rT001UHBXRzNDazlLaU9TbVFPTTV4WHJJOCtTdVNhaUl6ZE9ZZnVFOFZUcHpkODgrbE5vR3RFRkZGQm9HSlJSUlFBVVVVVXdGb3BLV2dBRkxRQm1sNlVDQVU0R21acFJRQktxN3Z3cVVvdTBFZGMwNjJpM3g4RG4xcTZkT2s4cmNBU2V1Y1V5SEpJbHN4dXlENmRhOVZ1TEcrdmZET25XbGxrUElOdVJYbGRwRzdTS1QwSkFOZlFHaFc0anNiUVkvd0NXUzdmYXVERnRSWnZCNkZEUmZoOVlXOWtCcWtyM0V4WDVnR3dxMXBSK0ZmRHRzdXhZQzMwa3lSVis5ZVJMY2lPTjVXN0JEajg2dy9zL2lPK0d5Slk3Q0VnNUtITG44YTVvVlhMcU96R1h2ZyszMnMxbFBKR2Y0UTR5S3g0ZEUxeU9YQm1qWkZQR3c4bXRwZkQrcExhN0cybTVHZjhBU1duYmVQd3hqOWEwTGF3dTdlR0pKbmVaeDk2UnZ2ZmhWU2xaWHVLT2hzK0hKTG9XTzI1VWhsNHJiWWtMV1ZaQjRaTnB6Z2p2V3ZqS2RhNW0yd2ExTTYva1lXajdUOHdIUVY1anFGcnExemRONVNNeXNlUzc0QXIwTFUya2FRUXh0Z3QzSFVWaHlXMXlDNHRZY3NCeEpMeU0rd3JXbTdGcDJSekZ0NE92Ym9admJ1T05mUmVhMDRQaDlvUG1ocHJtV2M5MUxBQ3Byei9oSkJacXF3dWx3Qi9yRWsrUWozV3MxcjdYN2RmOU4wNFRqL25yRHd3L0N0SlNuMFlrcnNmcmZ3NzB1NGhKMHR6YlBqb1R3YTRlNzBtOTB6dzllMmQwQjhqL0FDa2RQV3ZWN0cvVzVzZzJIVjhjaVVjMXlQakdQR2szWjdiYUtkWnVWbU5hYUhqTTBSMkhBeFVSaEt4RDNyYjBteE9wWHd0LzczVDYxMG5qRHdvbWc2WEE1a0JkaUZ4K0Zlb3RqbG5PenNlYnlLUWFaVTB3d1NCVU5CYUE5S0RSaWt4UU1LS0tLQUNpa29wZ0xTMG9veFFBQTRvTkowb29BS1VVbEFvRWIyaFR3b3JpWlF3cjF6dzFMNGMxUFN6QmNMRWtpSWVUNzE0WkJJMFRIQjYxb3dYMGtaR3h5dnJnMFBZeG5DNXYzRnZERnI1Z2ljR0VUZ2NlbWE5NjAxRldPTlI5M3l3QitWZk4xbmNnYWpHN05uTWlrNSt0ZlNPa01MaTNnWUhLbEZyemNldXAwMGxaR3lJdzZZQXArMHhEN29PUGFwb1VHS21aQjM1cmdWN0drbVo1WjNPTnRPUzBPZHpOVm9vUWVLWTZOanJUMUdyTWd3Rms2NU5YZCtJdndxbHR3MVdqeEdmcFFEaVpFNTNYR2U0UEJwNGlrWTVCSnFPWG1RL1dyTURNUHBRbTdqVVJwM3I5NU00NzQ1cUtSR2ZrQWcrdUswZ29jVXBpRzJuZDl4V1NaaVBib0FkeWpkWEhlTW9jYUhlZ2RkbTRWM2QwbTNPYTg5OGYzQnQ5Q241eDVoQ1o5QlZVVmVvS1c1NUxwK292cDE5RE9uRHFjMU40azhUWGV0eXI5b2M0UTVBckNtbEprM0FWRkljcm12Y1J5eWhkM0laR3kxTW9ZODBZb05BbzYwVVVBSlJSM29vQUtLRFNacGdQRklldEdhU2dBcGFTaWdCYVVVbFBVWm9FQTROU2pvRFZ1eDBiVU5SWUMwczVKUWY0aVBscmJpOEkzVUpIMm1XSmM5VVU1SW9SUHRFam5vMmJjTUFrOWErbXZCa3dtOFBXTWg2bUVWNGhGNGNpRWdYZTNQWVY3TjRQL3dCSDBPMGhPY1JqYWMvV3VISFIwTktkUlNkanVZT2xTczRBcXBESVF0UjNOeUVUQVB6SHRYbW8xNVcyV0pMbFZPMGNtcTVuYVFjZEtnalB5LzdSNjArTmxaY0RyUVdvMkpJa1p6bXJUb1JFZUtaYnB5b3E5T21JanhUdGN5bFBXeHpOeGxYUDFxZTJsRzdhM1dpNlhjL1R2VmVWbGptVEg0MGt0VFZHekdWempOU3RncnhXUjVySU55Tm4ycXpGY2lSTVorYW15WEc1RmZjQW12Sy9pZytORVhIUXlnZnlyMHkvbHdoRmVTZkUrNi8wUzN0L1Z0MWE0ZjhBaWt5UEtuS2V0VjVIQjRCb1p1L3JVUnIyVEt3MDllYU9hRFMwQUZGRkZBQ1lvcGFTZ0JEU1V0RkFCbWlpaW1BQ25qaW1yMXFXS041WFJFWGM3TUFxanVhWVhzU1d0ck5kM0NRVzhUU1N2MEFIWDYxNlo0ZjhFV1duS3R4cTJKN24rR0lENVZxNTRTOFB4NkhhQ1NRQjc2WGxpUm5ZUFFWMU1jU3FSeHZiM3FKVHNjczZqZXhVYXdNb0FRYlU3QWpBL0NuTHBNSEk4cmMzYzFxckVYNWM5T2c5S21DQUFZRll1b1llWm13YVRiS01zb0dPMWJHbnlCUnRBeGpwVFBMQkl5UlQxeEhpVFBDNUorbFlWMDVvMnBTNVpuU1FUNWhCNzFGRXZteUY1UjlLaTA1eElQTEJIUElQdFZvTElIOHRWK2hOZWNsWjZucHFWMEpnN2l2ZW15V3prWnpnOWpWVFVMdTYwNEdSN2N6SVA3bmFyT202a0wyMldkSVpOcDZnL3dBTmEyRjVqN2E5ZTNmWk9DUFJxdVhHcnhLamJuQjlLYmkybVhEZ3EzKzFVUjBxMHhrc05vOVdwR1RTdmN3YnZVYm01Y3JiS1J6MXBZSVpWdzBqNWM5YTJaSTdPSE93Z2dEb0t4ZFgxbURTNDFjd3U3T1FxcW9vczNvYUtWOWk3dWJnWnFSTXh5QUE1QnF0WXJkWG84eVJSQ25ZZHpXaEJiS201emtrZDZ5a2hKTytwbDZqS3pFS3A1SnlhOFIrSkdvL2FkYSt6QS9KQ3VDYTlkMW0vanMwbm5rWWZKOHErNXJ5MUxSZGJodVB0MFE4MFN0azlDVko0eCtGZDJEZ20rZGtUazQ3SG5MQThFNDZWRVJ6WFY2ajRQdW95WkxQOTRvL2dicUs1cWFDU0J6SExHeVNmM1dHSzlPeGtwUlpEUlRpdURTRVVGaVVVVVVCY0tLS0tRQ1VVVVVBSlJSUlFBNER0WFplQ05KOHlkcitSTWxXeEdEMjk2NDRWNnY0U1JJN0MzVEhJVGZqMW91WjFIb2RiQkM2eGdIQkgzdmZOWFl3Rk9TT2ZXcWR0SjVxZGVuYXJLeWRNMWpMVTVpNENwengrTlBEWUFIV3E0Y3NmbDZWS0FGRzQ5cXpzS3hOOHZHUmpOVTlWZGhwbDU1ZkJFTEVIOEtuQkxEY2Z3cXBxekJORnZuempFTGZ5cHJVVWR5RHdMcTh0em9ObE5PNU1tQ3BKNzRyMEZaRmxpVng2VjVKNEtabDhOV3BQWDVqWGZhSnFhM1VEUmhobER0STlEWEZpYVRpN283Nk03dXh2WEtpU0RrQThZcWpwQ3gyZHhJcE8xU2VLdEpObEFEOUtxeXdiWHoyUGVzWXkwT3RSVWxZNmJ5bzVRTjZLdytsUi8yZGFic21QUDQxbVdseFBFcEFmY08yYXMvYkxoZ2VCaXFSeU9sSk1rbldHQ09UeTQ0MUdPdGNaZVJ4M09vcEsvekZmdXFPbGJPb3ZLeUZtZkhISUZaRnZDeG5FcEdGSFROTzlqcm8wdVZjek5lRmhIRUJSZjNpMmxpZWdacXB0SnVZZnJXSnExNDExUHNEZkl2V3NKUFc1TGQyY2I0MnZIbXRZWWxKQ05Nb0lCNjFKYjJRZ25YSDNYVUE1OWFyZUtsRFRXRWFqbHBoeFhTTmJMdmpIWEJCcnJwMUxjcUZPSzVXalB1YkZnaGRjNEhOWkY5cEZqcWllWGV3L04wRHJ3UlhheXdLWW1XcXN1a3h5RTRiYjZHdlJWVzU0NmRtZVNhdDRJdkxNR1d5SXViYy9ndy9DdVdlSjBZcXlsV0hVTU1FVjdmY1c4dG5LTnJEUGJGWXV0ZUhySFc5enVndDdvalBtRG9hMHZjM2pWN25reEhOSVJpdFhVTkZ1OVB1VEM4WmYrNnk4NUg0Vm1NcERGU0NDT29OTTNUdU1wTTA3SEZHS0JvYWFUTkthU2tNS0tLV2dCdzY0cjBmd3BlQjdHTTU1Vk50ZWJWMFhoZSthM3VuaEp3cmRLcEdjMWRIckZyY0Jsd2VEVm1PVEJBem11Wmd2U3JLQ2F2eDNvQ1pVMUVvSFBZNlFYQ0pnRDczY1ZKNXdkZ3Vhd0lKeTUrWnEwb0pBb09md3JKeEV6VlJqd093Tlp2aU4xajhPMzV6L3dBc1dxM0ZLV0djMWplTFp2TDhMMzV6L3dBczl2NTFFZHhSV3BuK0UyMitIYlJTT2RwclEwSzdsdHRTdWovQ0pobjhoVkx3dXVORHN3UnlzWXF5RmFLOHVsVWM3eElQY1lGUmlkanJ3cXZPeDZOYXpDY0JnUnlPMVRpWFlTc2c0cmx0RTFJSklpT1FGYm9mZXV1QldSUWM1elhsN003bGRPd3pNUkdWbHdhUnA0MFhiNTFQRnJFeHlWcUI5UGlMNXptdEw2Q3ZxUXZMRDk1bjNZcXU4aGxQeXJnVmFhMmpVL2Rwcm1PTkNSeDYwcmxPOWpJMUM1VzFqSUorWThWaktPU1NNazhtcEw2NCsxWHBPY29oNHBranJFaExFQUQ1aWFpVHU3RGhHMnJPWjFVZmEvRTFuRC9ERWR4cnFZeUh1aDZKMXJsZkRiZmJkWHZOU2NaUldJVTExa0dQTERNTUZ1VFhiR25lUzhqanExTElzNUJZTDYxSGVTN0ZDcU9XNDRwcXlBRXlQMHhVTVJNamVhL1BQQjlLNmtqenlHYXlhV0lzcE84ZXRjemR5TlBKNWNiY2Z4bjBycE5SMUR5NHpCQTJaRzZuMHJHOG9CTVZwR1ExRXp6YXBnRHJqcVNLNVh4RG9HL2RkVzR3L3dERXZyWGJTQUJmZXFGeG5iZ1lKTlhGM05JeWFaNVV3SVBUYWVoRk1PYTZ2VnZEN3lTdFBCZ00zSlgxcm1KSW1qZGtaU0NPb05XZEVaWElUU1U4am5OSnQ5NlJReWlpaWdCUlUwRXpRU3JJdlZUbW9LVUhuaW1oTTdyVDlSVzdnV1JlQ0JoaDZWc1c4MlVHYTRIUjd2N1BQc1k0V1RyWFhXMHhLOFZSbEtKMFVFM1RtcjBjNTNBQThWejBOeHpXaEJLU3dPY0NvYU1tam9ZcnJaeG5pc2p4cGNEL0FJUlc1ei9HeWlwQk5qR0RXRjR2dTJPakpDZWQ4eTFLanFLSzFPajhOcnQwYUhISDdzVkRmenZiWE1GMzFqR1k1UjdFOWYxcTFwZUl0TWlBUFJRdUtpdlFBR0REZEU2N1dGWnpqem8wcFRjSjNHd1hTcXpScStSbmRHUlhaYU5yd250eERNMkprNCtvcnlwYmg3Qzk4cVE1VWNLZW5GYlJlUUFTeE1jOWM1eFhtVmFYS3oyVW96VjBldFE2aEV5NEREUHZValRvVjRZWnJ5MjIxNjZoK1UvTlY1UEV0MlRoWTgvaldYTG9DcG5hWGw3SEJqTFpKNkw2MXoycWFxN0VRd0E1T2R4OUt6V3Y3cTViZEpoZmZyVFN5Z0hibm51YWx5c2krVFVSQ0k4QXRrNXlheC9GV3BtMjB4b1VPWnJqNVZVZGNWZWxtTWFzZlRrZ2UxYzVwU1M2L3dDSld1V0c2M3Rqa1o2R3Q4UFNjcFhaaFhrb282elNkTmkwN3cvYVdxSDkrLzd5NDl2YXIwMGl4eDdkMkJqOUtqYWFPM1Fic2x1cTQ3MW5LSnRRdXRwVWlET1g1NjEzd2paM1o1RlNia3pSZ2I3V0FCbFl4L0VlOVRYVjBscENUZ2RNS1BXbE94VUtMd3FqakZZTWs1dTdra3ZsSXpnQ3FJc05SR1lzeCs4NTVxUXFPMVBYN2hJSE5SVE5zakxmcFFuZllvcnpFQlQ2MVNJR0Q2MUxJNVk1eCtOVnBueDA2MWF1TWlsUWJjVmk2anA4TjNoREdQTVA4UXJVa2tDcmx6eFRyTzNhUW1Vamc5TTlxdFhORVlWNTRjZ2UyeENOcmdkYzlhNWx0TXZsWWdRazRPSzlLdTBFY0c0amdWa2VZNTdqOHFzZDJlZTBVVVVqVUtLS0tMZ1NJMk9lNDZWMU9sWG5teGhzOGo3d3JsRnJWMFNkWTdoa1k4R3FKa2pyb0pnellBNXJSaGM4YzgrbFlzRFlPUjBxL0hMem1obVRSc3RJTmd4d2E1enhMS1pYc1ljNURURE5hWm55T3RZbW9QNTJ1V01YVUE3cVNKaWp1N2FiRUtqUEZQdUR1aEJicU8zcldUYjNCQTJrOFZZRngrNlpNL2pVMnNTMTFLODlySGRNVmtYUDgvd3FXMnRwSWsyckxsUjBWK29vaXVOdVVaUS9vZTRwRE9WYjVUZytqVm5PbXBJNktkYWNCNUVrYmZQRWNlcTFMRktCd1ZLbjZWVysyT1RqcjlLa042cWo1enpXRXNNbWRDeHJSZUVrb0FBQStwTkRNN2ZmZnYwV3FQMjFtSUVVYk9mcFVOMWV5MjhMVDNLT2thRG9Cam1pR0VndFdUVXhjM29pTHhIcXYyUzFGbmJZRnhjSGI3ak5hV2lXaDB2U2toakcxeU15TTNjbXVjOFBhZGM2eHFiYWxNcEtCdmszOUJYYytRa2NSa2tmelpNNEFQUVZ2YU1Gb2MwNVNsdVY4Tk5JWTRnV2tiK0k5aFZyem9ySkJBaEpjOWNEUE5SZWFZQ0VqQU55L1UrZ3A4YWVTckVjeU45NlExRGV0akt4UXZkV3VOdmx4eGhkM0JKcUMzSUNCY0QxSjlhcXpNalh6a3RsUjNxMUcwYW9TT3ZhcWtySWRpWjI1RzA0RlVyaVlzU3ZhcFpHQ0x1YzdoNlZUNTI1TktLc093anRoY1o2Vm5YTXBHY0dyRXJBazVvc3RPYlVyalkzRVNrRmpWM3NVa1JhZFl5WHhWM0JLWjQ5NjZCcmFLQ0xCR0FvclNqczRyZFVFWXhqZ1lxbHJyYkxHVXFRRGp2U2krWmh1YzVxazI4c2luNUIwcks4MXgveXpOYVZyWlBlWmZCOHNkNjBSWXhBQVlGYjNRN25qdExTVXRTYkNHaWcwVUFQN1UrM2w4bTRqZjBPRFRPMUovQ2ZyUUk3R0NRRUFqb1JtcmlTMWwyUC9IdEg5S3VyVm1iTG9reUt6QTNtZUpvai9jU3IwZjNhemJiL0FKR1J2OXlnU09rRDRIM3FzeE5rZGV0VXUxU3hkUlFESkN4VjhqcU9sYk5wSkRkVysyYU1GaFdHZjlkVnl3SjgvcWFtUzB1QnBwbzBVejdvemoycTFiYU5CR044djd3ZHF0MnZFWU5KT1NKY0E0RmM3a3lSVUVFWEM0VEk1SjdDdUUxcTZmeExyNjZiYkUvWklqaG03VjBXdE1SWVRFRWcrMzBybS9Bb0JodTJJeTNtRG52M3E0TFM0STdlenM0ckszU0cySHlvQUI5YWl2N29Rb1hjNXh3aWp1M3JVc1JPSDUvaFA4cXlaZm0xZXhCNUJYb2FsYmpXNW8yRnVxcXp5bk16Y2sxWXVyaExiVEpadHczQUVMOWFTMS8xY3RZV3RzZnNXTW5HK3A2a3ZjcVJObFFTY2xqdS9PclViQVBuRlZJL3VKVnhPOVZJWTJWL01rSkhhb1pEaGFGKzg5Sk5RQzNLc3JuWmhSbGp3SzZUUzdKYmF5alE4RnVXcm5ZT2I2TDYxMksvZi9BVTVEWTkyZ2hPUzJBb3lUWFBYY3JhNWNHMmdWdGpjTTFhbXFmOGVNNTloL09vOUFBR211d0FCejFweEJDK1JIWjI2eHFwQUZVamNjbjVUVi9WeWNweldabW5FRC8vMlE9PQ==</oa:EmbeddedData>
+            <oa:FileType>photo</oa:FileType>
+            <hr:Instructions>ProfilePicture</hr:Instructions>
+        </eures:Attachment>
+        <CreativeWorks/>
+        <Projects/>
+        <SocialAndPoliticalActivities/>
+        <Skills>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>SQL</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Microsoft Office</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Blazor</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Aspnet Core</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>C (NET NET Core)</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>SignalR</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Git</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>AgileScrum</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Team Fundation Server (TFS)</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Azure DevOps</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>PowerShell</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Padronanza del sistema operativo Windows</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Familiarity with Linux Based Operating Systems</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Visual Studio 2019</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Visual Studio Visual Studio Code</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Elasticsearch</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>ETL</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Unit Testing</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>xUnit</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Moq</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Grafana</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Prometheus</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>T-SQL</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>MS IIS</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>JSON</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>TFVC</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>SVN</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Javascript</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>XML</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Redis Cache</hr:CompetencyName>
+            </PersonCompetency>
+        </Skills>
+        <NetworksAndMemberships/>
+        <ConferencesAndSeminars/>
+        <VoluntaryWorks/>
+        <CourseCertifications/>
+        <Others>
+            <Title>Job-related skills</Title>
+            <Other>
+                <Title>Job-related skills</Title>
+                <Description>&lt;ul&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;BE Languages&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;C#, Javascript, SQL, JAVA basics soon.&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;FE Languages&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;HTML, CSS, Javascript, AngularJS, Angular&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;Version Control&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;TFVC, GIT, SVN&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;DEVOPS &amp;amp; App Lifecycle Management Tools&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;TFS – VSTS + Ticketing boards, IIS(setup of App Pools &amp;amp; Websites), Biztalk (setup of receive location)&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;Unit/Integration Testing&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;Visual Studio, XUnit, NUnit&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;Databases &amp;amp; ORM&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;MS SQL, Stored Procedures, Reporting Services, Profiler for tuning/tracing, Entity Framework&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;Package management&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;Nuget, npm, VS Package management console&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;IDE&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;Visual Studio 2017, SQL Server Management Studio, VSCode&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;Productivity&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;ReSharper, Postman, Github, mRemote, Notepad++&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;p&gt;&lt;strong&gt;Cache &amp;amp; Serialization formats&lt;/strong&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;p&gt;Redis, XML, JSON&lt;/p&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;</Description>
+            </Other>
+        </Others>
+    </CandidateProfile>
+    <RenderingInformation>
+        <Design>
+            <Template>DynamicTemplate2</Template>
+            <Color>DarkGreen</Color>
+            <FontSize>Medium</FontSize>
+            <Logo>None</Logo>
+            <PageNumbers>true</PageNumbers>
+            <SectionsOrder>
+                <Section>
+                    <Title>work-experience</Title>
+                </Section>
+                <Section>
+                    <Title>education-training</Title>
+                </Section>
+                <Section>
+                    <Title>language</Title>
+                </Section>
+                <Section>
+                    <Title>profile-skills</Title>
+                </Section>
+                <Section>
+                    <Title>driving-licence</Title>
+                </Section>
+                <Section>
+                    <Title>Job-related skills</Title>
+                    <Custom>true</Custom>
+                </Section>
+            </SectionsOrder>
+        </Design>
+    </RenderingInformation>
+</Candidate>
