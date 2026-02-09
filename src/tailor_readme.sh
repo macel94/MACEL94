@@ -3,7 +3,7 @@ set -euo pipefail
 
 # ── Tailor README.md for a specific role using GitHub Models API ──────
 #
-# Reads the existing README.md and uses an LLM (Claude via GitHub Models)
+# Reads the existing README.md and uses an LLM (GPT-4.1 via GitHub Models)
 # to rewrite the About Me section and experience descriptions to better
 # target a specific job role.
 #
@@ -70,10 +70,10 @@ README_CONTENT="$(cat README.md)"
 OUTPUT_DIR="artifacts/$ROLE"
 mkdir -p "$OUTPUT_DIR"
 
-# ── Call GitHub Models API (Claude) ─────────────────────────────────
+# ── Call GitHub Models API (GPT-4.1) ───────────────────────────────
 echo "▶ Tailoring README.md for $ROLE_TITLE using GitHub Models API..."
 
-# Build the prompt — ask Claude to rewrite specific sections
+# Build the prompt — ask the LLM to rewrite specific sections
 SYSTEM_PROMPT="You are an expert CV/resume writer. You will receive a GitHub profile README.md in markdown format. Your task is to rewrite ONLY the following sections to better target a ${ROLE_TITLE} position:
 
 1. The headline (line starting with '### ' right after the '# Hi, I'm' line)
@@ -100,7 +100,7 @@ USER_JSON=$(jq -Rs '.' <<< "$USER_PROMPT")
 
 REQUEST_BODY=$(cat <<REQEOF
 {
-  "model": "anthropic/claude-opus-4-6",
+  "model": "openai/gpt-4.1",
   "messages": [
     {"role": "system", "content": ${SYSTEM_JSON}},
     {"role": "user", "content": ${USER_JSON}}
