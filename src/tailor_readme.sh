@@ -141,4 +141,13 @@ fi
 # ── Write tailored README ───────────────────────────────────────────
 echo "$TAILORED_README" > "$OUTPUT_DIR/README.md"
 
+# Fix relative paths: the tailored README lives in artifacts/<role>/,
+# not the repo root, so local references must be adjusted.
+# 1. SVG images: ./artifacts/profile/ → ../profile/
+# 2. PDF download: ./artifacts/Francesco_Belacca_CV.pdf → ./Francesco_Belacca_CV.pdf
+sed -i -E \
+  -e 's|(\./)?artifacts/profile/|../profile/|g' \
+  -e 's|(\./)?artifacts/Francesco_Belacca_CV\.pdf|./Francesco_Belacca_CV.pdf|g' \
+  "$OUTPUT_DIR/README.md"
+
 echo "   ✅ Tailored README written to $OUTPUT_DIR/README.md"
