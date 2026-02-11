@@ -100,7 +100,7 @@ done
 
 # ── 7. Build PDF-ready markdown ──────────────────────────────────────
 echo "▶ Converting $ROLE_DIR/README.md to PDF..."
-sed -E 's|(artifacts/profile/[a-z-]+)\.svg"|\1_static.svg"|g' "$ROLE_DIR/README.md" \
+sed -E 's|\.\./profile/([a-z-]+)\.svg"|artifacts/profile/\1_static.svg"|g' "$ROLE_DIR/README.md" \
   | sed '/^### 📥 Download CV$/,/^<sub>/{ /^### 📥 Download CV$/d; /^- \[/d; /^$/d; }' > README_pdf.md
 
 # ── 8. Convert markdown → HTML body with pandoc ─────────────────────

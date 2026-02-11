@@ -141,4 +141,9 @@ fi
 # ── Write tailored README ───────────────────────────────────────────
 echo "$TAILORED_README" > "$OUTPUT_DIR/README.md"
 
+# Fix relative paths: the tailored README lives in artifacts/<role>/,
+# so ./artifacts/profile/ must become ../profile/ to resolve correctly.
+# Handle both ./artifacts/profile/ and artifacts/profile/ (LLM may omit ./).
+sed -i -E 's|(\./)?artifacts/profile/|../profile/|g' "$OUTPUT_DIR/README.md"
+
 echo "   ✅ Tailored README written to $OUTPUT_DIR/README.md"
