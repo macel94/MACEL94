@@ -1,6 +1,6 @@
 # Hi, I'm Francesco Belacca 👋
 
-### Cloud Site Reliability Engineer | Azure & DevOps Expert
+### Site Reliability Engineer | Cloud Reliability & Observability Expert
 
 <p>
   <a href="https://www.linkedin.com/in/fbelacca/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
@@ -11,30 +11,31 @@
 
 ## 🧑‍💻 About Me
 
-Senior Site Reliability Engineer | Cloud Infrastructure & Observability Specialist
+Senior Site Reliability Engineer | Azure & .NET Specialist
 
-With 9+ years in the tech industry, I specialize in driving reliability, scalability, and operational excellence for cloud-native environments. My experience spans the full stack, from backend engineering in C#/.NET to architecting resilient Azure solutions and leading teams in automating infrastructure and incident response.
+With 9+ years in technology, I drive reliability, scalability, and operational excellence for cloud-native and distributed systems. My expertise spans end-to-end production reliability, observability, incident management, and infrastructure automation—enabling organizations to deliver resilient services at scale.
 
-Currently, I am an SRE at Würth-IT, where I ensure production reliability for large-scale Azure, Dynamics 365, Power Platform, and Entra ID services. My focus is on observability, incident management, SLO/SLI/SLA implementation, and reducing operational toil through automation and robust monitoring.
+Currently, I serve as an SRE at Würth-IT, focusing on Azure-centric reliability engineering, monitoring, and automation for Dynamics 365, Power Platform, and Entra ID. I thrive in complex environments, implementing SLOs/SLIs, reducing toil, and leading post-mortems to continuously improve reliability and performance.
 
 **Key Competencies:**
 
-- **Production Reliability & Incident Management:** Oversee mission-critical environments (85,000+ users, 500+ companies), implementing monitoring, alerting, and rapid incident response to minimize downtime and ensure SLA compliance.
-- **Infrastructure Automation:** Expert in Bicep and YAML pipelines (GitHub Actions/Azure DevOps), enabling repeatable, auditable infrastructure deployments and capacity planning.
-- **Observability & Monitoring:** Design and maintain end-to-end observability stacks, integrating metrics, logs, and traces for proactive issue detection and root cause analysis.
-- **Toil Reduction & On-Call Practices:** Develop automation and backend APIs to eliminate manual tasks, streamline on-call rotations, and facilitate post-mortem analysis for continuous improvement.
-- **Security & Compliance Automation:** Automate identity and secret management (Key Vault), enforce RBAC, and ensure governance at scale across cloud tenants.
-- **Chaos Engineering & Resilience Testing:** Advocate for and implement chaos testing and load simulations to validate system robustness under real-world conditions.
+- **Production Reliability:** Managing large-scale, single-tenant environments (85,000+ users, 500+ companies) with robust incident response, monitoring, and alerting practices.
+- **Observability & Monitoring:** Implementing end-to-end telemetry, dashboards, and alerting using Azure, Prometheus, Grafana, and custom .NET solutions to ensure actionable insights and rapid incident detection.
+- **Infrastructure Automation:** Expert in Bicep and YAML pipelines (GitHub Actions/Azure DevOps) for automated, repeatable, and auditable cloud infrastructure deployments.
+- **Toil Reduction & Process Hardening:** Developing PowerShell and .NET automation to eliminate manual tasks, streamline operations, and improve on-call efficiency.
+- **Capacity Planning & Chaos Engineering:** Load testing, performance tuning, and chaos experiments to validate system resilience and optimize resource allocation.
+- **Incident Management & Post-Mortems:** Leading root cause analysis, documenting learnings, and implementing reliability improvements across teams.
+- **Governance & Security:** Enforcing DevSecOps guardrails, RBAC, and compliance by default; automating secret rotation and identity security at scale.
 
-**🎯 My Mission: To build and operate reliable, scalable platforms that empower billions. I am passionate about simplifying distributed systems, elevating reliability, and driving operational excellence through SRE best practices.**
+**🎯 My Mission:** To build and operate reliable, scalable cloud platforms that empower billions. I am passionate about simplifying complex distributed systems, driving operational excellence, and fostering a culture of continuous improvement.
 
-*Based in Parma, Italy. Let's connect to discuss the future of Cloud Reliability Engineering and .NET.*
+*Based in Parma, Italy. Let's connect to discuss the future of Cloud Reliability and SRE.*
 
 ## 📊 GitHub Stats
 
 <p>
-  <img src="./artifacts/profile/stats.svg" height="170" alt="GitHub Stats"/>
-  <img src="./artifacts/profile/top-langs.svg" height="170" alt="Top Languages"/>
+  <img src="../profile/stats.svg" height="170" alt="GitHub Stats"/>
+  <img src="../profile/top-langs.svg" height="170" alt="Top Languages"/>
 </p>
 
 ## 🛠 Tech Stack
@@ -77,44 +78,43 @@ Currently, I am an SRE at Würth-IT, where I ensure production reliability for l
 ### **Site Reliability Engineer** @ Würth IT Italy (Sep 2024 - Present)
 📍 Parma, Emilia-Romagna, Italy
 
-- Spearheaded reliability and operational excellence for Würth-Phoenix’s Microsoft stack, optimizing production environments for CRM/ERP and Business Central workloads.
-- Architected and maintained dynamic CI/CD pipelines in Azure DevOps and GitHub Enterprise, enabling automated deployments, monitoring, and rapid rollback capabilities.
-- Developed PowerShell automation and .NET backend APIs to eliminate toil, enforce incident response workflows, and strengthen process reliability.
-- Deployed Bicep-based Infrastructure as Code for consistent, reviewable environment provisioning and capacity management.
-- Led governance and administration of Azure, Entra ID, Business Central, Fabric, and GitHub Enterprise tenants, implementing DevSecOps guardrails, RBAC, and compliance automation.
-- Collaborated with development teams to shift-left reliability and security, codifying SRE best practices and accelerating delivery at scale.
+- Engineered and maintain robust CI/CD pipelines in Azure DevOps and GitHub Enterprise for CRM/ERP and Business Central workloads, optimizing for reliability and rapid recovery.
+- Developed production-grade PowerShell automation and .NET APIs to eliminate manual toil, enhance operational efficiency, and harden critical processes.
+- Implemented Bicep for repeatable, version-controlled Infrastructure as Code, enabling rapid environment provisioning and consistent deployments.
+- Administer and govern Azure, Entra ID, Business Central, Fabric, and GitHub Enterprise tenants and repositories, enforcing DevSecOps guardrails, RBAC, and compliance by default.
+- Collaborate with developers to shift-left reliability and security, codify best practices, and unblock delivery at scale through automation and monitoring.
 
 ### **Presales Solutions Architect** @ Agic Cloud (Jul 2023 - Jul 2024)
 📍 Parma, Emilia Romagna, Italia
 
-- Designed Azure landing zones and application architectures with a focus on reliability, scalability, and cost optimization, supporting enterprise SLAs.
-- Led technical presales for multi-service Azure projects, producing estimations and solution designs that emphasized operational resilience and observability.
-- Drove DevOps and SRE adoption by standardizing Infrastructure as Code (Bicep), CI/CD pipelines, and deployment practices, reducing manual intervention and improving delivery reliability.
-- Defined secure integration patterns and automated identity management with Key Vault/Managed Identity, strengthening workload security and uptime.
-- Partnered with engineering teams to troubleshoot distributed systems, resolve reliability bottlenecks, and optimize monitoring and alerting for cloud operations.
+- Designed Azure landing zones and application architectures with a focus on reliability, scalability, observability, and cost control for enterprise clients.
+- Led technical presales, producing estimations and supporting bids for complex, multi-service Azure projects, emphasizing operational excellence and SLO-driven delivery.
+- Drove DevOps adoption with Bicep, GitHub Actions/Azure DevOps YAML, and CI/CD patterns; standardized IaC and deployment practices to improve reliability and reduce deployment errors.
+- Enabled Dynamics teams by defining integration patterns, securing workloads with Key Vault/Managed Identity, and optimizing delivery workflows for reliability.
+- Worked with engineering teams to troubleshoot distributed systems, resolve production incidents, and streamline cloud operations for improved uptime and performance.
 
 ### **Backend Team Leader & Cloud Developer** @ Agic Cloud (Feb 2022 - Jul 2023)
 📍 Parma, Emilia-Romagna, Italy
 
-- Led the backend team in delivering resilient, multi-region cloud projects, collaborating remotely to ensure high availability and production reliability.
-- Orchestrated end-to-end load testing using Azure Load Testing and JMeter, validating system performance and capacity under stress.
-- Built and deployed a multi-layered, containerized application on AKS using GitHub Actions, Bicep, Helm, Chaos Mesh, and Azure Load Testing, integrating Prometheus and Grafana for observability and SLI/SLO tracking.
-- Mentored and guided the backend team, fostering a culture of reliability and continuous improvement.
-- Contributed to open source projects, sharing reliability engineering practices and automation solutions.
+- Led reliability engineering for multi-region projects, collaborating with Microsoft Consulting and remote teams to ensure resilient, highly available cloud solutions.
+- Conducted end-to-end load testing using Azure Load Testing and JMeter, validating capacity planning and system performance under stress.
+- Demonstrated AKS reliability by building and deploying a custom three-layered containerized application using GitHub Actions, Bicep, Helm, Chaos Mesh, and Azure Load Testing; exposed metrics via Prometheus and Grafana for observability.
+- Mentored and guided the Agic Cloud Backend Team, fostering a culture of reliability, automation, and continuous improvement.
+- Contributed to open source projects, sharing reliability and automation solutions with the community.
 
 <details>
 <summary>Earlier roles</summary>
 
 - **Backend Team Leader & Cloud Developer** @ Vetrya · Parma, Emilia-Romagna, Italy (Full Remote) (Jun 2021 - Jan 2022)
-  > Led the team in building reliable Azure PaaS environments, automating deployments and monitoring for multiple projects. Focused on reducing operational toil and improving incident response through cloud-native tooling.
+  > Led backend team to deliver reliable Azure PaaS environments, leveraging automation and monitoring to ensure operational excellence. Built and governed multiple environments using Bot Framework, Power BI, and Azure Static Web Apps, focusing on reducing toil and improving deployment consistency.
 - **Backend Developer/ Analyst** @ Credemtel SpA · Reggio nell'Emilia, Emilia Romagna, Italia (Apr 2020 - May 2021)
-  > Developed and maintained backend microservices and APIs for core applications, implementing monitoring and troubleshooting for distributed systems. Supported SAGA orchestration and reliability in production.
+  > Developed and maintained backend microservices and APIs for core applications, implementing monitoring and troubleshooting practices for SQL/ElasticSearch databases. Supported SAGA orchestration and incident response in production environments using .NET Framework and .NET Core.
 - **Backend Developer** @ Credemtel SpA · Reggio Emilia, Italia (Sep 2019 - Mar 2020)
-  > Built and supported backend microservices and APIs, integrating observability and reliability practices for mission-critical systems. Enhanced monitoring and incident management workflows.
+  > Built backend microservices and APIs, applying reliability engineering principles to ensure robust, scalable systems. Used .NET Framework/Core and SQL/ElasticSearch, contributing to SAGA orchestration and production support.
 - **Consultant - Backend Developer** @ Amaris · Reggio Emilia, Italia (Sep 2018 - Aug 2019)
-  > Provided backend development and reliability engineering support for Credemtel, focusing on production stability and automated troubleshooting.
+  > Provided reliability-focused backend development for Credemtel, supporting production systems and incident troubleshooting.
 - **Junior Backend Developer** @ ericsoft srl · Misano Adriatico (May 2016 - Aug 2018)
-  > Developed API integrations and backend services, implementing automated testing and monitoring to improve reliability and reduce manual intervention in production.
+  > Developed API integrations for Ericsoft's Channel Manager, focusing on reliability and test coverage. Built with C#, EF, SQL, and MSTests, contributing to production stability and reducing manual errors.
 
 </details>
 
@@ -144,7 +144,7 @@ Currently, I am an SRE at Würth-IT, where I ensure production reliability for l
 
 ### 📥 Download CV
 
-- [PDF Version](./artifacts/Francesco_Belacca_CV.pdf)
+- [PDF Version](./Francesco_Belacca_CV.pdf)
 - [Europass XML](./artifacts/europass_cv.xml)
 
 <sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-02-09 06:32 UTC</sub>
