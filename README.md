@@ -67,7 +67,7 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 - [**Career Essentials in Generative AI by Microsoft and LinkedIn** - Microsoft (Oct 2023 - Present)](https://www.linkedin.com/learning/certificates/16067e03e960ef0144dc31920fcaf387d7873ef227c5738cb99ff362ede92a8a)
 - [**Kubernetes for developers** - Udemy (Apr 2023 - Present)](https://www.udemy.com/certificate/UC-67714a89-6f40-4717-93a7-cded4b75d711/)
 - [**AZ-204 Developing for Microsoft Azure Exam Prep** - Udemy (Mar 2021 - Present)](https://www.udemy.com/certificate/UC-5957c389-228f-4488-aa31-c8cdd755f9af/)
-- [**Speexx English CEFR Level C1.1** - Speexx (Sep 2020 - Present)](https://portal.speexx.com/certificate/MzY2Mjg1Nw==)
+- [**Speexx English CEFR Level C1.1** - Speexx (Sep 2020 - Present)](https://portal.speexx.com/certificate/MWVhOTEwZTctYzAxMy00NjY0LTk3MjItZmJiNDc5ZGFiMjJl)
 - [**The Web Developer Bootcamp (40+ hours)** - Udemy (Jan 2018 - Present)](https://www.udemy.com/certificate/UC-SQ4MQOK7/)
 - [**Getting Started with Angular 2+** - Udemy (Sep 2017 - Present)](https://www.udemy.com/certificate/UC-KKN29TB2/)
 - [**MENSA ITALIA** - http://www.mensa.it/ (Feb 2014 - Present)](https://www.cloud32.it/GES/stampa?Ybrx%253hhjZog2Ynyqt1H58OUdkEJG6Re1y%3Fnbeu%2B26hcatWk%2B%3Fu%3F%2FFn6B%3DQQgJLJ9HBcNVWTqAVmobqbDy%2Bn%2F%25p30Jz6%3D%2FGIWckfomplKYPdUjy330)
@@ -150,5 +150,5 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 - [PDF Version](./artifacts/Francesco_Belacca_CV.pdf)
 - [Europass XML](./artifacts/europass_cv.xml)
 
-<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-02-09 06:32 UTC</sub>
+<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-02-16 06:32 UTC</sub>
 

@@ -373,7 +373,7 @@
                 </AttendancePeriod>
                 <EducationDegree>
                     <hr:DegreeName>Speexx English CEFR Level C1.1</hr:DegreeName>
-                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://portal.speexx.com/certificate/MzY2Mjg1Nw==&lt;/p&gt;</OccupationalSkillsCovered>
+                    <OccupationalSkillsCovered>&lt;p&gt;Certificate:&lt;/p&gt;&lt;p&gt;https://portal.speexx.com/certificate/MWVhOTEwZTctYzAxMy00NjY0LTk3MjItZmJiNDc5ZGFiMjJl&lt;/p&gt;</OccupationalSkillsCovered>
                 </EducationDegree>
             </EducationOrganizationAttendance>
             <EducationOrganizationAttendance>
@@ -767,6 +767,10 @@
         <Projects/>
         <SocialAndPoliticalActivities/>
         <Skills>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>English</hr:CompetencyName>
+            </PersonCompetency>
             <PersonCompetency>
                 <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
                 <hr:CompetencyName>Stakeholder Management</hr:CompetencyName>
