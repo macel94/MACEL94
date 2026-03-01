@@ -116,6 +116,89 @@ All scripts use .NET 10 [file-based apps](https://devblogs.microsoft.com/dotnet/
 - Go to **Actions → Update README from LinkedIn → Run workflow**
 - Or wait for the weekly schedule (every Monday at 06:00 UTC)
 
+## Workflows
+
+### Base recurring workflow (single source of truth)
+
+`/.github/workflows/update-readme.yml`
+
+- **Trigger**: Weekly schedule (`0 6 * * 1`) + manual `workflow_dispatch`
+- **Purpose**: Keep your LinkedIn profile as the canonical source, then regenerate:
+  - `README.md`
+  - `artifacts/europass_cv.xml`
+  - `artifacts/Francesco_Belacca_CV.pdf` (with embedded Europass XML attachment)
+  - `artifacts/profile/*.svg` stats cards
+- **Result**: Your GitHub profile README and CV assets stay continuously aligned with the same data source.
+
+### Manually triggered custom CV workflows (role-tailored)
+
+The repository also includes manual workflows that generate role-specific CV packages:
+
+- `/.github/workflows/generate-cv-cloud-sre.yml`
+- `/.github/workflows/generate-cv-cloud-devops.yml`
+- `/.github/workflows/generate-cv-cloud-swdev.yml`
+
+How they work:
+1. `src/tailor_readme.sh` calls **GitHub Models** (`openai/gpt-4.1`) to rewrite selected sections of the base README for the target role.
+2. `src/generate_role_pdf.sh` renders a role-specific PDF and embeds the same Europass XML.
+3. Outputs are committed under `artifacts/<role>/`.
+
+This gives you:
+- one canonical profile dataset for consistency,
+- one baseline recurring CV pipeline,
+- and multiple role-specific CV variants on demand.
+
+## LinkedIn API and token guide (researched references)
+
+This project uses LinkedIn’s **Member Data Portability (Member) API**:
+
+- Official API guide:  
+  https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/
+- LinkedIn API docs entrypoint:  
+  https://learn.microsoft.com/en-us/linkedin/
+
+Official authentication/token references:
+
+- Getting access to LinkedIn APIs:  
+  https://learn.microsoft.com/en-us/linkedin/shared/authentication/getting-access
+- OAuth overview:  
+  https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication
+- 3-legged OAuth flow:  
+  https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow
+
+In practice for this repo, token creation is done in **LinkedIn Developer Portal → Docs and tools → OAuth Token Tools** with the scope `r_dma_portability_self_serve`.
+
+### Why this is available to Europeans (EU/EEA context)
+
+The portability capability is tied to compliance with the **EU Digital Markets Act (DMA)**, which introduces data portability obligations for designated gatekeepers in the EU. LinkedIn’s Member Data Portability product is designed around these regulatory requirements, which is why availability is region-scoped to European users rather than globally.
+
+Reference:
+- EU Digital Markets Act (Regulation (EU) 2022/1925):  
+  https://eur-lex.europa.eu/eli/reg/2022/1925/oj
+
+## Copy-ready LinkedIn post (high engagement)
+
+> 🚀 I just open-sourced my LinkedIn → GitHub automation pipeline:  
+> **https://github.com/macel94/macel94**
+>
+> I wanted my professional profile to have a **single source of truth**.  
+> So I built a workflow that turns my LinkedIn profile data into:
+> - ✅ an always up-to-date GitHub `README.md`
+> - ✅ a generated CV PDF
+> - ✅ a standards-based **Europass XML** embedded into the PDF
+>
+> Why this matters:
+> - No more copy/paste drift between LinkedIn, GitHub, and CV versions
+> - Recruiters and collaborators always see fresh information
+> - Anyone can fork the repo and adapt it to keep their own portfolio + CV in sync
+>
+> Bonus: I also added manual workflows for **role-tailored CVs** (SRE, DevOps, Cloud Software Developer) powered by GitHub Models.
+>
+> If you want your GitHub profile and CV to auto-maintain themselves, this repo is plug-and-play.  
+> Happy to hear feedback or ideas for the next iteration 👇
+>
+> #opensource #github #linkedin #automation #devops #sre #cloud #dotnet #career #europass
+
 ## Local Development
 
 Requires [.NET 10 SDK](https://dotnet.microsoft.com/download/dotnet/10.0) or later.
