@@ -153,3 +153,25 @@ Content-Type: application/json
 ### Rate Limits
 
 LinkedIn enforces rate limits. The script makes one request per domain — with 17 domains, that's ~17+ requests per run (more with pagination). The weekly schedule is very conservative.
+
+## NetEye-Style Article Ideas (Automatic CV Creation)
+
+The outlines below mirror the concise, opinionated tone of the referenced NetEye post: quick context, what was built, why it works, and a short reflection.
+
+### Article 1 - Azure GitHub Actions + LinkedIn DMA: Zero-Touch CV Refresh
+- **Premise:** Stale CVs cause trust and compliance headaches; I wanted a repeatable weekly refresh without human steps.
+- **What I built:** GitHub Actions triggers `src/run.sh`, which fetches LinkedIn DMA data, regenerates `README.md`, outputs a Europass XML via `src/generate_cv.cs`, and renders a PDF with `src/generate_pdf.sh` (pandoc + headless Chromium).
+- **Why it's great:** No .csproj restore step (file-based apps), Europass-compliant XML baked into the PDF, and badges/SVGs stay in sync because the pipeline pulls fresh stats before rendering.
+- **If I had more time:** Add a smoke test that fails the workflow when the DMA token expires, and publish the PDF as a signed release asset.
+
+### Article 2 - Tailoring CVs per Role with GitHub Models (GPT-4.1)
+- **Premise:** Recruiters want role-focused CVs, not generic ones.
+- **What I built:** `src/tailor_readme.sh` calls GitHub Models (`openai/gpt-4.1`) to rewrite the About/Experience sections for cloud SRE, DevOps, or software-dev roles, then fixes relative assets so the tailored README renders from `artifacts/<role>/`.
+- **Why it's great:** No prompt drift (system prompt guards structure), assets stay intact after rewriting, and outputs land next to role PDFs for immediate sharing.
+- **If I had more time:** Add a fourth profile (platform engineering) and gate the job behind a low-temp dry run that shows diffs before committing.
+
+### Article 3 - Embedding Europass XML in PDFs with pandoc + Puppeteer
+- **Premise:** Many CV exporters stop at pretty PDFs; HR systems need structured data.
+- **What I built:** `src/generate_cv.cs` emits Europass XML from LinkedIn data, and `src/generate_pdf.sh` (pandoc → HTML → Puppeteer) injects that XML as an attachment so the PDF is both human- and machine-readable.
+- **Why it's great:** Compliant with the official Europass schema (see `src/attachment.xml` reference), no manual tooling installs inside CI, and reproducible outputs for audits.
+- **If I had more time:** Swap wkhtmltopdf fallback for a pure headless-Chromium path on all platforms and add a one-page "diff since last run" summary inside the PDF.
