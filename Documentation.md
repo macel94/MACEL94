@@ -165,12 +165,14 @@ Official authentication/token references:
   https://learn.microsoft.com/en-us/linkedin/shared/authentication/authentication
 - 3-legged OAuth flow:  
   https://learn.microsoft.com/en-us/linkedin/shared/authentication/authorization-code-flow
+- OAuth Token Generator Tool (Developer Portal):  
+  https://www.linkedin.com/developers/tools/oauth
 
 In practice for this repo, token creation is done in **LinkedIn Developer Portal → Docs and tools → OAuth Token Tools** with the scope `r_dma_portability_self_serve`.
 
 ### Why this is available to Europeans (EU/EEA context)
 
-The portability capability is tied to compliance with the **EU Digital Markets Act (DMA)**, which introduces data portability obligations for designated gatekeepers in the EU. LinkedIn’s Member Data Portability product is designed around these regulatory requirements, which is why availability is region-scoped to European users rather than globally.
+The portability capability is tied to compliance with the **EU Digital Markets Act (DMA)**, which introduces data portability obligations for designated gatekeepers in the EU. LinkedIn’s official Member Data Portability (Member) documentation states that token generation is currently available only to members located in the **European Economic Area (EEA) and Switzerland**. This is why availability is region-scoped rather than globally enabled.
 
 Reference:
 - EU Digital Markets Act (Regulation (EU) 2022/1925):  
