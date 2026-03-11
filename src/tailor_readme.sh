@@ -71,7 +71,7 @@ OUTPUT_DIR="artifacts/$ROLE"
 mkdir -p "$OUTPUT_DIR"
 
 # ── Call GitHub Models API (GPT-4.1) ───────────────────────────────
-echo "▶ Tailoring README.md for $ROLE_TITLE using GitHub Models API..."
+echo "▶ Tailoring README.md for $ROLE_TITLE using GitHub Models API (GPT-5)..."
 
 # Build the prompt — ask the LLM to rewrite specific sections
 SYSTEM_PROMPT="You are an expert CV/resume writer. You will receive a GitHub profile README.md in markdown format. Your task is to rewrite ONLY the following sections to better target a ${ROLE_TITLE} position:
@@ -100,13 +100,11 @@ USER_JSON=$(jq -Rs '.' <<< "$USER_PROMPT")
 
 REQUEST_BODY=$(cat <<REQEOF
 {
-  "model": "openai/gpt-4.1",
+  "model": "openai/gpt-5",
   "messages": [
     {"role": "system", "content": ${SYSTEM_JSON}},
     {"role": "user", "content": ${USER_JSON}}
-  ],
-  "max_tokens": 16000,
-  "temperature": 0.3
+  ]
 }
 REQEOF
 )
