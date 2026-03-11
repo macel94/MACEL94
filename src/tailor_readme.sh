@@ -149,3 +149,7 @@ sed -i -E \
   "$OUTPUT_DIR/README.md"
 
 echo "   ✅ Tailored README written to $OUTPUT_DIR/README.md"
+
+# Now echo in the console output the tailored README for visibility
+echo -e "\n--- Tailored README.md for $ROLE_TITLE ---\n"
+echo "$TAILORED_README"
