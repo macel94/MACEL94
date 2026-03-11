@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       # ── Tailor README for Cloud Software Developer using GitHub Models API ──
       - name: Tailor README for Cloud Software Developer
