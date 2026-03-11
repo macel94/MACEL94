@@ -79,8 +79,8 @@ string GenerateReadme(Dictionary<string, List<JsonElement>> data)
 
     // Shields.io contact & social badges
     sb.AppendLine("<p>");
-    sb.AppendLine($"  <a href=\"https://www.linkedin.com/in/fbelacca/\"><img src=\"https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white\" alt=\"LinkedIn\"/></a>");
-    sb.AppendLine($"  <a href=\"mailto:francesco.belacca@outlook.it\"><img src=\"https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=microsoft-outlook&logoColor=white\" alt=\"Email\"/></a>");
+    sb.AppendLine($"  <a href=\"https://www.linkedin.com/in/francesco-belacca-dev/\"><img src=\"https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white\" alt=\"LinkedIn\"/></a>");
+    sb.AppendLine($"  <a href=\"mailto:francesco.belacca@hotmail.it\"><img src=\"https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=microsoft-outlook&logoColor=white\" alt=\"Email\"/></a>");
     sb.AppendLine($"  <a href=\"https://github.com/{GH_USER}\"><img src=\"https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white\" alt=\"GitHub\"/></a>");
     if (!string.IsNullOrEmpty(geo))
     {
@@ -272,7 +272,7 @@ string GenerateReadme(Dictionary<string, List<JsonElement>> data)
             sb.AppendLine();
         }
 
-        sb.AppendLine($"> 📄 [Full career history on LinkedIn](https://www.linkedin.com/in/fbelacca/)");
+        sb.AppendLine($"> 📄 [Full career history on LinkedIn](https://www.linkedin.com/in/francesco-belacca-dev/)");
         sb.AppendLine();
     }
 

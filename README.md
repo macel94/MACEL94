@@ -3,8 +3,8 @@
 ### Certified Azure Dev, Admin & DevOps Expert
 
 <p>
-  <a href="https://www.linkedin.com/in/fbelacca/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-  <a href="mailto:francesco.belacca@outlook.it"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="Email"/></a>
+  <a href="https://www.linkedin.com/in/francesco-belacca-dev/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="mailto:francesco.belacca@hotmail.it"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=microsoft-outlook&logoColor=white" alt="Email"/></a>
   <a href="https://github.com/macel94"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
   <a href="https://www.google.com/maps/search/Parma%2C%20Emilia-Romagna%2C%20Italy"><img src="https://img.shields.io/badge/📍_Parma%2C_Emilia--Romagna%2C_Italy-grey?style=for-the-badge" alt="Location"/></a>
 </p>
@@ -121,7 +121,7 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 
 </details>
 
-> 📄 [Full career history on LinkedIn](https://www.linkedin.com/in/fbelacca/)
+> 📄 [Full career history on LinkedIn](https://www.linkedin.com/in/francesco-belacca-dev/)
 
 ## 🚀 Featured Projects
 
@@ -129,7 +129,7 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 
 ## 🎓 Education
 
-- **Università degli Studi di Urbino 'Carlo Bo'** - Informatica Applicata(CS) (Sep 2014 - Jun 2020)
+- **Università degli Studi di Urbino 'Carlo Bo'** - Informatica Applicata(CS) (Sep 2013 - Jun 2020)
 - **Liceo Scientifico A.Volta Riccione - Corso Sperimentale Brocca** - High School
   > Focus on advanced mathematics and natural sciences within an extended‑hours experimental curriculum.
 
@@ -150,5 +150,5 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 - [PDF Version](./artifacts/Francesco_Belacca_CV.pdf)
 - [Europass XML](./artifacts/europass_cv.xml)
 
-<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-03-10 10:26 UTC</sub>
+<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-03-11 14:08 UTC</sub>
 

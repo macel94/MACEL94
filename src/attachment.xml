@@ -38,13 +38,6 @@
             <oa:URI>https://techprofile.microsoft.com/it-it/francesco-belacca</oa:URI>
         </Communication>
         <Communication>
-            <ChannelCode>Telephone</ChannelCode>
-            <UseCode>mobile</UseCode>
-            <CountryDialing>39</CountryDialing>
-            <oa:DialNumber>3927192565</oa:DialNumber>
-            <CountryCode>it</CountryCode>
-        </Communication>
-        <Communication>
             <UseCode>home</UseCode>
             <Address type="home">
                 <oa:AddressLine>Viale la Grola 29</oa:AddressLine>
