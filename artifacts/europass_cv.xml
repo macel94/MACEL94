@@ -278,7 +278,7 @@
                 </OrganizationContact>
                 <AttendancePeriod>
                     <StartDate>
-                        <hr:FormattedDateTime>2014-09-01</hr:FormattedDateTime>
+                        <hr:FormattedDateTime>2013-09-01</hr:FormattedDateTime>
                     </StartDate>
                     <EndDate>
                         <hr:FormattedDateTime>2020-06-01</hr:FormattedDateTime>

@@ -129,7 +129,7 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 
 ## 🎓 Education
 
-- **Università degli Studi di Urbino 'Carlo Bo'** - Informatica Applicata(CS) (Sep 2014 - Jun 2020)
+- **Università degli Studi di Urbino 'Carlo Bo'** - Informatica Applicata(CS) (Sep 2013 - Jun 2020)
 - **Liceo Scientifico A.Volta Riccione - Corso Sperimentale Brocca** - High School
   > Focus on advanced mathematics and natural sciences within an extended‑hours experimental curriculum.
 
@@ -150,5 +150,5 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 - [PDF Version](./artifacts/Francesco_Belacca_CV.pdf)
 - [Europass XML](./artifacts/europass_cv.xml)
 
-<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-03-10 10:26 UTC</sub>
+<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-03-11 14:08 UTC</sub>
 
