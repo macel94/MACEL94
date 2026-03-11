@@ -1,6 +1,6 @@
 # Hi, I'm Francesco Belacca 👋
 
-### Cloud DevOps Engineer | CI/CD & Infrastructure Automation Specialist
+### Cloud DevOps Engineer | CI/CD & IaC Specialist | Azure Certified
 
 <p>
   <a href="https://www.linkedin.com/in/francesco-belacca-dev/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
@@ -11,30 +11,30 @@
 
 ## 🧑‍💻 About Me
 
-Cloud DevOps Engineer | Azure Platform & Release Automation Expert
+Senior Cloud DevOps & Site Reliability Engineer | Azure Platform & Automation Expert
 
-With 9+ years of experience, I specialize in designing, automating, and optimizing cloud infrastructure and deployment pipelines. My expertise spans CI/CD, infrastructure as code, container orchestration, and platform engineering—enabling teams to deliver scalable, secure, and resilient solutions on Azure.
+With over 9 years of experience, I specialize in architecting, automating, and optimizing cloud infrastructure and deployment pipelines. My expertise spans end-to-end CI/CD, infrastructure as code, container orchestration, and release engineering for enterprise-scale environments on Azure.
 
-Currently, as an SRE at Würth-IT, I drive Azure DevOps adoption, automate deployments, and enforce governance for large-scale enterprise environments (Dynamics 365, Power Platform, Entra ID). I focus on improving developer experience, streamlining release engineering, and codifying security best practices using modern DevOps and GitOps principles.
+Currently, as an SRE at Würth-IT, I drive Azure-centric DevOps initiatives, focusing on automated deployments, platform governance, and developer experience across Dynamics 365, Power Platform, and Entra ID. My passion lies in enabling rapid, secure, and reliable delivery through modern DevOps practices.
 
 **Core Strengths:**
 
-- **CI/CD & Release Automation:** Architecting and maintaining robust pipelines (Azure DevOps, GitHub Actions) for rapid, reliable delivery across multiple environments.
-- **Infrastructure as Code:** Advanced use of Bicep and YAML to provision, configure, and manage cloud resources with repeatability and compliance.
-- **Container Orchestration:** Deploying and managing containerized workloads (AKS, Helm), integrating monitoring and chaos engineering for resilient platforms.
-- **Configuration Management & DevSecOps:** Automating secret rotation, RBAC, and security controls to ensure compliance and operational integrity.
-- **Platform Engineering:** Enhancing developer workflows, enabling self-service infrastructure, and standardizing build systems for enterprise-scale teams.
-- **Cloud Governance:** Leading stakeholder alignment and approval processes for secure, compliant cloud operations at scale.
+- **CI/CD & Release Engineering:** Designing and maintaining robust, scalable pipelines (Azure DevOps, GitHub Actions) for automated build, test, and deployment of cloud workloads.
+- **Infrastructure as Code (IaC):** Expert in Bicep and YAML, delivering reproducible and auditable infrastructure using GitOps and automated provisioning.
+- **Container Orchestration:** Deploying and managing containerized applications with AKS, Helm, and integrated monitoring solutions.
+- **Configuration Management & DevSecOps:** Enforcing security, RBAC, and compliance by default; automating secret rotation and identity management at scale.
+- **Platform Engineering:** Leading governance and administration for Azure, Entra ID, Business Central, and GitHub Enterprise, enhancing developer productivity and operational reliability.
+- **Developer Experience:** Partnering with teams to codify best practices, shift-left security, and streamline delivery workflows.
 
-**🎯 My Mission: To empower teams through automation, scalable infrastructure, and secure delivery pipelines—simplifying the complexity of distributed systems and accelerating innovation.**
+**🎯 My Mission: To empower teams to deliver resilient, scalable cloud solutions through automation, infrastructure as code, and DevOps excellence.**
 
-*Based in Parma, Italy. Connect with me to discuss cloud-native DevOps, platform engineering, and CI/CD best practices.*
+*Based in Parma, Italy. Connect with me to discuss cloud automation, DevOps, and platform engineering.*
 
 ## 📊 GitHub Stats
 
 <p>
-  <img src="./artifacts/profile/stats.svg" height="170" alt="GitHub Stats"/>
-  <img src="./artifacts/profile/top-langs.svg" height="170" alt="Top Languages"/>
+  <img src="../profile/stats.svg" height="170" alt="GitHub Stats"/>
+  <img src="../profile/top-langs.svg" height="170" alt="Top Languages"/>
 </p>
 
 ## 🛠 Tech Stack
@@ -65,7 +65,7 @@ Currently, as an SRE at Würth-IT, I drive Azure DevOps adoption, automate deplo
 - [**Career Essentials in Generative AI by Microsoft and LinkedIn** - Microsoft (Oct 2023 - Present)](https://www.linkedin.com/learning/certificates/16067e03e960ef0144dc31920fcaf387d7873ef227c5738cb99ff362ede92a8a)
 - [**Kubernetes for developers** - Udemy (Apr 2023 - Present)](https://www.udemy.com/certificate/UC-67714a89-6f40-4717-93a7-cded4b75d711/)
 - [**AZ-204 Developing for Microsoft Azure Exam Prep** - Udemy (Mar 2021 - Present)](https://www.udemy.com/certificate/UC-5957c389-228f-4488-aa31-c8cdd755f9af/)
-- [**Speexx English CEFR Level C1.1** - Speexx (Sep 2020 - Present)](https://portal.speexx.com/certificate/MzY2Mjg1Nw==)
+- [**Speexx English CEFR Level C1.1** - Speexx (Sep 2020 - Present)](https://portal.speexx.com/certificate/MWVhOTEwZTctYzAxMy00NjY0LTk3MjItZmJiNDc5ZGFiMjJl)
 - [**The Web Developer Bootcamp (40+ hours)** - Udemy (Jan 2018 - Present)](https://www.udemy.com/certificate/UC-SQ4MQOK7/)
 - [**Getting Started with Angular 2+** - Udemy (Sep 2017 - Present)](https://www.udemy.com/certificate/UC-KKN29TB2/)
 - [**MENSA ITALIA** - http://www.mensa.it/ (Feb 2014 - Present)](https://www.cloud32.it/GES/stampa?Ybrx%253hhjZog2Ynyqt1H58OUdkEJG6Re1y%3Fnbeu%2B26hcatWk%2B%3Fu%3F%2FFn6B%3DQQgJLJ9HBcNVWTqAVmobqbDy%2Bn%2F%25p30Jz6%3D%2FGIWckfomplKYPdUjy330)
@@ -77,42 +77,43 @@ Currently, as an SRE at Würth-IT, I drive Azure DevOps adoption, automate deplo
 ### **Site Reliability Engineer** @ Würth IT Italy (Sep 2024 - Present)
 📍 Parma, Emilia-Romagna, Italy
 
-- Engineered and maintained dynamic CI/CD pipelines in Azure DevOps and GitHub Enterprise for CRM/ERP and Business Central workloads, automating deployments and release processes.
-- Developed production-grade PowerShell automation and .NET backend APIs to eliminate manual operations and enforce process reliability.
-- Implemented Bicep for scalable, reviewable infrastructure as code (IaC) across multiple environments, enabling rapid provisioning and teardown.
-- Administered and governed Azure, Entra ID, Business Central, Fabric, and GitHub Enterprise tenants and repositories, applying DevSecOps guardrails, RBAC, and compliance automation.
-- Collaborated with development teams to shift security left, codify best practices, and accelerate delivery through platform engineering and automation.
+- Architect and maintain complex, automated CI/CD pipelines in Azure DevOps and GitHub Enterprise for CRM/ERP and Business Central workloads, enabling rapid and reliable releases.
+- Develop production-grade PowerShell automation and .NET backend APIs to eliminate manual tasks and strengthen deployment processes.
+- Implement Bicep-based infrastructure as code for consistent, version-controlled provisioning across environments.
+- Lead governance and administration for Azure, Entra ID, Business Central, Fabric, and GitHub Enterprise tenants and repositories, enforcing DevSecOps guardrails, RBAC, and compliance automation.
+- Collaborate with developers to shift-left security, codify best practices, and accelerate delivery through platform engineering and automation.
 
 ### **Presales Solutions Architect** @ Agic Cloud (Jul 2023 - Jul 2024)
 📍 Parma, Emilia Romagna, Italia
 
-- Designed Azure landing zones and cloud architectures with a focus on scalable, secure, and automated deployments using IaC and CI/CD.
-- Led technical presales, producing estimates and supporting bids for complex Azure projects involving multi-service integrations and automated build systems.
-- Advocated DevOps adoption, standardizing Bicep, GitHub Actions/Azure DevOps YAML pipelines, and deployment automation across teams.
-- Defined integration and security patterns for Dynamics workloads, leveraging Key Vault and Managed Identity to automate configuration and protect secrets.
-- Worked with engineering teams to troubleshoot distributed systems, resolve reliability issues, and optimize cloud operations through automation.
+- Designed Azure landing zones and cloud architectures with a focus on automated deployment, scalability, and secure configuration management.
+- Led technical presales, producing solution estimates and supporting bids for enterprise Azure projects involving multi-service integration and migration.
+- Championed DevOps adoption by standardizing CI/CD pipelines, IaC (Bicep), and deployment automation with GitHub Actions and Azure DevOps YAML.
+- Defined integration and security patterns for Dynamics workloads, leveraging Key Vault and Managed Identity to enhance delivery pipelines.
+- Worked with engineering teams to troubleshoot distributed systems, resolve reliability challenges, and optimize cloud operations through automation.
 
 ### **Backend Team Leader & Cloud Developer** @ Agic Cloud (Feb 2022 - Jul 2023)
 📍 Parma, Emilia-Romagna, Italy
 
-- Led remote teams in architecting and deploying multi-region Azure projects, leveraging IaC and CI/CD to ensure repeatable, automated infrastructure delivery.
+- Led remote teams to build and manage multi-region Azure projects, leveraging PaaS and IaC for scalable, resilient cloud environments.
 - Load tested applications end-to-end using Azure Load Testing and JMeter, integrating performance validation into release pipelines.
-- Demonstrated AKS capabilities by building and deploying a containerized, multi-layered application with GitHub Actions, Bicep, Helm, Chaos Mesh, and automated monitoring via Prometheus and Grafana.
-- Guided the backend team in adopting DevOps best practices and contributed to open source projects to improve build and deployment workflows.
+- Demonstrated AKS and container orchestration by architecting and deploying a custom three-layered application using GitHub Actions, Bicep, Helm, Chaos Mesh, and Azure Load Testing, with monitoring via Prometheus and Grafana.
+- Guided backend team growth and success through DevOps best practices and automation.
+- Contributed to open source projects, focusing on deployment automation and developer experience.
 
 <details>
 <summary>Earlier roles</summary>
 
 - **Backend Team Leader & Cloud Developer** @ Vetrya · Parma, Emilia-Romagna, Italy (Full Remote) (Jun 2021 - Jan 2022)
-  > Led team in building and managing Azure PaaS environments, utilizing automation, IaC, and DevOps tools to streamline deployment and configuration processes for multiple projects.
+  > Led team success and growth by implementing Azure PaaS services and automating environment provisioning. Built multiple environments using Bot Framework, Power BI Dashboard embedded in Azure Static Web Apps, and streamlined CI/CD workflows.
 - **Backend Developer/ Analyst** @ Credemtel SpA · Reggio nell'Emilia, Emilia Romagna, Italia (Apr 2020 - May 2021)
-  > Developed backend microservices and APIs for core applications, implementing automated build and deployment pipelines using .NET and SQL/ElasticSearch, and supporting SAGA orchestration.
+  > Developed backend microservices and APIs using .NET and SQL/ElasticSearch, supporting SAGA patterns and automated build/deployment pipelines. Enhanced reliability and delivery through version control and continuous integration.
 - **Backend Developer** @ Credemtel SpA · Reggio Emilia, Italia (Sep 2019 - Mar 2020)
-  > Built backend microservices and APIs, integrating automated testing and deployment practices in .NET environments with SQL/ElasticSearch databases.
+  > Built backend microservices and APIs for core applications, utilizing .NET and multiple databases. Integrated CI/CD and automated testing to improve release quality.
 - **Consultant - Backend Developer** @ Amaris · Reggio Emilia, Italia (Sep 2018 - Aug 2019)
-  > Supported Credemtel as a consultant, contributing to backend development and deployment automation for enterprise applications.
+  > Provided backend development and DevOps support for Credemtel, focusing on build automation and deployment reliability.
 - **Junior Backend Developer** @ ericsoft srl · Misano Adriatico (May 2016 - Aug 2018)
-  > Developed API integrations and backend features for channel manager platforms, implementing automated testing and continuous integration with C#, EF, and SQL.
+  > Developed API integrations for channel management, working with C#, EF, and SQL. Automated testing with MSTests and contributed to build system improvements.
 
 </details>
 
@@ -124,7 +125,7 @@ Currently, as an SRE at Würth-IT, I drive Azure DevOps adoption, automate deplo
 
 ## 🎓 Education
 
-- **Università degli Studi di Urbino 'Carlo Bo'** - Informatica Applicata(CS) (Sep 2014 - Jun 2020)
+- **Università degli Studi di Urbino 'Carlo Bo'** - Informatica Applicata(CS) (Sep 2013 - Jun 2020)
 - **Liceo Scientifico A.Volta Riccione - Corso Sperimentale Brocca** - High School
   > Focus on advanced mathematics and natural sciences within an extended‑hours experimental curriculum.
 
@@ -142,7 +143,7 @@ Currently, as an SRE at Würth-IT, I drive Azure DevOps adoption, automate deplo
 
 ### 📥 Download CV
 
-- [PDF Version](./artifacts/Francesco_Belacca_CV.pdf)
+- [PDF Version](./Francesco_Belacca_CV.pdf)
 - [Europass XML](./artifacts/europass_cv.xml)
 
-<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-02-09 06:32 UTC</sub>
+<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-03-11 14:08 UTC</sub>
