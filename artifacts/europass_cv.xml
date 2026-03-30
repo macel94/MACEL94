@@ -118,14 +118,14 @@
                     <PositionTitle typeCode="FREETEXT">Backend Team Leader &amp; Cloud Developer</PositionTitle>
                     <eures:EmploymentPeriod>
                         <eures:StartDate>
-                            <hr:FormattedDateTime>2022-02-01</hr:FormattedDateTime>
+                            <hr:FormattedDateTime>2022-03-01</hr:FormattedDateTime>
                         </eures:StartDate>
                         <eures:EndDate>
                             <hr:FormattedDateTime>2023-07-01</hr:FormattedDateTime>
                         </eures:EndDate>
                         <hr:CurrentIndicator>false</hr:CurrentIndicator>
                     </eures:EmploymentPeriod>
-                    <oa:Description>&lt;p&gt;Our cloud division (Vetrya Cloud) was bought by the AGIC Techonology group, becoming AGIC Cloud.  Load tested multiple applications E2E using Azure Load Testing and Jmeter. Built from the ground up and managed more than one Multi-Region project with Microsoft Consulting with a fully remote team. Demonstrated AKS potential building and deploying a custom three layered containerized application using Github Actions, bicep, helm, Chaos Mesh, Azure Load Testing and made metric available using Prometheus and Grafana. Led and helped the Agic Cloud Backend Team grow and succeed. Contributed to Open Source projects for both Agic Cloud and myself on github. Teached a PBI Embedded &amp; Azure Automation course(to automatically use only what&apos;s needed, when it&apos;s needed) for an IT PA division(in Italian). Gave guidance to clients by demonstrating Azure capabilities implementing multiple POCs whenever needed using the latest standards(Bicep-Blazor-.NET 6-AzDevOps pipelines or GitHub actions).&lt;/p&gt;</oa:Description>
+                    <oa:Description>&lt;p&gt;Continued within AGIC Cloud following the acquisition of Vetrya Cloud by AGIC Technology Group, contributing to the growth of the cloud division as both a senior technical consultant and backend team lead.  Delivered end-to-end cloud-native and full-stack solutions for large enterprise customers, including Enel, in collaboration with Microsoft Consulting Services, covering frontend, backend, databases, and Infrastructure as Code.  Designed and managed multiple multi-region Azure projects from the ground up in fully remote environments, applying best practices for security, automation, scalability, and operational excellence.  Built proof of concepts and technical demonstrations to showcase Azure capabilities, using modern technologies such as Bicep, Blazor, .NET, Azure DevOps, and GitHub Actions.  Developed and deployed a custom three-tier containerized application on Azure Kubernetes Service using GitHub Actions, Bicep, Helm, Chaos Mesh, and Azure Load Testing, with Prometheus and Grafana for monitoring and observability.  Performed end-to-end load testing for multiple applications using Azure Load Testing and JMeter.  Leveraged Azure AI services, including Azure OpenAI Service, Azure AI Services, Azure AI Video Indexer, and Azure AI Document Intelligence, within customer solutions.  Led and mentored the AGIC Cloud backend team, helping drive technical growth and delivery success.  Contributed to open-source projects for both AGIC Cloud and personal initiatives on GitHub.  Delivered technical training in Italian on Power BI Embedded and Azure Automation, with a focus on resource optimization and efficient cloud operations.&lt;/p&gt;</oa:Description>
                     <City>Parma</City>
                     <Country>it</Country>
                 </PositionHistory>
@@ -280,6 +280,7 @@
                 </AttendancePeriod>
                 <EducationDegree>
                     <hr:DegreeName>Informatica Applicata(CS)</hr:DegreeName>
+                    <OccupationalSkillsCovered>Bachelor’s Degree in Applied Computer Science (L-31), with a strong focus on software development, algorithms, databases, computer networks, operating systems, and software engineering. The programme combined theoretical foundations with practical application, developing skills in programming, system design, and ICT solutions for real-world business and technology contexts.</OccupationalSkillsCovered>
                 </EducationDegree>
             </EducationOrganizationAttendance>
             <EducationOrganizationAttendance>
@@ -306,7 +307,7 @@
                 </OrganizationContact>
                 <AttendancePeriod>
                     <StartDate>
-                        <hr:FormattedDateTime>2014-02-01</hr:FormattedDateTime>
+                        <hr:FormattedDateTime>2014-03-01</hr:FormattedDateTime>
                     </StartDate>
                     <Ongoing>false</Ongoing>
                 </AttendancePeriod>

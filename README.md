@@ -70,7 +70,7 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 - [**Speexx English CEFR Level C1.1** - Speexx (Sep 2020 - Present)](https://portal.speexx.com/certificate/MWVhOTEwZTctYzAxMy00NjY0LTk3MjItZmJiNDc5ZGFiMjJl)
 - [**The Web Developer Bootcamp (40+ hours)** - Udemy (Jan 2018 - Present)](https://www.udemy.com/certificate/UC-SQ4MQOK7/)
 - [**Getting Started with Angular 2+** - Udemy (Sep 2017 - Present)](https://www.udemy.com/certificate/UC-KKN29TB2/)
-- [**MENSA ITALIA** - http://www.mensa.it/ (Feb 2014 - Present)](https://www.cloud32.it/GES/stampa?Ybrx%253hhjZog2Ynyqt1H58OUdkEJG6Re1y%3Fnbeu%2B26hcatWk%2B%3Fu%3F%2FFn6B%3DQQgJLJ9HBcNVWTqAVmobqbDy%2Bn%2F%25p30Jz6%3D%2FGIWckfomplKYPdUjy330)
+- [**MENSA ITALIA** - http://www.mensa.it/ (Mar 2014 - Present)](https://www.cloud32.it/GES/stampa?Ybrx%253hhjZog2Ynyqt1H58OUdkEJG6Re1y%3Fnbeu%2B26hcatWk%2B%3Fu%3F%2FFn6B%3DQQgJLJ9HBcNVWTqAVmobqbDy%2Bn%2F%25p30Jz6%3D%2FGIWckfomplKYPdUjy330)
 
 </details>
 
@@ -95,15 +95,15 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 - Engaged with Dynamics teams as an enabler, defining integration patterns, securing workloads with Key Vault/Managed Identity, and improving delivery workflows.
 - Collaborated with engineering teams to troubleshoot distributed systems, resolve reliability issues, and streamline cloud operations.
 
-### **Backend Team Leader & Cloud Developer** @ Agic Cloud (Feb 2022 - Jul 2023)
+### **Backend Team Leader & Cloud Developer** @ Agic Cloud (Mar 2022 - Jul 2023)
 📍 Parma, Emilia-Romagna, Italy
 
-- Our cloud division (Vetrya Cloud) was bought by the AGIC Techonology group, becoming AGIC Cloud.
-- Load tested multiple applications E2E using Azure Load Testing and Jmeter
-- Built from the ground up and managed more than one Multi-Region project with Microsoft Consulting with a fully remote team
-- Demonstrated AKS potential building and deploying a custom three layered containerized application using Github Actions, bicep, helm, Chaos Mesh, Azure Load Testing and made metric available using Prometheus and Grafana
-- Led and helped the Agic Cloud Backend Team grow and succeed
-- Contributed to Open Source projects for both Agic Cloud and myself on github
+- Continued within AGIC Cloud following the acquisition of Vetrya Cloud by AGIC Technology Group, contributing to the growth of the cloud division as both a senior technical consultant and backend team lead
+- Delivered end-to-end cloud-native and full-stack solutions for large enterprise customers, including Enel, in collaboration with Microsoft Consulting Services, covering frontend, backend, databases, and Infrastructure as Code
+- Designed and managed multiple multi-region Azure projects from the ground up in fully remote environments, applying best practices for security, automation, scalability, and operational excellence.
+- Built proof of concepts and technical demonstrations to showcase Azure capabilities, using modern technologies such as Bicep, Blazor, .NET, Azure DevOps, and GitHub Actions.
+- Developed and deployed a custom three-tier containerized application on Azure Kubernetes Service using GitHub Actions, Bicep, Helm, Chaos Mesh, and Azure Load Testing, with Prometheus and Grafana for monitoring and observability
+- Performed end-to-end load testing for multiple applications using Azure Load Testing and JMeter.
 
 <details>
 <summary>Earlier roles</summary>
@@ -130,6 +130,7 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 ## 🎓 Education
 
 - **Università degli Studi di Urbino 'Carlo Bo'** - Informatica Applicata(CS) (Sep 2013 - Jun 2020)
+  > Bachelor’s Degree in Applied Computer Science (L-31), with a strong focus on software development, algorithms, databases, computer networks, operating systems, and software engineering. The programme combined theoretical foundations with practical application, developing skills in programming, system design, and ICT solutions for real-world business and technology contexts.
 - **Liceo Scientifico A.Volta Riccione - Corso Sperimentale Brocca** - High School
   > Focus on advanced mathematics and natural sciences within an extended‑hours experimental curriculum.
 
@@ -150,5 +151,5 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 - [PDF Version](./artifacts/Francesco_Belacca_CV.pdf)
 - [Europass XML](./artifacts/europass_cv.xml)
 
-<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-03-23 06:34 UTC</sub>
+<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-03-30 06:46 UTC</sub>
 
