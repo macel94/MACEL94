@@ -77,14 +77,14 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 ## 💼 Experience
 
 ### **Site Reliability Engineer** @ Würth IT Italy (Sep 2024 - Present)
-📍 Parma, Emilia-Romagna, Italy
+📍 Parma
 
 - I’ve been the force-multiplier behind Würth-Phoenix’s Microsoft stack.
-- Built and maintain complex, dynamic CI/CD in Azure DevOps and GitHub Enterprise for CRM/ERP and Business Central workloads.
-- Wrote production PowerShell automation and .NET backend APIs to remove manual toil and harden processes.
+- Built and maintained complex, dynamic CI/CD in Azure DevOps and GitHub Enterprise for CRM/ERP and Business Central workloads.
+- Wrote production PowerShell automation and .NET backend APIs or background services to remove manual toil and harden processes.
 - Rolling out Bicep for repeatable, reviewable IaC across environments.
 - Lead admin/governance for tenants and repos (Azure, Entra ID, Business Central, Fabric, GitHub Enterprise), enforcing DevSecOps guardrails, RBAC, and compliance by default.
-- Partner with developers to shift-left security, codify best practices, and unblock delivery at scale.
+- Partner with developers to shift-left security, codify best practices, and unlock delivery at scale.
 
 ### **Presales Solutions Architect** @ Agic Cloud (Jul 2023 - Jul 2024)
 📍 Parma, Emilia Romagna, Italia
@@ -151,5 +151,5 @@ Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps
 - [PDF Version](./artifacts/Francesco_Belacca_CV.pdf)
 - [Europass XML](./artifacts/europass_cv.xml)
 
-<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-04-06 06:47 UTC</sub>
+<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-04-13 06:54 UTC</sub>
 
