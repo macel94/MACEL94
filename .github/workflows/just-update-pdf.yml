@@ -1,4 +1,4 @@
-name: Update README from LinkedIn
+name: Update PDF only from current readme
 
 on:
   # Run manually from the Actions tab
@@ -8,7 +8,7 @@ permissions:
   contents: write
 
 jobs:
-  update-readme:
+  update-pdf:
     runs-on: ubuntu-latest
 
     steps:
