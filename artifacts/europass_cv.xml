@@ -69,7 +69,7 @@
                     <PositionTitle typeCode="FREETEXT">Site Reliability Engineer</PositionTitle>
                     <eures:EmploymentPeriod>
                         <eures:StartDate>
-                            <hr:FormattedDateTime>2024-09-01</hr:FormattedDateTime>
+                            <hr:FormattedDateTime>2024-10-01</hr:FormattedDateTime>
                         </eures:StartDate>
                         <hr:CurrentIndicator>true</hr:CurrentIndicator>
                     </eures:EmploymentPeriod>
@@ -118,7 +118,7 @@
                     <PositionTitle typeCode="FREETEXT">Backend Team Leader &amp; Cloud Developer</PositionTitle>
                     <eures:EmploymentPeriod>
                         <eures:StartDate>
-                            <hr:FormattedDateTime>2022-02-01</hr:FormattedDateTime>
+                            <hr:FormattedDateTime>2022-03-01</hr:FormattedDateTime>
                         </eures:StartDate>
                         <eures:EndDate>
                             <hr:FormattedDateTime>2023-07-01</hr:FormattedDateTime>
@@ -144,7 +144,7 @@
                     <PositionTitle typeCode="FREETEXT">Backend Team Leader &amp; Cloud Developer</PositionTitle>
                     <eures:EmploymentPeriod>
                         <eures:StartDate>
-                            <hr:FormattedDateTime>2021-06-01</hr:FormattedDateTime>
+                            <hr:FormattedDateTime>2021-07-01</hr:FormattedDateTime>
                         </eures:StartDate>
                         <eures:EndDate>
                             <hr:FormattedDateTime>2022-01-01</hr:FormattedDateTime>
@@ -170,7 +170,7 @@
                     <PositionTitle typeCode="FREETEXT">Backend Developer/ Analyst</PositionTitle>
                     <eures:EmploymentPeriod>
                         <eures:StartDate>
-                            <hr:FormattedDateTime>2020-04-01</hr:FormattedDateTime>
+                            <hr:FormattedDateTime>2020-05-01</hr:FormattedDateTime>
                         </eures:StartDate>
                         <eures:EndDate>
                             <hr:FormattedDateTime>2021-05-01</hr:FormattedDateTime>
@@ -196,7 +196,7 @@
                     <PositionTitle typeCode="FREETEXT">Backend Developer</PositionTitle>
                     <eures:EmploymentPeriod>
                         <eures:StartDate>
-                            <hr:FormattedDateTime>2019-09-01</hr:FormattedDateTime>
+                            <hr:FormattedDateTime>2019-10-01</hr:FormattedDateTime>
                         </eures:StartDate>
                         <eures:EndDate>
                             <hr:FormattedDateTime>2020-03-01</hr:FormattedDateTime>
@@ -222,7 +222,7 @@
                     <PositionTitle typeCode="FREETEXT">Consultant - Backend Developer</PositionTitle>
                     <eures:EmploymentPeriod>
                         <eures:StartDate>
-                            <hr:FormattedDateTime>2018-09-01</hr:FormattedDateTime>
+                            <hr:FormattedDateTime>2018-10-01</hr:FormattedDateTime>
                         </eures:StartDate>
                         <eures:EndDate>
                             <hr:FormattedDateTime>2019-08-01</hr:FormattedDateTime>
@@ -271,10 +271,10 @@
                 </OrganizationContact>
                 <AttendancePeriod>
                     <StartDate>
-                        <hr:FormattedDateTime>2013-09-01</hr:FormattedDateTime>
+                        <hr:FormattedDateTime>2013-10-01</hr:FormattedDateTime>
                     </StartDate>
                     <EndDate>
-                        <hr:FormattedDateTime>2020-06-01</hr:FormattedDateTime>
+                        <hr:FormattedDateTime>2020-07-01</hr:FormattedDateTime>
                     </EndDate>
                     <Ongoing>false</Ongoing>
                 </AttendancePeriod>
@@ -307,7 +307,7 @@
                 </OrganizationContact>
                 <AttendancePeriod>
                     <StartDate>
-                        <hr:FormattedDateTime>2014-02-01</hr:FormattedDateTime>
+                        <hr:FormattedDateTime>2014-03-01</hr:FormattedDateTime>
                     </StartDate>
                     <Ongoing>false</Ongoing>
                 </AttendancePeriod>
@@ -325,7 +325,7 @@
                 </OrganizationContact>
                 <AttendancePeriod>
                     <StartDate>
-                        <hr:FormattedDateTime>2017-09-01</hr:FormattedDateTime>
+                        <hr:FormattedDateTime>2017-10-01</hr:FormattedDateTime>
                     </StartDate>
                     <Ongoing>false</Ongoing>
                 </AttendancePeriod>
@@ -361,7 +361,7 @@
                 </OrganizationContact>
                 <AttendancePeriod>
                     <StartDate>
-                        <hr:FormattedDateTime>2020-09-01</hr:FormattedDateTime>
+                        <hr:FormattedDateTime>2020-10-01</hr:FormattedDateTime>
                     </StartDate>
                     <Ongoing>false</Ongoing>
                 </AttendancePeriod>
@@ -541,7 +541,7 @@
                 </OrganizationContact>
                 <AttendancePeriod>
                     <StartDate>
-                        <hr:FormattedDateTime>2023-04-01</hr:FormattedDateTime>
+                        <hr:FormattedDateTime>2023-05-01</hr:FormattedDateTime>
                     </StartDate>
                     <Ongoing>false</Ongoing>
                 </AttendancePeriod>
@@ -559,7 +559,7 @@
                 </OrganizationContact>
                 <AttendancePeriod>
                     <StartDate>
-                        <hr:FormattedDateTime>2023-09-01</hr:FormattedDateTime>
+                        <hr:FormattedDateTime>2023-10-01</hr:FormattedDateTime>
                     </StartDate>
                     <Ongoing>false</Ongoing>
                 </AttendancePeriod>
@@ -1066,7 +1066,7 @@
             <Title>Job-related skills</Title>
             <Other>
                 <Title>Job-related skills</Title>
-                <Description>&lt;p&gt;Senior DevOps &amp;amp; Site Reliability Engineer | Azure &amp;amp; .NET SpecialistWith 10+ years in the tech industry, I help organizations build, secure, and scale their cloud infrastructure. My background spans the full stack—from writing C# backend code to leading development teams and architecting cloud solutions for enterprise clients.Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps, governance, and automation across Dynamics 365, Power Platform, and Entra ID services. I thrive in complex environments where operational excellence is critical.Key Competencies:Governance at Scale: Navigating compliance and security in a massive single-tenant environment (85,000+ users, 500+ companies). I orchestrate stakeholders to ensure smooth approvals and operations in a complex corporate ecosystem.Infrastructure as Code: Expert in Bicep and YAML pipelines (GitHub Actions/Azure DevOps) to implement modern, rapid approaches for creating and destroying cloud infrastructure.Backend Engineering: Strong foundation in .NET and Blazor for building robust internal tools and customer-facing apps.Security Automation: Managing large-scale secret rotation (Key Vault) and identity security standards.Cloud Solutions Architecting: Utilizing rapid prototyping to demonstrate value, align stakeholders, and drive management strategies toward modern technical directions.Power Platform Administration: Managing and governing low-code environments at an enterprise level.My Mission:To build groundbreaking products that influence billions. I am passionate about simplifying complex distributed systems and applying Domain-Driven Design principles to solve real-world problems.Based in Parma, Italy. Let&apos;s connect to talk about the future of Cloud Engineering and .NET.&lt;/p&gt;</Description>
+                <Description>&lt;p&gt;Senior DevOps &amp;amp; Site Reliability Engineer | Azure &amp;amp; .NET SpecialistWith 10+ years in the tech industry, I help organizations build, secure, and scale their cloud infrastructure. My background spans the full stack—from writing C# backend code to leading development teams and architecting cloud solutions for enterprise clients.Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps, governance, and automation across Dynamics 365, Power Platform, and Entra ID services. I thrive in complex environments where operational excellence is critical.Key Competencies:Governance at Scale: Navigating compliance and security in a massive single-tenant environment (85,000+ users, 500+ companies). I orchestrate stakeholders to ensure smooth approvals and operations in a complex corporate ecosystem.Infrastructure as Code: Expert in Bicep and YAML pipelines (GitHub Actions/Azure DevOps) to implement modern, rapid approaches for creating and destroying cloud infrastructure.Backend Engineering: Strong foundation in .NET and Blazor for building robust internal tools and customer-facing apps.Security Automation: Managing large-scale secret rotation (Key Vault) and identity security standards.Cloud Solutions Architecting: Utilizing rapid prototyping to demonstrate value, align stakeholders, and drive management strategies toward modern technical directions.Power Platform Administration: Managing and governing low-code environments at an enterprise level.My Mission:To build groundbreaking products that influence billions. I am passionate about simplifying complex distributed systems and applying Domain-Driven Design principles to solve real-world problems.Based in Parma, Italy.&lt;/p&gt;</Description>
             </Other>
         </Others>
     </CandidateProfile>
