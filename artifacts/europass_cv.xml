@@ -763,6 +763,10 @@
         <Skills>
             <PersonCompetency>
                 <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Full-Stack Development</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
                 <hr:CompetencyName>English</hr:CompetencyName>
             </PersonCompetency>
             <PersonCompetency>
