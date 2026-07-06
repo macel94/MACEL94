@@ -24,15 +24,15 @@ Senior DevOps &amp; Site Reliability Engineer | Azure &amp; .NET SpecialistWith 
 
 <img src="https://skillicons.dev/icons?i=azure,dotnet,cs,docker,kubernetes,powershell,bash,github,githubactions,git,js,vscode&perline=6" alt="Tech Stack"/>
 
-**Cloud & Infrastructure:** Microsoft Fabric · Business Central · Software Infrastructure · Azure · Microsoft Entra ID · Microsoft Dynamics 365 · Microsoft Power Platform · Cost Optimization · Cloud Security · Windows Azure · Containerization · Distributed Systems · Cloud Infrastructure
+**Cloud & Infrastructure:** Microsoft Fabric · Business Central · Software Infrastructure · Azure · Microsoft Entra ID · Microsoft Dynamics 365 · Microsoft Power Platform · Cost Optimization · Cloud Security · Windows Azure · Containerization · Distributed Systems · Cloud Infrastructure · Microsoft Fabric · Business Central · Software Infrastructure · Azure · Microsoft Entra ID · Microsoft Dynamics 365 · Microsoft Power Platform · Cost Optimization · Cloud Security · Windows Azure · Containerization · Distributed Systems · Cloud Infrastructure
 
-**Backend & Languages:** C# · SQL · OOP · ETL · .NET · JavaScript · LINQ · Database · Server Microsoft SQL · T-SQL · .NET Framework · Microservices
+**Backend & Languages:** C# · SQL · OOP · ETL · .NET · JavaScript · LINQ · Database · Server Microsoft SQL · T-SQL · .NET Framework · Microservices · C# · SQL · OOP · ETL · .NET · JavaScript · LINQ · Database · Server Microsoft SQL · T-SQL · .NET Framework · Microservices
 
-**DevOps & CI/CD:** Github Enterprise · Powershell Core · Bash · DSC · Automation · DevOps · Version Control · Troubleshooting · Continuous improvement · Git · Windows PowerShell · AZURE DEVOPS
+**DevOps & CI/CD:** Github Enterprise · Powershell Core · Bash · DSC · Automation · DevOps · Version Control · Troubleshooting · Continuous improvement · Git · Windows PowerShell · AZURE DEVOPS · Github Enterprise · Powershell Core · Bash · DSC · Automation · DevOps · Version Control · Troubleshooting · Continuous improvement · Git · Windows PowerShell · AZURE DEVOPS
 
-**Frontend:** HTML · Kibana
+**Frontend:** HTML · Kibana · HTML · Kibana
 
-**Methods & Tools:** Stakeholder Management · Public speaking · JIRA · wsl · Communication · Attention to Detail · Analytical Skills · Project management · Agile Methodologies · Agile Project Management · Visual Studio · Microsoft Office · Project Leadership · Generative AI · Search Engine Technology · Artificial Intelligence (AI) · Artificial Intelligence for Business · Chatbots · Microsoft Search
+**Methods & Tools:** Stakeholder Management · Public speaking · JIRA · wsl · Communication · Attention to Detail · Analytical Skills · Project management · Agile Methodologies · Agile Project Management · Visual Studio · Microsoft Office · Project Leadership · Generative AI · Search Engine Technology · Artificial Intelligence (AI) · Artificial Intelligence for Business · Chatbots · Microsoft Search · Stakeholder Management · Public speaking · JIRA · wsl · Communication · Attention to Detail · Analytical Skills · Project management · Agile Methodologies · Agile Project Management · Visual Studio · Microsoft Office · Project Leadership · Generative AI · Search Engine Technology · Artificial Intelligence (AI) · Artificial Intelligence for Business · Chatbots · Microsoft Search
 
 ## 📜 Certifications
 
@@ -114,14 +114,22 @@ Senior DevOps &amp; Site Reliability Engineer | Azure &amp; .NET SpecialistWith 
   > Bachelor’s Degree in Applied Computer Science (L-31), with a strong focus on software development, algorithms, databases, computer networks, operating systems, and software engineering. The programme combined theoretical foundations with practical application, developing skills in programming, system design, and ICT solutions for real-world business and technology contexts.
 - **Liceo Scientifico A.Volta Riccione - Corso Sperimentale Brocca** - High School
   > Focus on advanced mathematics and natural sciences within an extended‑hours experimental curriculum.
+- **Università degli Studi di Urbino 'Carlo Bo'** - Informatica Applicata(CS) (Sep 2013 - Jun 2020)
+  > Bachelor’s Degree in Applied Computer Science (L-31), with a strong focus on software development, algorithms, databases, computer networks, operating systems, and software engineering. The programme combined theoretical foundations with practical application, developing skills in programming, system design, and ICT solutions for real-world business and technology contexts.
+- **Liceo Scientifico A.Volta Riccione - Corso Sperimentale Brocca** - High School
+  > Focus on advanced mathematics and natural sciences within an extended‑hours experimental curriculum.
 
 ## 🌐 Languages
 
 - **English** — Full professional proficiency
 - **Italian** — Native or bilingual proficiency
+- **English** — Full professional proficiency
+- **Italian** — Native or bilingual proficiency
 
 ## 🤝 Volunteering
 
+- **Azure Consultant** · education (Dec 2021 - Present)
+  > I helped the company with their onboarding on azure for nonprofit helping them obtain 3000$ per year. I helped them choosing the right technology for their use case and building their website, setting up the db, custom domains, etc.  https://www.progettosole.org/
 - **Azure Consultant** · education (Dec 2021 - Present)
   > I helped the company with their onboarding on azure for nonprofit helping them obtain 3000$ per year. I helped them choosing the right technology for their use case and building their website, setting up the db, custom domains, etc.  https://www.progettosole.org/
 
@@ -132,5 +140,5 @@ Senior DevOps &amp; Site Reliability Engineer | Azure &amp; .NET SpecialistWith 
 - [PDF Version](./artifacts/Francesco_Belacca_CV.pdf)
 - [Europass XML](./artifacts/europass_cv.xml)
 
-<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-06-29 07:57 UTC</sub>
+<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-07-06 07:43 UTC</sub>
 

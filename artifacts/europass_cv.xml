@@ -299,6 +299,42 @@
                 </EducationDegree>
             </EducationOrganizationAttendance>
             <EducationOrganizationAttendance>
+                <hr:OrganizationName>Università degli Studi di Urbino &apos;Carlo Bo&apos;</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <StartDate>
+                        <hr:FormattedDateTime>2013-09-01</hr:FormattedDateTime>
+                    </StartDate>
+                    <EndDate>
+                        <hr:FormattedDateTime>2020-06-01</hr:FormattedDateTime>
+                    </EndDate>
+                    <Ongoing>false</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>Informatica Applicata(CS)</hr:DegreeName>
+                    <OccupationalSkillsCovered>Bachelor’s Degree in Applied Computer Science (L-31), with a strong focus on software development, algorithms, databases, computer networks, operating systems, and software engineering. The programme combined theoretical foundations with practical application, developing skills in programming, system design, and ICT solutions for real-world business and technology contexts.</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
+                <hr:OrganizationName>Liceo Scientifico A.Volta Riccione - Corso Sperimentale Brocca</hr:OrganizationName>
+                <OrganizationContact>
+                    <Communication>
+                        <Address/>
+                    </Communication>
+                </OrganizationContact>
+                <AttendancePeriod>
+                    <Ongoing>true</Ongoing>
+                </AttendancePeriod>
+                <EducationDegree>
+                    <hr:DegreeName>High School</hr:DegreeName>
+                    <OccupationalSkillsCovered>Focus on advanced mathematics and natural sciences within an extended‑hours experimental curriculum.</OccupationalSkillsCovered>
+                </EducationDegree>
+            </EducationOrganizationAttendance>
+            <EducationOrganizationAttendance>
                 <hr:OrganizationName>http://www.mensa.it/</hr:OrganizationName>
                 <OrganizationContact>
                     <Communication>
@@ -755,12 +791,346 @@
                     </eures:Score>
                 </eures:CompetencyDimension>
             </PersonCompetency>
+            <PersonCompetency>
+                <CompetencyID schemeName="NORMAL">eng</CompetencyID>
+                <hr:TaxonomyID>language</hr:TaxonomyID>
+                <eures:CompetencyDimension>
+                    <hr:CompetencyDimensionTypeCode>CEF-Understanding-Listening</hr:CompetencyDimensionTypeCode>
+                    <eures:Score>
+                        <hr:ScoreText>C1</hr:ScoreText>
+                    </eures:Score>
+                </eures:CompetencyDimension>
+                <eures:CompetencyDimension>
+                    <hr:CompetencyDimensionTypeCode>CEF-Understanding-Reading</hr:CompetencyDimensionTypeCode>
+                    <eures:Score>
+                        <hr:ScoreText>C1</hr:ScoreText>
+                    </eures:Score>
+                </eures:CompetencyDimension>
+                <eures:CompetencyDimension>
+                    <hr:CompetencyDimensionTypeCode>CEF-Speaking-Interaction</hr:CompetencyDimensionTypeCode>
+                    <eures:Score>
+                        <hr:ScoreText>B2</hr:ScoreText>
+                    </eures:Score>
+                </eures:CompetencyDimension>
+                <eures:CompetencyDimension>
+                    <hr:CompetencyDimensionTypeCode>CEF-Speaking-Production</hr:CompetencyDimensionTypeCode>
+                    <eures:Score>
+                        <hr:ScoreText>B2</hr:ScoreText>
+                    </eures:Score>
+                </eures:CompetencyDimension>
+                <eures:CompetencyDimension>
+                    <hr:CompetencyDimensionTypeCode>CEF-Writing-Production</hr:CompetencyDimensionTypeCode>
+                    <eures:Score>
+                        <hr:ScoreText>C1</hr:ScoreText>
+                    </eures:Score>
+                </eures:CompetencyDimension>
+            </PersonCompetency>
         </PersonQualifications>
         <EmploymentReferences/>
         <CreativeWorks/>
         <Projects/>
         <SocialAndPoliticalActivities/>
         <Skills>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Full-Stack Development</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>English</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Stakeholder Management</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Security Administration</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Identity management</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Pianificazione delle capacità</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Public speaking</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Microsoft Fabric</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>JIRA</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Github Enterprise</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>wsl</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Powershell Core</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Bash</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>DSC</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Business Central</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Software Infrastructure</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Azure</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Microsoft Entra ID</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Automation</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Microsoft Dynamics 365</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Microsoft Power Platform</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Cost Optimization</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Cloud Security</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Customer Requirements</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Communication</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Windows Azure</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>C#</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>DevOps</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Containerization</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Distributed Systems</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Version Control</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Cloud Infrastructure</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Attention to Detail</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Analytical Skills</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>SQL</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Lingua inglese</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Project management</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>OOP</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Analisi dei dati</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Sviluppo di prodotto</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>ETL</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Infrastrutture</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Troubleshooting</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Applicazioni Web</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Sviluppo di software</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Continuous improvement</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Integrazione continua</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Social media</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Agile Methodologies</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Agile Project Management</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>.NET</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Git</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>JavaScript</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>LINQ</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Visual Studio</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Microsoft Office</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>HTML</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Database</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Server Microsoft SQL</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Windows PowerShell</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>T-SQL</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Kibana</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>AZURE DEVOPS</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Time management</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Lavoro di squadra</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Project Leadership</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>.NET Framework</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Microservices</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Generative AI</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Search Engine Technology</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Artificial Intelligence (AI)</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Artificial Intelligence for Business</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Chatbots</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Microsoft Search</hr:CompetencyName>
+            </PersonCompetency>
+            <PersonCompetency>
+                <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
+                <hr:CompetencyName>Computer Ethics</hr:CompetencyName>
+            </PersonCompetency>
             <PersonCompetency>
                 <hr:TaxonomyID>Digital_Skill</hr:TaxonomyID>
                 <hr:CompetencyName>Full-Stack Development</hr:CompetencyName>
