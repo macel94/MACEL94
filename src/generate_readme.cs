@@ -97,7 +97,8 @@ string GenerateReadme(Dictionary<string, List<JsonElement>> data)
     {
         sb.AppendLine("## 🧑‍💻 About Me");
         sb.AppendLine();
-        var formattedSummary = FormatSummary(summary);
+        var preprocessed = PreprocessSummary(summary);
+        var formattedSummary = FormatSummary(preprocessed);
         sb.AppendLine(formattedSummary);
         sb.AppendLine();
     }
@@ -422,6 +423,73 @@ string GenerateReadme(Dictionary<string, List<JsonElement>> data)
 
 // ── Formatting Helpers ───────────────────────────────────────────────
 
+/// <summary>
+/// Pre-processes the raw LinkedIn Summary string to insert line breaks at
+/// natural boundaries (sentence ends, section headers) so that FormatSummary
+/// can properly split them into paragraphs.
+///
+/// LinkedIn's DMA API returns the Summary as a single plain-text string with
+/// no newlines or paragraph breaks — this is expected behaviour, not a
+/// serialization issue.
+/// </summary>
+string PreprocessSummary(string summary)
+{
+    var text = summary.Trim();
+
+    // 1. Fix missing space after a period followed by an uppercase letter
+    //    (e.g. "clients.Currently" -> "clients. Currently")
+    //    Only when the period is preceded by a lowercase letter (sentence end),
+    //    not for acronyms like ".NET" or ".Framework"
+    text = System.Text.RegularExpressions.Regex.Replace(
+        text, @"(?<=[a-z])\.(?=[A-Z])", ". ");
+
+    // 2. Fix missing space between a lowercase letter and an uppercase letter
+    //    (e.g. "SpecialistWith" -> "Specialist With"), but skip known
+    //    camelCase words like "DevOps", "GitHub", etc.
+    var camelCaseExceptions = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+    {
+        "DevOps", "GitHub", "GitLab", "BitBucket", "JavaScript", "TypeScript",
+        "PowerShell", "OpenAI", "OpenAPI", "GraphQL", "MongoDB", "MariaDB",
+        "MySQL", "PostgreSQL", "ElasticSearch", "HashiCorp", "SalesForce",
+        "ServiceNow", "YouTube", "LinkedIn", "WordPress", "WooCommerce",
+        "SharePoint", "OneDrive", "OneNote", "TeamCity", "OctopusDeploy"
+    };
+    text = System.Text.RegularExpressions.Regex.Replace(
+        text, @"([a-z])([A-Z])",
+        m =>
+        {
+            // Get the full word containing this match
+            var idx = m.Index;
+            var wordStart = idx;
+            while (wordStart > 0 && char.IsLetter(text[wordStart - 1])) wordStart--;
+            var wordEnd = idx + m.Length;
+            while (wordEnd < text.Length && char.IsLetter(text[wordEnd])) wordEnd++;
+            var word = text[wordStart..wordEnd];
+            return camelCaseExceptions.Contains(word) ? m.Value : $"{m.Groups[1].Value} {m.Groups[2].Value}";
+        });
+
+    // 3. Insert newline before known section headers
+    var headerPatterns = new[] {
+        "Key Competencies:", "Core Competencies:", "My Mission:",
+        "Focus areas:", "What I do:", "Areas of expertise:"
+    };
+    foreach (var header in headerPatterns)
+    {
+        text = System.Text.RegularExpressions.Regex.Replace(
+            text, System.Text.RegularExpressions.Regex.Escape(header),
+            $"\n{header}");
+    }
+
+    // 4. Insert newline before "Based in" at the end
+    text = System.Text.RegularExpressions.Regex.Replace(
+        text, @"(\.?\s*)(Based in)", "\n$2");
+
+    // 5. Clean up any leading newline
+    text = text.TrimStart('\n');
+
+    return text;
+}
+
 string FormatSummary(string summary)
 {
     var sb = new StringBuilder();
@@ -432,12 +500,12 @@ string FormatSummary(string summary)
         "Core Competencies:", "What I do:", "Areas of expertise:"
     };
 
-    var paragraphs = text.Split(new[] { "  " }, StringSplitOptions.RemoveEmptyEntries)
+    var paragraphs = text.Split(new[] { "  ", "\n" }, StringSplitOptions.RemoveEmptyEntries)
         .Select(p => p.Trim())
         .Where(p => !string.IsNullOrEmpty(p))
         .ToList();
 
-    if (paragraphs.Count <= 1)
+    if (paragraphs.Count <= 1 && !text.Contains('\n'))
     {
         paragraphs = [text];
     }
@@ -466,8 +534,9 @@ string FormatSummary(string summary)
         if (trimmed.StartsWith("My Mission:"))
         {
             competenciesStarted = false;
+            var missionText = trimmed.Substring("My Mission:".Length).Trim();
             sb.AppendLine();
-            sb.AppendLine($"**🎯 {trimmed}**");
+            sb.AppendLine($"**🎯 My Mission:** {missionText}");
             sb.AppendLine();
             continue;
         }
