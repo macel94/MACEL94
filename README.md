@@ -11,7 +11,22 @@
 
 ## 🧑‍💻 About Me
 
-Senior DevOps &amp; Site Reliability Engineer | Azure &amp; .NET SpecialistWith 10+ years in the tech industry, I help organizations build, secure, and scale their cloud infrastructure. My background spans the full stack—from writing C# backend code to leading development teams and architecting cloud solutions for enterprise clients.Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps, governance, and automation across Dynamics 365, Power Platform, and Entra ID services. I thrive in complex environments where operational excellence is critical.Key Competencies:Governance at Scale: Navigating compliance and security in a massive single-tenant environment (85,000+ users, 500+ companies). I orchestrate stakeholders to ensure smooth approvals and operations in a complex corporate ecosystem.Infrastructure as Code: Expert in Bicep and YAML pipelines (GitHub Actions/Azure DevOps) to implement modern, rapid approaches for creating and destroying cloud infrastructure.Backend Engineering: Strong foundation in .NET and Blazor for building robust internal tools and customer-facing apps.Security Automation: Managing large-scale secret rotation (Key Vault) and identity security standards.Cloud Solutions Architecting: Utilizing rapid prototyping to demonstrate value, align stakeholders, and drive management strategies toward modern technical directions.Power Platform Administration: Managing and governing low-code environments at an enterprise level.My Mission:To build groundbreaking products that influence billions. I am passionate about simplifying complex distributed systems and applying Domain-Driven Design principles to solve real-world problems.Based in Parma, Italy.
+Senior DevOps &amp; Site Reliability Engineer | Azure &amp; .NET Specialist With 10+ years in the tech industry, I help organizations build, secure, and scale their cloud infrastructure. My background spans the full stack—from writing C# backend code to leading development teams and architecting cloud solutions for enterprise clients. Currently, I serve as an SRE at Würth-IT, where I focus on Azure-centric DevOps, governance, and automation across Dynamics 365, Power Platform, and Entra ID services. I thrive in complex environments where operational excellence is critical.
+
+
+**Key Competencies:**
+
+- **Governance at Scale:** Navigating compliance and security in a massive single-tenant environment (85,000+ users, 500+ companies). I orchestrate stakeholders to ensure smooth approvals and operations in a complex corporate ecosystem.
+- **Infrastructure as Code:** Expert in Bicep and YAML pipelines (GitHub Actions/Azure DevOps) to implement modern, rapid approaches for creating and destroying cloud infrastructure.
+- **Backend Engineering:** Strong foundation in .NET and Blazor for building robust internal tools and customer-facing apps.
+- **Security Automation:** Managing large-scale secret rotation (Key Vault) and identity security standards.
+- **Cloud Solutions Architecting:** Utilizing rapid prototyping to demonstrate value, align stakeholders, and drive management strategies toward modern technical directions.
+- **Power Platform Administration:** Managing and governing low-code environments at an enterprise level.
+
+**🎯 My Mission:** To build groundbreaking products that influence billions. I am passionate about simplifying complex distributed systems and applying Domain-Driven Design principles to solve real-world problems
+
+
+*Based in Parma, Italy.*
 
 ## 📊 GitHub Stats
 
@@ -57,7 +72,7 @@ Senior DevOps &amp; Site Reliability Engineer | Azure &amp; .NET SpecialistWith 
 
 ## 💼 Experience
 
-### **Site Reliability Engineer** @ Würth IT Italy (Sep 2024 - Present)
+### **Senior Site Reliability Engineer** @ Würth IT Italy (Sep 2024 - Present)
 📍 Parma
 
 - I’ve been the force-multiplier behind Würth-Phoenix’s Microsoft stack.
@@ -132,5 +147,5 @@ Senior DevOps &amp; Site Reliability Engineer | Azure &amp; .NET SpecialistWith 
 - [PDF Version](./artifacts/Francesco_Belacca_CV.pdf)
 - [Europass XML](./artifacts/europass_cv.xml)
 
-<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-07-13 09:34 UTC</sub>
+<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-07-19 11:41 UTC</sub>
 

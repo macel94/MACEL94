@@ -36,7 +36,7 @@ async function main() {
     // Navigate to the local HTML file and wait for all network activity to stop
     await page.goto(`file://${absoluteHtml}`, {
       waitUntil: 'networkidle0',   // wait until 0 network connections for 500ms
-      timeout: 30000,
+      timeout: 60000,
     });
 
     // Extra wait for any remaining rendering/layout
