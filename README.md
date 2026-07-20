@@ -147,5 +147,5 @@ Senior DevOps &amp; Site Reliability Engineer | Azure &amp; .NET Specialist With
 - [PDF Version](./artifacts/Francesco_Belacca_CV.pdf)
 - [Europass XML](./artifacts/europass_cv.xml)
 
-<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-07-19 11:45 UTC</sub>
+<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-07-20 09:21 UTC</sub>
 
