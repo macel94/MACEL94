@@ -1,6 +1,6 @@
 # Hi, I'm Francesco Belacca 👋
 
-### Certified Azure Dev, Admin & DevOps Expert
+### Senior SRE | Certified Azure Dev, Admin & DevOps Expert
 
 <p>
   <a href="https://www.linkedin.com/in/francesco-belacca-dev/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
@@ -147,5 +147,5 @@ Senior DevOps &amp; Site Reliability Engineer | Azure &amp; .NET Specialist With
 - [PDF Version](./artifacts/Francesco_Belacca_CV.pdf)
 - [Europass XML](./artifacts/europass_cv.xml)
 
-<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-07-27 09:57 UTC</sub>
+<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-08-03 09:52 UTC</sub>
 
