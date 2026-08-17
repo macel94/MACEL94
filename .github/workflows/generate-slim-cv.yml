@@ -1,0 +1,61 @@
+name: "Generate CV: Slim one-page"
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Run shortly after the main LinkedIn refresh, without changing its job.
+    - cron: "30 6 * * 1"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generate-slim-cv
+  cancel-in-progress: false
+
+jobs:
+  generate-slim-cv:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Setup .NET 10
+        uses: actions/setup-dotnet@v6
+        with:
+          dotnet-version: "10.0.x"
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24.x"
+          cache: npm
+          cache-dependency-path: src/package-lock.json
+
+      - name: Install PDF dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq pandoc poppler-utils
+          (cd src && npm ci && npx puppeteer browsers install chrome-headless-shell)
+
+      - name: Fetch LinkedIn snapshot
+        env:
+          LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
+        run: dotnet run src/fetch_linkedin.cs
+
+      - name: Generate slim one-page resume
+        run: dotnet run src/generate_slim.cs
+
+      - name: Render slim PDF and run one-page checks
+        run: |
+          chmod +x ./src/generate_slim_pdf.sh
+          ./src/generate_slim_pdf.sh
+
+      - name: Commit and push slim output only
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add slim/
+          git diff --cached --quiet || (git commit -m "docs: update slim one-page CV [skip ci]" && git push)
