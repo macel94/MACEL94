@@ -10,7 +10,7 @@ Azure, Azure DevOps, GitHub Actions, GitHub Enterprise, Bicep, Infrastructure as
 
 ## EXPERIENCE
 ### Senior Site Reliability Engineer | Würth IT Italy
-Parma | September 2024 - Present
+Parma | October 2024 - Present
 - Built and maintained complex, dynamic CI/CD in Azure DevOps and GitHub Enterprise for CRM/ERP and Business Central workloads.
 - Wrote production PowerShell automation and .NET backend APIs or background services to remove manual toil and harden processes.
 - Focus areas Azure | Azure DevOps | GitHub Enterprise | CI/CD | PowerShell | .NET | Bicep (IaC) | Dynamics 365 / Business Central / Power Platform | Microsoft Fabric | Entra ID | DevSecOps | Governance | Automation.
@@ -22,16 +22,16 @@ Parma, Emilia Romagna, Italia | July 2023 - July 2024
 - Drove DevOps adoption using Bicep, GitHub Actions/Azure DevOps YAML, and CI/CD patterns; standardized IaC and deployment practices across teams.
 
 ### Backend Team Leader & Cloud Developer | Agic Cloud
-Parma, Italy | February 2022 - July 2023
+Parma, Italy | March 2022 - July 2023
 - Delivered end-to-end cloud-native and full-stack solutions for large enterprise customers, including Enel, in collaboration with Microsoft Consulting Services, covering frontend, backend, databases, and Infrastructure as Code.
 - Built proof of concepts and technical demonstrations to showcase Azure capabilities, using modern technologies such as Bicep, Blazor, .NET, Azure DevOps, and GitHub Actions.
 - Developed and deployed a custom three-tier containerized application on Azure Kubernetes Service using GitHub Actions, Bicep, Helm, Chaos Mesh, and Azure Load Testing, with Prometheus and Grafana for monitoring and observability.
 
 ### Earlier Experience
-- Backend Team Leader & Cloud Developer | Vetrya | Parma, Emilia-Romagna, Italy (Full Remote) | June 2021 - January 2022
-- Backend Developer/ Analyst | Credemtel SpA | Reggio nell'Emilia, Emilia Romagna, Italia | April 2020 - May 2021
-- Backend Developer | Credemtel SpA | Reggio Emilia, Italia | September 2019 - March 2020
-- Consultant - Backend Developer | Amaris | Reggio Emilia, Italia | September 2018 - August 2019
+- Backend Team Leader & Cloud Developer | Vetrya | Parma, Emilia-Romagna, Italy (Full Remote) | July 2021 - January 2022
+- Backend Developer/ Analyst | Credemtel SpA | Reggio nell'Emilia, Emilia Romagna, Italia | May 2020 - May 2021
+- Backend Developer | Credemtel SpA | Reggio Emilia, Italia | October 2019 - March 2020
+- Consultant - Backend Developer | Amaris | Reggio Emilia, Italia | October 2018 - August 2019
 - Junior Backend Developer | ericsoft srl | Misano Adriatico | May 2016 - August 2018
 
 ## CERTIFICATIONS
@@ -41,7 +41,7 @@ Parma, Italy | February 2022 - July 2023
 - Microsoft Certified Azure Developer Associate (May 2021)
 
 ## EDUCATION
-- Bachelor's Degree in Applied Computer Science, Università degli Studi di Urbino 'Carlo Bo' (June 2020)
+- Bachelor's Degree in Applied Computer Science, Università degli Studi di Urbino 'Carlo Bo' (July 2020)
 
 ## LANGUAGES
 English - Full professional proficiency; Italian - Native or bilingual proficiency
