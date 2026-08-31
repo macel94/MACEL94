@@ -61,18 +61,18 @@ Senior DevOps &amp; Site Reliability Engineer | Azure &amp; .NET Specialist With
 <summary>Other certifications & courses</summary>
 
 - [**Career Essentials in Generative AI by Microsoft and LinkedIn** - Microsoft (Oct 2023 - Present)](https://www.linkedin.com/learning/certificates/16067e03e960ef0144dc31920fcaf387d7873ef227c5738cb99ff362ede92a8a)
-- [**Kubernetes for developers** - Udemy (Apr 2023 - Present)](https://www.udemy.com/certificate/UC-67714a89-6f40-4717-93a7-cded4b75d711/)
+- [**Kubernetes for developers** - Udemy (May 2023 - Present)](https://www.udemy.com/certificate/UC-67714a89-6f40-4717-93a7-cded4b75d711/)
 - [**AZ-204 Developing for Microsoft Azure Exam Prep** - Udemy (Mar 2021 - Present)](https://www.udemy.com/certificate/UC-5957c389-228f-4488-aa31-c8cdd755f9af/)
-- [**Speexx English CEFR Level C1.1** - Speexx (Sep 2020 - Present)](https://portal.speexx.com/certificate/MWVhOTEwZTctYzAxMy00NjY0LTk3MjItZmJiNDc5ZGFiMjJl)
+- [**Speexx English CEFR Level C1.1** - Speexx (Oct 2020 - Present)](https://portal.speexx.com/certificate/MWVhOTEwZTctYzAxMy00NjY0LTk3MjItZmJiNDc5ZGFiMjJl)
 - [**The Web Developer Bootcamp (40+ hours)** - Udemy (Jan 2018 - Present)](https://www.udemy.com/certificate/UC-SQ4MQOK7/)
-- [**Getting Started with Angular 2+** - Udemy (Sep 2017 - Present)](https://www.udemy.com/certificate/UC-KKN29TB2/)
-- [**MENSA ITALIA** - http://www.mensa.it/ (Feb 2014 - Present)](https://www.cloud32.it/GES/stampa?Ybrx%253hhjZog2Ynyqt1H58OUdkEJG6Re1y%3Fnbeu%2B26hcatWk%2B%3Fu%3F%2FFn6B%3DQQgJLJ9HBcNVWTqAVmobqbDy%2Bn%2F%25p30Jz6%3D%2FGIWckfomplKYPdUjy330)
+- [**Getting Started with Angular 2+** - Udemy (Oct 2017 - Present)](https://www.udemy.com/certificate/UC-KKN29TB2/)
+- [**MENSA ITALIA** - http://www.mensa.it/ (Mar 2014 - Present)](https://www.cloud32.it/GES/stampa?Ybrx%253hhjZog2Ynyqt1H58OUdkEJG6Re1y%3Fnbeu%2B26hcatWk%2B%3Fu%3F%2FFn6B%3DQQgJLJ9HBcNVWTqAVmobqbDy%2Bn%2F%25p30Jz6%3D%2FGIWckfomplKYPdUjy330)
 
 </details>
 
 ## 💼 Experience
 
-### **Senior Site Reliability Engineer** @ Würth IT Italy (Sep 2024 - Present)
+### **Senior Site Reliability Engineer** @ Würth IT Italy (Oct 2024 - Present)
 📍 Parma
 
 - I’ve been the force-multiplier behind Würth-Phoenix’s Microsoft stack.
@@ -91,7 +91,7 @@ Senior DevOps &amp; Site Reliability Engineer | Azure &amp; .NET Specialist With
 - Engaged with Dynamics teams as an enabler, defining integration patterns, securing workloads with Key Vault/Managed Identity, and improving delivery workflows.
 - Collaborated with engineering teams to troubleshoot distributed systems, resolve reliability issues, and streamline cloud operations.
 
-### **Backend Team Leader & Cloud Developer** @ Agic Cloud (Feb 2022 - Jul 2023)
+### **Backend Team Leader & Cloud Developer** @ Agic Cloud (Mar 2022 - Jul 2023)
 📍 Parma, Emilia-Romagna, Italy
 
 - Continued within AGIC Cloud following the acquisition of Vetrya Cloud by AGIC Technology Group, contributing to the growth of the cloud division as both a senior technical consultant and backend team lead
@@ -104,13 +104,13 @@ Senior DevOps &amp; Site Reliability Engineer | Azure &amp; .NET Specialist With
 <details>
 <summary>Earlier roles</summary>
 
-- **Backend Team Leader & Cloud Developer** @ Vetrya · Parma, Emilia-Romagna, Italy (Full Remote) (Jun 2021 - Jan 2022)
+- **Backend Team Leader & Cloud Developer** @ Vetrya · Parma, Emilia-Romagna, Italy (Full Remote) (Jul 2021 - Jan 2022)
   > As a Team Leader I helped my Team succeed and grow. We used Azure PaaS services to build multiple environments using the following technologies: Bot framework PBI Dashboard embedded in Azure Static...
-- **Backend Developer/ Analyst** @ Credemtel SpA · Reggio nell'Emilia, Emilia Romagna, Italia (Apr 2020 - May 2021)
+- **Backend Developer/ Analyst** @ Credemtel SpA · Reggio nell'Emilia, Emilia Romagna, Italia (May 2020 - May 2021)
   > Worked as backend developer for multiple core application using various types of dbs(sql/ElasticSearch) developing microservices of a SAGA in the backend and APIs for the frontend. Used both .net Fram...
-- **Backend Developer** @ Credemtel SpA · Reggio Emilia, Italia (Sep 2019 - Mar 2020)
+- **Backend Developer** @ Credemtel SpA · Reggio Emilia, Italia (Oct 2019 - Mar 2020)
   > Worked as backend developer for multiple core application using various types of dbs(sql/ElasticSearch) developing microservices of a SAGA in the backend and APIs for the frontend. Used both .net Fram...
-- **Consultant - Backend Developer** @ Amaris · Reggio Emilia, Italia (Sep 2018 - Aug 2019)
+- **Consultant - Backend Developer** @ Amaris · Reggio Emilia, Italia (Oct 2018 - Aug 2019)
   > Worked as consultant for Credemtel
 - **Junior Backend Developer** @ ericsoft srl · Misano Adriatico (May 2016 - Aug 2018)
   > Developed various APIs integrations from Booking to expedia and Agoda for Ericsoft's Channel Manager. Started working with C#, EF, and basic SQL. Tested everything i developed with MSTests & learned...
@@ -125,7 +125,7 @@ Senior DevOps &amp; Site Reliability Engineer | Azure &amp; .NET Specialist With
 
 ## 🎓 Education
 
-- **Università degli Studi di Urbino 'Carlo Bo'** - Informatica Applicata(CS) (Sep 2013 - Jun 2020)
+- **Università degli Studi di Urbino 'Carlo Bo'** - Informatica Applicata(CS) (Oct 2013 - Jul 2020)
   > Bachelor’s Degree in Applied Computer Science (L-31), with a strong focus on software development, algorithms, databases, computer networks, operating systems, and software engineering. The programme combined theoretical foundations with practical application, developing skills in programming, system design, and ICT solutions for real-world business and technology contexts.
 - **Liceo Scientifico A.Volta Riccione - Corso Sperimentale Brocca** - High School
   > Focus on advanced mathematics and natural sciences within an extended‑hours experimental curriculum.
@@ -147,5 +147,5 @@ Senior DevOps &amp; Site Reliability Engineer | Azure &amp; .NET Specialist With
 - [PDF Version](./artifacts/Francesco_Belacca_CV.pdf)
 - [Europass XML](./artifacts/europass_cv.xml)
 
-<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-08-24 07:04 UTC</sub>
+<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-08-31 13:08 UTC</sub>
 
