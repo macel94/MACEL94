@@ -1,6 +1,6 @@
 # Francesco Belacca
 Senior SRE | Certified Azure Dev, Admin & DevOps Expert
-Parma, Italy | francesco.belacca@hotmail.it | https://www.linkedin.com/in/francesco-belacca-dev/ | https://github.com/macel94
+Cattolica, Italy | francesco.belacca@hotmail.it | https://www.linkedin.com/in/francesco-belacca-dev/ | https://github.com/macel94
 
 ## SUMMARY
 Senior Site Reliability Engineer with 10+ years of experience building, securing, and scaling Azure cloud infrastructure, .NET services, and delivery automation. Expertise spans CI/CD, Infrastructure as Code, cloud governance, reliability engineering, and distributed systems. Operates in a single-tenant environment supporting 85,000+ users across 500+ companies.
