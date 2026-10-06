@@ -41,10 +41,10 @@
         <Communication>
             <UseCode>home</UseCode>
             <Address type="home">
-                <oa:AddressLine>Viale la Grola 29</oa:AddressLine>
+                <oa:AddressLine>Viale Nazario Sauro</oa:AddressLine>
                 <oa:CityName>Cattolica</oa:CityName>
                 <CountryCode>it</CountryCode>
-                <oa:PostalCode>43126</oa:PostalCode>
+                <oa:PostalCode>47841</oa:PostalCode>
             </Address>
         </Communication>
         <NationalityCode>it</NationalityCode>
