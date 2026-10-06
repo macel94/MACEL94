@@ -120,10 +120,10 @@ string GenerateEuropassXml(Dictionary<string, List<JsonElement>> data)
     sb.AppendLine("        <Communication>");
     sb.AppendLine("            <UseCode>home</UseCode>");
     sb.AppendLine("            <Address type=\"home\">");
-    sb.AppendLine("                <oa:AddressLine>Viale la Grola 29</oa:AddressLine>");
+    sb.AppendLine("                <oa:AddressLine>Viale Nazario Sauro</oa:AddressLine>");
     sb.AppendLine($"                <oa:CityName>{Esc(city)}</oa:CityName>");
     sb.AppendLine($"                <CountryCode>{countryCode}</CountryCode>");
-    sb.AppendLine("                <oa:PostalCode>43126</oa:PostalCode>");
+    sb.AppendLine("                <oa:PostalCode>47841</oa:PostalCode>");
     sb.AppendLine("            </Address>");
     sb.AppendLine("        </Communication>");
     sb.AppendLine($"        <NationalityCode>{countryCode}</NationalityCode>");
