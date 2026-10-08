@@ -127,7 +127,7 @@ string GenerateSlimMarkdown(Dictionary<string, List<JsonElement>> data)
 
         for (var index = 0; index < featuredCount; index++)
         {
-            AppendFeaturedPosition(sb, positions[index]);
+            AppendFeaturedPosition(sb, positions[index], index == 0 ? location : "");
         }
 
         if (positions.Count > featuredCount)
@@ -175,10 +175,11 @@ string GenerateSlimMarkdown(Dictionary<string, List<JsonElement>> data)
     return sb.ToString().TrimEnd() + Environment.NewLine;
 }
 
-void AppendFeaturedPosition(StringBuilder sb, JsonElement position)
+void AppendFeaturedPosition(StringBuilder sb, JsonElement position, string currentLocation)
 {
     var header = PositionHeader(position);
-    var location = ResumeLocation(Safe(position, "Location"));
+    var roleLocation = ResumeLocation(Safe(position, "Location"));
+    var location = string.IsNullOrWhiteSpace(currentLocation) ? roleLocation : currentLocation;
     var dates = DateRange(position);
 
     sb.AppendLine($"### {header}");

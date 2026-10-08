@@ -75,7 +75,7 @@ cat > "$TEMP_DIR/resume.html" <<'HTMLEOF'
       box-sizing: border-box;
       width: 100%;
       max-width: none;
-      padding: 12.7mm;
+      padding: 6mm 12.7mm;
       margin: 0;
     }
 
@@ -140,7 +140,7 @@ cat > "$TEMP_DIR/resume.html" <<'HTMLEOF'
     }
 
     @media print {
-      .markdown-body { padding: 12.7mm; }
+      .markdown-body { padding: 6mm 12.7mm; }
     }
   </style>
 </head>

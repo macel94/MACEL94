@@ -10,7 +10,7 @@ Azure, Azure DevOps, GitHub Actions, GitHub Enterprise, Bicep, Infrastructure as
 
 ## EXPERIENCE
 ### Senior Site Reliability Engineer | Würth IT Italy
-Parma | September 2024 - Present
+Cattolica, Italy | September 2024 - Present
 - Built and maintained complex, dynamic CI/CD in Azure DevOps and GitHub Enterprise for CRM/ERP and Business Central workloads.
 - Wrote production PowerShell automation and .NET backend APIs or background services to remove manual toil and harden processes.
 - Focus areas Azure | Azure DevOps | GitHub Enterprise | CI/CD | PowerShell | .NET | Bicep (IaC) | Dynamics 365 / Business Central / Power Platform | Microsoft Fabric | Entra ID | DevSecOps | Governance | Automation.
