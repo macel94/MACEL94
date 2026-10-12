@@ -23,10 +23,7 @@ Senior DevOps &amp; Site Reliability Engineer | Azure &amp; .NET Specialist With
 - **Cloud Solutions Architecting:** Utilizing rapid prototyping to demonstrate value, align stakeholders, and drive management strategies toward modern technical directions.
 - **Power Platform Administration:** Managing and governing low-code environments at an enterprise level.
 
-**🎯 My Mission:** To build groundbreaking products that influence billions. I am passionate about simplifying complex distributed systems and applying Domain-Driven Design principles to solve real-world problems
-
-
-*Based in Parma, Italy.*
+**🎯 My Mission:** To build groundbreaking products that influence billions. I am passionate about simplifying complex distributed systems and applying Domain-Driven Design principles to solve real-world problems.
 
 ## 📊 GitHub Stats
 
@@ -73,7 +70,7 @@ Senior DevOps &amp; Site Reliability Engineer | Azure &amp; .NET Specialist With
 ## 💼 Experience
 
 ### **Senior Site Reliability Engineer** @ Würth IT Italy (Sep 2024 - Present)
-📍 Parma
+📍 Cattolica
 
 - I’ve been the force-multiplier behind Würth-Phoenix’s Microsoft stack.
 - Built and maintained complex, dynamic CI/CD in Azure DevOps and GitHub Enterprise for CRM/ERP and Business Central workloads.
@@ -147,5 +144,5 @@ Senior DevOps &amp; Site Reliability Engineer | Azure &amp; .NET Specialist With
 - [PDF Version](./artifacts/Francesco_Belacca_CV.pdf)
 - [Europass XML](./artifacts/europass_cv.xml)
 
-<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-10-08 10:37 UTC</sub>
+<sub>🔄 Auto-generated from LinkedIn via [DMA Data Portability API](https://learn.microsoft.com/en-us/linkedin/dma/member-data-portability/member-data-portability-member/) · Last updated: 2026-10-12 14:52 UTC</sub>
 
